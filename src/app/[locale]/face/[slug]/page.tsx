@@ -4,6 +4,14 @@ import { faceTreatmentsMetadata } from "@/src/config/faceTreatments";
 import { Metadata } from "next";
 import { faceSchema } from "@/src/lib/loadSchema";
 import Script from "next/script";
+import { getTranslation } from "@/src/i18n/server";
+
+// Slug -> locale JSON namespace mapping for SEO localization.
+// Only slugs listed here will attempt to load localized SEO; others fall back to faceTreatmentsMetadata.
+const localizedSeoNamespaces: Record<string, string> = {
+  "newest-malaysia": "newestMalaysia",
+  "profhilo-malaysia": "profhiloMalaysia",
+};
 
 import DermalFiller from "@/src/views/faceTreatment/DermalFiller";
 import LipFiller from "@/src/views/faceTreatment/LipFiller";
@@ -74,13 +82,28 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     ? `${baseUrl}/face/${slug}` 
     : `${baseUrl}/${locale}/face/${slug}`;
 
+  let title = treatment.title;
+  let description = treatment.description;
+
+  const ns = localizedSeoNamespaces[slug];
+  if (ns) {
+    try {
+      const { t } = await getTranslation(locale, `face/${ns}`);
+      const seo = t("seo", { returnObjects: true }) as { title?: string; description?: string } | undefined;
+      if (seo?.title) title = seo.title;
+      if (seo?.description) description = seo.description;
+    } catch {
+      // Fall back to default English metadata from faceTreatmentsMetadata
+    }
+  }
+
   return {
-    title: treatment.title,
-    description: treatment.description,
+    title,
+    description,
     alternates: { canonical: url },
     openGraph: {
-      title: treatment.title,
-      description: treatment.description,
+      title,
+      description,
       url,
       siteName: 'Nexus Clinic',
     },

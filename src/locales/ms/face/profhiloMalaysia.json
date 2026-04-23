@@ -1,0 +1,232 @@
+{
+  "seo": {
+    "title": "Profhilo Terbaik Malaysia | Rawatan Hidrasi & Ketegapan Kulit di Nexus Clinic KL",
+    "description": "Tingkatkan hidrasi, ketegapan dan kilauan kulit dengan Profhilo di Malaysia. Nexus Clinic KL menawarkan rawatan Profhilo dipimpin doktor untuk kulit yang kusam, nipis dan menua. Tempah konsultasi percuma anda hari ini."
+  },
+  "hero": {
+    "badge": "Pembentukan Semula Kulit Tanpa Pembedahan",
+    "title": "Profhilo | Rawatan Hidrasi & Ketegapan Kulit",
+    "highlight": "di Nexus Clinic KL",
+    "description": "Tingkatkan hidrasi, ketegapan dan kilauan kulit dengan Profhilo di Malaysia. Nexus Clinic KL menawarkan rawatan Profhilo dipimpin doktor untuk kulit yang kusam, nipis dan menua.",
+    "details": "Kulit anda boleh kelihatan letih walaupun anda tidak. Ia mula terasa lebih nipis. Garisan halus lebih mudah kelihatan. Solekan tidak lagi melekat dengan baik. Kilauan pudar. Kulit kehilangan kekenyalan, dan tiada krim yang nampaknya boleh memperbaikinya untuk masa yang lama. Itulah biasanya titik di mana penjagaan kulit sahaja tidak lagi mencukupi.",
+    "note": "Profhilo bukan filler. Ia tidak mengubah bentuk muka anda. Ia berfungsi dengan menyebar di bawah kulit untuk meningkatkan hidrasi, keanjalan dan tekstur kulit secara keseluruhan.",
+    "ctaText": "Tempah konsultasi percuma",
+    "whatsappMessage": "Hai, saya berminat dengan rawatan Profhilo di Nexus Clinic KL. Saya ingin menempah konsultasi.",
+    "floatingTitle": "✨ Pembentukan Semula Kulit",
+    "floatingSubtitle": "Tiada filler • Kilauan semula jadi"
+  },
+  "treatmentAtGlance": {
+    "title": "Rawatan Profhilo Sekilas Pandang",
+    "subtitle": "Semua yang anda perlu tahu tentang rawatan pembentukan semula kulit ini",
+    "items": [
+      { "icon": "Syringe", "label": "Jenis Rawatan", "value": "Rawatan suntikan pembentukan semula kulit menggunakan asid hyaluronic stabil" },
+      { "icon": "Activity", "label": "Kawasan Lazim", "value": "Muka, leher, décolletage dan tangan" },
+      { "icon": "Clock", "label": "Masa Sesi", "value": "15 hingga 30 minit" },
+      { "icon": "Heart", "label": "Masa Pemulihan", "value": "Minimum, kembali ke rutin biasa pada hari yang sama" }
+    ],
+    "protocolInfo": [
+      { "label": "Protokol Disyorkan", "value": "2 sesi, 4 minggu jarak" },
+      { "label": "Bila Hasil Mula", "value": "Hidrasi dahulu, ketegapan terbentuk dalam beberapa minggu" },
+      { "label": "Tempoh Hasil", "value": "6 hingga 9 bulan" },
+      { "label": "Sesuai Untuk", "value": "Kulit kusam, garisan halus, tekstur berkedut, kelonggaran awal, dehidrasi, kehilangan kekenyalan" }
+    ],
+    "cta": "Bercakap Dengan Doktor Mengenai Profhilo"
+  },
+  "whatIs": {
+    "title": "Apa Itu Profhilo dan ",
+    "titleHighlight": "Bagaimana Ia Berfungsi",
+    "paragraphs": [
+      "Profhilo ialah rawatan suntikan pembentukan semula kulit yang dibuat dengan asid hyaluronic kemurnian tinggi. Tidak seperti filler dermal, ia tidak digunakan untuk membina pipi, membentuk dagu atau menambah isipadu pada bibir. Sebaliknya, ia menyebar melalui tisu untuk meningkatkan hidrasi dan menyokong kualiti kulit yang lebih baik.",
+      "Ia sering digambarkan sebagai rawatan bio-pembentukan semula kerana matlamatnya bukan untuk mengisi garisan, tetapi untuk meningkatkan keadaan kulit itu sendiri. Pesakit biasanya memilih Profhilo apabila mereka rasa kulit mereka telah menjadi nipis, letih, longgar atau kurang segar daripada sebelumnya.",
+      "Salah satu sebab Profhilo menjadi begitu popular ialah ia merawat kualiti kulit dengan cara yang sangat semula jadi. Kulit masih kelihatan seperti kulit anda, hanya lebih sihat, lebih lembap dan lebih halus."
+    ],
+    "quote": "Profhilo meningkatkan kualiti kulit. Filler mengubah isipadu dan bentuk.",
+    "imageAlt": "Rawatan pembentukan semula kulit Profhilo",
+    "cta": "Ketahui Sama Ada Profhilo Sesuai Untuk Anda"
+  },
+  "helpsImprove": {
+    "title": "Apa Yang Profhilo Bantu Tingkatkan",
+    "subtitle": "Di Nexus Clinic KL, Profhilo lazim digunakan untuk pesakit yang inginkan penambahbaikan kulit tanpa menambah isipadu muka",
+    "items": [
+      {
+        "icon": "Sparkles",
+        "title": "Kulit Kusam",
+        "description": "Apabila kulit kehilangan hidrasi, ia juga kehilangan pantulan cahaya. Profhilo membantu meningkatkan kelembapan dari dalam, yang boleh menjadikan kulit kelihatan lebih segar dan berseri."
+      },
+      {
+        "icon": "Eye",
+        "title": "Garisan Halus",
+        "description": "Garisan halus yang disebabkan oleh kekeringan dan kulit yang menipis sering menjadi lebih kelihatan dengan usia. Profhilo digunakan untuk meningkatkan tekstur dan kelembutan kulit secara keseluruhan, yang boleh menjadikan garisan ini kurang ketara dari semasa ke semasa."
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Kehilangan Ketegapan Kulit",
+        "description": "Apabila kulit mula kelihatan longgar atau kurang ketat, terutamanya pada pipi, bahagian bawah muka atau leher, Profhilo mungkin membantu menyokong rupa kulit yang lebih tegap melalui pembentukan semula kulit."
+      },
+      {
+        "icon": "Droplets",
+        "title": "Kulit Berkedut",
+        "description": "Profhilo digunakan secara meluas untuk kulit yang terasa nipis, rapuh atau berkedut, terutamanya pada muka, leher dan tangan."
+      },
+      {
+        "icon": "Calendar",
+        "title": "Penuaan Awal",
+        "description": "Sesetengah pesakit belum bersedia untuk filler atau prosedur yang lebih maju. Profhilo sering dipilih lebih awal, apabila matlamatnya adalah pencegahan, hidrasi dan penyelenggaraan kualiti kulit."
+      }
+    ],
+    "cta": "Tempah Konsultasi Untuk Lihat Sama Ada Profhilo Sepadan Dengan Matlamat Kulit Anda"
+  },
+  "treatmentAreas": {
+    "title": "Kawasan Yang Lazim Dirawat Dengan Profhilo",
+    "subtitle": "Untuk muka, rawatan biasanya dilakukan menggunakan teknik BAP",
+    "items": [
+      { "area": "Muka", "description": "Untuk hidrasi, tekstur lebih licin dan kualiti kulit yang lebih baik" },
+      { "area": "Leher", "description": "Untuk kulit yang nipis, berkedut atau menua" },
+      { "area": "Décolletage", "description": "Untuk garisan halus dan kehilangan kelembutan" },
+      { "area": "Tangan", "description": "Untuk kulit yang menua, kering atau menipis" }
+    ]
+  },
+  "comparison": {
+    "title": "Mengapa Pesakit Memilih Profhilo Daripada Filler",
+    "subtitle": "Profhilo dan filler bukanlah perkara yang sama",
+    "items": [
+      {
+        "type": "Profhilo",
+        "concerns": "kulit kelihatan letih, kehilangan kilauan, garisan halus, kulit nipis atau berkedut, kelonggaran kulit awal, tekstur kulit yang lemah",
+        "action": "Meningkatkan kualiti kulit"
+      },
+      {
+        "type": "Filler",
+        "concerns": "pipi cengkung, isipadu bibir, unjuran dagu, definisi garis rahang, kontur struktur",
+        "action": "Mengubah isipadu dan bentuk"
+      }
+    ],
+    "concernsLabel": "Pilih jika kebimbangan utama anda ialah:",
+    "actionLabel": "Apa yang ia lakukan:",
+    "footer": "Sesetengah pesakit memerlukan satu. Sesetengah memerlukan kedua-duanya. Jawapan yang tepat bergantung pada apa yang sebenarnya menyebabkan kebimbangan tersebut."
+  },
+  "doctorLed": {
+    "title": "Nexus Clinic KL | ",
+    "titleHighlight": "Rawatan Profhilo Dipimpin Doktor",
+    "titleSuffix": " di Malaysia",
+    "intro": "Banyak klinik menawarkan Profhilo di Kuala Lumpur. Produk itu penting, tetapi penilaian dan teknik suntikan juga sama pentingnya.",
+    "subheading": "Apa yang membezakan Nexus Clinic KL daripada klinik lain:",
+    "points": [
+      "Penilaian dipimpin doktor sebelum rawatan",
+      "Pelan diperibadikan berdasarkan kualiti kulit dan tahap penuaan anda",
+      "Tumpuan kepada penambahbaikan semula jadi, bukan rawatan berlebihan",
+      "Kombinasi rawatan yang sesuai dibincangkan secara jujur apabila perlu",
+      "Panduan penjagaan selepas rawatan penuh dan sokongan susulan",
+      "Produk asli digunakan dalam persekitaran klinikal"
+    ],
+    "footnote": "Profhilo tidak boleh dianggap sebagai tambahan kecantikan segera. Ia berfungsi paling baik apabila pesakit yang tepat dipilih, protokol yang betul digunakan, dan jangkaan ditetapkan dengan betul dari awal.",
+    "imageAlt": "Rawatan Profhilo dipimpin doktor di Nexus Clinic KL",
+    "cta": "Tempah Konsultasi Profhilo Anda di Nexus Clinic KL"
+  },
+  "procedure": {
+    "title": "Prosedur Profhilo di Nexus Clinic KL",
+    "subtitle": "Langkah demi langkah — selamat, tepat, dan diperibadikan",
+    "steps": [
+      { "step": "1", "title": "Penilaian Kulit Penuh", "desc": "Doktor anda memeriksa tekstur kulit, hidrasi, keanjalan dan kelonggaran. Ini penting kerana bukan setiap pesakit yang meminta Profhilo benar-benar sesuai untuknya." },
+      { "step": "2", "title": "Perancangan Rawatan Diperibadikan", "desc": "Doktor mengesahkan sama ada Profhilo perlu digunakan secara bersendirian atau digabungkan dengan sesuatu yang lain. Jika kebimbangan anda adalah kehilangan isipadu dan bukan kualiti kulit, anda akan diberitahu dengan jelas sebelum rawatan dimulakan." },
+      { "step": "3", "title": "Sesi Suntikan", "desc": "Profhilo biasanya disuntik menggunakan titik tertentu yang direka untuk penyebaran yang selamat dan sekata. Pada muka, protokol biasa adalah 5 titik suntikan setiap sebelah." },
+      { "step": "4", "title": "Sesi Kedua", "desc": "Kebanyakan pesakit memerlukan sesi kedua kira-kira 4 minggu kemudian untuk kursus rawatan standard." },
+      { "step": "5", "title": "Semakan", "desc": "Kulit anda disemak sepanjang minggu-minggu berikutnya semasa hidrasi dan ketegapan terus terbentuk." }
+    ],
+    "ctaText": "Tempah Janji Temu Profhilo Anda",
+    "ctaSubtitle": "Sesi 15-30 minit di Nexus Clinic KL"
+  },
+  "pricing": {
+    "title": "Kos Profhilo di Malaysia",
+    "subtitle": "Harga 2026 yang Telus di Nexus Clinic KL",
+    "columns": { "treatment": "Rawatan", "volume": "Protokol", "price": "Julat Harga (2026)" },
+    "tiers": [
+      { "treatment": "1 sesi", "volume": "Setiap sesi", "price": "RM 2,000 – RM 3,500" },
+      { "treatment": "Kursus 2 sesi yang disyorkan", "volume": "Protokol penuh", "price": "RM 4,000 – RM 7,000" },
+      { "treatment": "Leher / tangan / kawasan tambahan", "volume": "Kawasan tambahan", "price": "Diharga secara berasingan" }
+    ],
+    "factorsTitle": "Faktor Yang Mempengaruhi Harga Profhilo Anda",
+    "factors": [
+      "Bilangan sesi yang diperlukan: Kebanyakan pesakit mula dengan 2 sesi",
+      "Kawasan rawatan: Muka, leher, tangan dan décolletage mungkin diharga berbeza",
+      "Pengalaman doktor: Injektor yang lebih berpengalaman sering mengenakan bayaran lebih tinggi",
+      "Keaslian produk: Profhilo asli daripada sumber yang betul kos lebih daripada alternatif yang meragukan",
+      "Pelan kombinasi: Sesetengah pesakit menggabungkan Profhilo dengan rawatan lain untuk hasil yang lebih kuat"
+    ],
+    "footerNote": "Di Nexus Clinic KL, harga yang disahkan dibincangkan sebelum rawatan bermula. Tiada tekanan. Tiada caj tersembunyi.",
+    "cta": "Dapatkan Sebut Harga Profhilo Diperibadikan Anda"
+  },
+  "benefitsLimitations": {
+    "benefitsTitle": "Faedah Profhilo",
+    "benefits": [
+      "Meningkatkan hidrasi kulit dari dalam",
+      "Membantu kulit kelihatan lebih licin, segar dan berseri",
+      "Menyokong rupa kulit yang lebih tegap dari semasa ke semasa",
+      "Melembutkan rupa garisan halus yang disebabkan oleh kekeringan dan kulit yang menipis",
+      "Tidak mengubah bentuk muka",
+      "Hasil yang sangat semula jadi",
+      "Masa pemulihan minimum untuk kebanyakan pesakit",
+      "Sesuai untuk muka, leher, tangan dan kawasan lain bergantung pada penilaian"
+    ],
+    "limitationsTitle": "Batasan Profhilo",
+    "limitations": [
+      "Ia bukan filler dan tidak menggantikan isipadu muka yang hilang",
+      "Ia tidak mengangkat kulit yang sangat kendur",
+      "Hasil tidak segera seperti filler",
+      "Kebanyakan pesakit memerlukan 2 sesi untuk hasil terbaik",
+      "Penyelenggaraan diperlukan kerana hasil bukan kekal",
+      "Ia tidak sesuai untuk setiap pesakit atau setiap kebimbangan kulit"
+    ],
+    "footer": "Inilah sebabnya penilaian yang betul penting. Jika isu sebenar adalah kehilangan isipadu, kekosongan atau berat, rawatan lain mungkin lebih berkesan."
+  },
+  "sideEffectsAftercare": {
+    "title": "Kesan Sampingan dan Penjagaan Selepas Profhilo",
+    "subtitle": "Sementara, jarang berlaku dan biasanya ringan",
+    "commonTitle": "Kesan Sementara Yang Biasa",
+    "common": [
+      "bonjolan kecil yang menonjol di titik suntikan",
+      "kemerahan ringan",
+      "bengkak sedikit",
+      "lebam ringan",
+      "kelembutan selama 1 hingga 3 hari"
+    ],
+    "rareTitle": "Risiko Jarang Berlaku",
+    "rare": [
+      "jangkitan",
+      "tindak balas alahan atau hipersensitiviti",
+      "ketulan berpanjangan",
+      "komplikasi vaskular, yang jarang berlaku tetapi serius dengan rawatan suntikan dan memerlukan pengurusan perubatan yang betul"
+    ],
+    "rareNote": "",
+    "aftercareTitle": "Arahan Penjagaan Selepas Profhilo",
+    "aftercare": [
+      "Jangan tekan atau urut kawasan yang dirawat melainkan doktor anda memberitahu",
+      "Elakkan senaman intensif selama 24 jam",
+      "Elakkan alkohol dalam 24 jam pertama jika boleh",
+      "Elakkan sauna, stim dan haba kuat selama 24 hingga 48 jam",
+      "Jangan menjadualkan facial atau rawatan kulit agresif sebaik sahaja selepasnya",
+      "Beri masa kepada rawatan untuk mendap sebelum menilai keputusan"
+    ],
+    "aftercareNote": "Kebanyakan bonjolan titik suntikan kecil mendap dengan cepat. Penambahbaikan kulit terus berkembang sepanjang minggu-minggu berikutnya."
+  },
+  "faq": [
+    { "q": "Berapakah kos Profhilo di Malaysia?", "a": "Profhilo di Malaysia biasanya berjumlah sekitar RM 2,000 hingga RM 3,500 setiap sesi, bergantung pada klinik, kawasan dan pengalaman doktor. Kursus 2 sesi penuh biasanya kos lebih tinggi secara keseluruhan." },
+    { "q": "Berapa banyak sesi Profhilo yang saya perlukan?", "a": "Kebanyakan pesakit mula dengan 2 sesi kira-kira 4 minggu jarak. Sesetengah kemudiannya meneruskan dengan penyelenggaraan berdasarkan tindak balas kulit mereka." },
+    { "q": "Berapa lama Profhilo bertahan?", "a": "Hasil biasanya bertahan sekitar 6 hingga 9 bulan, walaupun ini berbeza dari orang ke orang." },
+    { "q": "Adakah Profhilo sama dengan filler?", "a": "Tidak. Profhilo terutamanya digunakan untuk meningkatkan kualiti kulit, hidrasi dan ketegapan. Filler digunakan untuk menambah isipadu dan bentuk." },
+    { "q": "Adakah Profhilo menyakitkan?", "a": "Kebanyakan pesakit menggambarkannya sebagai sangat boleh diuruskan. Anda mungkin merasa pedih atau tekanan ringkas semasa suntikan, tetapi prosedur itu cepat." },
+    { "q": "Bilakah saya akan melihat hasil daripada Profhilo?", "a": "Sesetengah pesakit menyedari hidrasi dan kilauan yang lebih baik dahulu. Penambahbaikan yang lebih tegap dan licin biasanya terbentuk sepanjang beberapa minggu berikutnya." },
+    { "q": "Apakah umur terbaik untuk Profhilo?", "a": "Tiada satu umur terbaik. Ia sering dipilih oleh dewasa yang menyedari kekusaman, garisan halus, dehidrasi atau kelonggaran kulit awal dan inginkan penambahbaikan semula jadi." },
+    { "q": "Bolehkah Profhilo mengangkat kulit kendur?", "a": "Profhilo boleh meningkatkan kualiti kulit dan kelonggaran ringan, tetapi ia tidak menggantikan rawatan pengangkatan sebenar apabila kekenduran lebih lanjut." },
+    { "q": "Adakah masa pemulihan selepas Profhilo?", "a": "Masa pemulihan biasanya minimum. Bonjolan kecil, kemerahan atau lebam ringan boleh berlaku, tetapi ini biasanya sementara." },
+    { "q": "Siapa yang tidak sesuai untuk Profhilo?", "a": "Kesesuaian harus diputuskan oleh doktor. Secara umumnya, rawatan suntikan boleh ditangguhkan atau dielakkan dalam orang dengan jangkitan kulit aktif, isu perubatan tertentu, kehamilan, atau faktor lain yang memerlukan penilaian terlebih dahulu." }
+  ],
+  "finalCta": {
+    "title": "Tempah Profhilo di Kuala Lumpur di Nexus Clinic KL",
+    "description": "Jika kulit anda kelihatan kusam, letih, nipis atau kurang tegap berbanding dahulu, Profhilo mungkin rawatan yang menghidupkannya semula tanpa mengubah wajah anda.",
+    "subDescription": "Tiada rupa berat. Tiada isipadu palsu. Tiada pembedahan. Hanya kualiti kulit yang lebih baik, hidrasi yang lebih baik dan versi yang lebih segar daripada anda.",
+    "ctaText": "Tempah Konsultasi Profhilo Percuma Anda Sekarang",
+    "whatsappMessage": "Hai, saya ingin menempah konsultasi percuma untuk rawatan Profhilo di Nexus Clinic KL. Sila beritahu saya slot yang tersedia.",
+    "footer": "Slot terhad tersedia minggu ini | Terletak di Wisma UOA II, Jalan Pinang, KLCC — Berkhidmat di Malaysia sejak 2001"
+  }
+}

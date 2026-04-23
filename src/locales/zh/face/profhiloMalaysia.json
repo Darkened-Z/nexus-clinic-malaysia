@@ -1,0 +1,232 @@
+{
+  "seo": {
+    "title": "马来西亚最佳 Profhilo | Nexus Clinic KL 肌肤补水与紧致治疗",
+    "description": "在马来西亚使用 Profhilo 改善肌肤水润、紧致和光泽。Nexus Clinic KL 提供医生主导的 Profhilo 治疗,适合暗沉、较薄和老化的肌肤。立即预约免费咨询。"
+  },
+  "hero": {
+    "badge": "非手术肌肤重塑",
+    "title": "Profhilo | 肌肤补水与紧致治疗",
+    "highlight": "于 Nexus Clinic KL",
+    "description": "在马来西亚使用 Profhilo 改善肌肤水润、紧致和光泽。Nexus Clinic KL 提供医生主导的 Profhilo 治疗,适合暗沉、较薄和老化的肌肤。",
+    "details": "您的肌肤可能即使在您不感到疲倦时也看起来疲倦。它开始感觉更薄。细纹更容易显现。妆容不再服帖。光泽消退。肌肤失去弹性,似乎没有任何乳霜能长久解决问题。这通常就是单靠护肤品已经不够的时刻。",
+    "note": "Profhilo 不是填充剂。它不会改变您的脸型。它通过在皮肤下扩散来改善水润、弹性和整体肌肤质感。",
+    "ctaText": "预约免费咨询",
+    "whatsappMessage": "您好,我对 Nexus Clinic KL 的 Profhilo 治疗感兴趣。我想预约咨询。",
+    "floatingTitle": "✨ 肌肤重塑",
+    "floatingSubtitle": "无填充剂 • 自然光泽"
+  },
+  "treatmentAtGlance": {
+    "title": "Profhilo 治疗一览",
+    "subtitle": "您需要了解的所有关于这款肌肤重塑治疗的信息",
+    "items": [
+      { "icon": "Syringe", "label": "治疗类型", "value": "使用稳定化透明质酸的注射型肌肤重塑治疗" },
+      { "icon": "Activity", "label": "常见部位", "value": "面部、颈部、胸前和双手" },
+      { "icon": "Clock", "label": "疗程时间", "value": "15 至 30 分钟" },
+      { "icon": "Heart", "label": "恢复时间", "value": "极少,当天即可恢复正常生活" }
+    ],
+    "protocolInfo": [
+      { "label": "建议方案", "value": "2 次疗程,间隔 4 周" },
+      { "label": "效果开始时间", "value": "先是水润,紧致感在数周内逐步建立" },
+      { "label": "持续时间", "value": "6 至 9 个月" },
+      { "label": "适合", "value": "暗沉肌肤、细纹、皱褶质感、早期松弛、缺水、弹性流失" }
+    ],
+    "cta": "与医生讨论 Profhilo"
+  },
+  "whatIs": {
+    "title": "什么是 Profhilo 以及",
+    "titleHighlight": "其作用原理",
+    "paragraphs": [
+      "Profhilo 是一种使用高纯度透明质酸制成的注射型肌肤重塑治疗。与皮肤填充剂不同,它不用于打造脸颊、塑造下巴或为唇部增加体积。相反,它在组织中扩散,以改善水润度并支持更好的肌肤质量。",
+      "它经常被描述为生物重塑治疗,因为目标不是填补线条,而是改善肌肤本身的状况。患者通常在感觉自己的肌肤变薄、疲倦、松弛或不如以前清新时选择 Profhilo。",
+      "Profhilo 如此受欢迎的原因之一是它以非常自然的方式改善肌肤质量。肌肤看起来仍然像您的肌肤,只是更健康、更水润、更精致。"
+    ],
+    "quote": "Profhilo 改善肌肤质量。填充剂改变体积和形状。",
+    "imageAlt": "Profhilo 肌肤重塑治疗",
+    "cta": "了解 Profhilo 是否适合您"
+  },
+  "helpsImprove": {
+    "title": "Profhilo 可以改善哪些问题",
+    "subtitle": "在 Nexus Clinic KL,Profhilo 常用于希望改善肌肤但不增加面部体积的患者",
+    "items": [
+      {
+        "icon": "Sparkles",
+        "title": "暗沉肌肤",
+        "description": "当肌肤失去水润时,也会失去光线反射。Profhilo 帮助从内部改善水分,这可以使肌肤看起来更清新、更有光泽。"
+      },
+      {
+        "icon": "Eye",
+        "title": "细纹",
+        "description": "由干燥和肌肤变薄引起的细纹通常会随着年龄的增长而变得更明显。Profhilo 用于改善整体肌肤质感和柔软度,这可以使这些线条随时间变得不那么明显。"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "肌肤紧致度流失",
+        "description": "当肌肤开始看起来松弛或不那么紧致时,尤其是在脸颊、下脸部或颈部,Profhilo 可以通过肌肤重塑来支持看起来更紧致的肌肤。"
+      },
+      {
+        "icon": "Droplets",
+        "title": "皱褶肌肤",
+        "description": "Profhilo 广泛用于感觉薄、脆弱或皱褶的肌肤,尤其是面部、颈部和双手。"
+      },
+      {
+        "icon": "Calendar",
+        "title": "早期老化",
+        "description": "一些患者尚未准备好接受填充剂或更高级的程序。Profhilo 通常较早被选择,当目标是预防、水润和肌肤质量维护时。"
+      }
+    ],
+    "cta": "预约咨询,看看 Profhilo 是否符合您的肌肤目标"
+  },
+  "treatmentAreas": {
+    "title": "Profhilo 常见的治疗部位",
+    "subtitle": "对于面部,治疗通常使用 BAP 技术进行",
+    "items": [
+      { "area": "面部", "description": "用于水润、更光滑的质感和更好的肌肤质量" },
+      { "area": "颈部", "description": "用于薄、皱褶或老化的肌肤" },
+      { "area": "胸前", "description": "用于细纹和柔软度流失" },
+      { "area": "双手", "description": "用于老化、干燥或变薄的肌肤" }
+    ]
+  },
+  "comparison": {
+    "title": "为什么患者选择 Profhilo 而不是填充剂",
+    "subtitle": "Profhilo 和填充剂不是同一回事",
+    "items": [
+      {
+        "type": "Profhilo",
+        "concerns": "看起来疲倦的肌肤、光泽流失、细纹、薄或皱褶肌肤、早期肌肤松弛、肌肤质感差",
+        "action": "改善肌肤质量"
+      },
+      {
+        "type": "Filler",
+        "concerns": "凹陷的脸颊、唇部体积、下巴突出、下颌线轮廓、结构性塑形",
+        "action": "改变体积和形状"
+      }
+    ],
+    "concernsLabel": "如果您的主要问题是以下情况,请选择:",
+    "actionLabel": "其作用:",
+    "footer": "一些患者需要其中一种。一些患者需要两种。正确的答案取决于实际造成问题的原因。"
+  },
+  "doctorLed": {
+    "title": "Nexus Clinic KL | ",
+    "titleHighlight": "医生主导的 Profhilo 治疗",
+    "titleSuffix": " 在马来西亚",
+    "intro": "吉隆坡有许多诊所提供 Profhilo。产品很重要,但评估和注射技术同样重要。",
+    "subheading": "Nexus Clinic KL 与其他诊所的区别:",
+    "points": [
+      "治疗前由医生主导评估",
+      "根据您的肌肤质量和老化程度制定个性化方案",
+      "专注于自然改善,而非过度治疗",
+      "在需要时诚实讨论合适的治疗组合",
+      "完整的术后护理指导和复诊支持",
+      "在临床环境中使用正品产品"
+    ],
+    "footnote": "Profhilo 不应被视为快速的美容附加品。当选择合适的患者、使用正确的方案,并从一开始就正确设定期望时,它的效果最好。",
+    "imageAlt": "Nexus Clinic KL 医生主导的 Profhilo 治疗",
+    "cta": "在 Nexus Clinic KL 预约您的 Profhilo 咨询"
+  },
+  "procedure": {
+    "title": "Nexus Clinic KL 的 Profhilo 治疗流程",
+    "subtitle": "逐步进行 — 安全、精准、个性化",
+    "steps": [
+      { "step": "1", "title": "全面肌肤评估", "desc": "您的医生检查肌肤质感、水润度、弹性和松弛度。这很重要,因为并不是每位要求 Profhilo 的患者都真正适合它。" },
+      { "step": "2", "title": "个性化治疗规划", "desc": "医生确认 Profhilo 是单独使用还是与其他治疗结合。如果您的问题是体积流失而非肌肤质量,您将在治疗开始前被明确告知。" },
+      { "step": "3", "title": "注射疗程", "desc": "Profhilo 通常使用专为安全均匀扩散设计的特定注射点。在面部,常见方案是每侧 5 个注射点。" },
+      { "step": "4", "title": "第二次疗程", "desc": "大多数患者需要在大约 4 周后进行第二次疗程,以完成标准治疗课程。" },
+      { "step": "5", "title": "复查", "desc": "随着水润和紧致感的持续建立,您的肌肤将在接下来的几周内进行复查。" }
+    ],
+    "ctaText": "预约您的 Profhilo 疗程",
+    "ctaSubtitle": "Nexus Clinic KL 的 15-30 分钟疗程"
+  },
+  "pricing": {
+    "title": "马来西亚 Profhilo 费用",
+    "subtitle": "Nexus Clinic KL 透明的 2026 年定价",
+    "columns": { "treatment": "治疗", "volume": "方案", "price": "价格范围 (2026)" },
+    "tiers": [
+      { "treatment": "1 次疗程", "volume": "每次疗程", "price": "RM 2,000 – RM 3,500" },
+      { "treatment": "建议的 2 次疗程课程", "volume": "完整方案", "price": "RM 4,000 – RM 7,000" },
+      { "treatment": "颈部 / 双手 / 附加区域", "volume": "附加区域", "price": "单独定价" }
+    ],
+    "factorsTitle": "影响您 Profhilo 价格的因素",
+    "factors": [
+      "所需的疗程次数:大多数患者从 2 次疗程开始",
+      "治疗区域:面部、颈部、双手和胸前可能定价不同",
+      "医生经验:更有经验的注射师通常收费更高",
+      "产品的真实性:来自正规来源的真正 Profhilo 比可疑替代品成本更高",
+      "组合方案:一些患者将 Profhilo 与其他治疗结合以获得更强的效果"
+    ],
+    "footerNote": "在 Nexus Clinic KL,确认价格在治疗开始前讨论。无压力。无隐藏费用。",
+    "cta": "获取您的个性化 Profhilo 报价"
+  },
+  "benefitsLimitations": {
+    "benefitsTitle": "Profhilo 的好处",
+    "benefits": [
+      "从内部改善肌肤水润度",
+      "帮助肌肤看起来更光滑、更清新和更有光泽",
+      "随时间支持看起来更紧致的肌肤",
+      "软化由干燥和肌肤变薄引起的细纹外观",
+      "不改变面部形状",
+      "非常自然的效果",
+      "大多数患者恢复时间极少",
+      "根据评估适合面部、颈部、双手和其他部位"
+    ],
+    "limitationsTitle": "Profhilo 的局限性",
+    "limitations": [
+      "它不是填充剂,不能替代流失的面部体积",
+      "它不能提升严重的下垂肌肤",
+      "效果不像填充剂那样即时",
+      "大多数患者需要 2 次疗程才能获得最佳效果",
+      "需要维护,因为效果不是永久的",
+      "不适合每位患者或每种肌肤问题"
+    ],
+    "footer": "这就是为什么适当的评估很重要。如果真正的问题是体积流失、空洞或沉重感,其他治疗可能更有效。"
+  },
+  "sideEffectsAftercare": {
+    "title": "Profhilo 副作用和术后护理",
+    "subtitle": "暂时性、罕见且通常轻微",
+    "commonTitle": "常见的暂时性反应",
+    "common": [
+      "注射点的小凸起",
+      "轻微发红",
+      "轻微肿胀",
+      "轻度瘀青",
+      "1 至 3 天的压痛"
+    ],
+    "rareTitle": "罕见风险",
+    "rare": [
+      "感染",
+      "过敏或超敏反应",
+      "持续性结节",
+      "血管并发症,在注射治疗中不常见但严重,需要适当的医疗管理"
+    ],
+    "rareNote": "",
+    "aftercareTitle": "Profhilo 术后护理说明",
+    "aftercare": [
+      "除非医生告知,否则不要按压或按摩治疗区域",
+      "24 小时内避免剧烈运动",
+      "如果可能,前 24 小时避免饮酒",
+      "24 至 48 小时内避免桑拿、蒸汽和强烈热源",
+      "不要在治疗后立即安排面部护理或激进的肌肤治疗",
+      "在判断结果之前,给治疗时间稳定"
+    ],
+    "aftercareNote": "大多数小注射点凸起会迅速消退。肌肤改善会在接下来的几周内继续发展。"
+  },
+  "faq": [
+    { "q": "马来西亚 Profhilo 多少钱?", "a": "马来西亚 Profhilo 通常每次疗程在 RM 2,000 至 RM 3,500 之间,具体取决于诊所、区域和医生经验。完整的 2 次疗程课程通常总成本更高。" },
+    { "q": "我需要多少次 Profhilo 疗程?", "a": "大多数患者从相隔约 4 周的 2 次疗程开始。一些患者随后根据肌肤反应继续进行维护。" },
+    { "q": "Profhilo 能持续多久?", "a": "效果通常持续约 6 至 9 个月,但因人而异。" },
+    { "q": "Profhilo 与填充剂相同吗?", "a": "不。Profhilo 主要用于改善肌肤质量、水润和紧致度。填充剂用于增加体积和形状。" },
+    { "q": "Profhilo 痛吗?", "a": "大多数患者描述它非常可以承受。您可能在注射期间感到短暂的刺痛或压力,但程序很快。" },
+    { "q": "我什么时候能看到 Profhilo 的效果?", "a": "一些患者首先注意到更好的水润和光泽。更紧致、更光滑的改善通常在接下来的几周内逐步建立。" },
+    { "q": "什么年龄最适合 Profhilo?", "a": "没有单一的最佳年龄。它通常被注意到暗沉、细纹、缺水或早期肌肤松弛并希望获得自然改善的成年人选择。" },
+    { "q": "Profhilo 可以提升下垂的肌肤吗?", "a": "Profhilo 可以改善肌肤质量和轻微松弛,但当下垂更严重时,它不能替代真正的提升治疗。" },
+    { "q": "Profhilo 后有恢复时间吗?", "a": "恢复时间通常极少。可能出现小凸起、发红或轻微瘀青,但这些通常是暂时的。" },
+    { "q": "谁不适合 Profhilo?", "a": "适合性应由医生决定。一般而言,有活动性皮肤感染、某些医疗问题、怀孕或其他需要先评估的因素的人,可能会推迟或避免注射治疗。" }
+  ],
+  "finalCta": {
+    "title": "在 Nexus Clinic KL 预约吉隆坡 Profhilo",
+    "description": "如果您的肌肤看起来比以前暗沉、疲倦、薄或不那么紧致,Profhilo 可能是不改变您的脸,而让肌肤恢复活力的治疗。",
+    "subDescription": "没有沉重的外观。没有虚假的体积。没有手术。只有更好的肌肤质量、更好的水润和更清新的您。",
+    "ctaText": "立即预约您的免费 Profhilo 咨询",
+    "whatsappMessage": "您好,我想预约 Nexus Clinic KL 的 Profhilo 治疗免费咨询。请告诉我可用的时间。",
+    "footer": "本周名额有限 | 位于 Wisma UOA II, Jalan Pinang, KLCC — 自 2001 年起为马来西亚服务"
+  }
+}
