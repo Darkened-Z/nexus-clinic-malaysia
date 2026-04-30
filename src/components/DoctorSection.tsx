@@ -47,39 +47,6 @@ const doctors = [
     linkedin: "https://linkedin.com/in/dr-ashvinia-bala",
     rating: 5,
   },
-    {
-    id: 3,
-    name: "Dr. Aris Fadzillah Mazlan",
-    title: "Aesthetic & Anti-Aging Physician",
-    photo: "/images/main/Dr.-Aris-Image.webp",
-    specialisation: "Anti-Aging Treatments & Aesthetic Enhancements",
-    qualifications: [
-      "MD from Moscow Medical Academy, Russian Federation",
-      "Specialized Training in Aesthetic Medicine",
-    ],
-    awards: [],
-    bio: "Dr. Aris Fadzillah Mazlan is a distinguished aesthetic and anti-aging physician based in Kuala Lumpur, Malaysia. Committed to helping patients enhance their beauty and confidence. Fluent in English, Russian, and Malay. When not practicing medicine, Dr. Aris enjoys traveling to exotic destinations and cultivating unique ferns.",
-    instagram: "https://instagram.com/arisfadz",
-    linkedin: "#",
-    rating: 5,
-  },
-  {
-    id: 4,
-    name: "Dr. Charmaine Grace",
-    title: "Aesthetic Medical Doctor | Expert in Advanced Laser Treatments",
-    photo: "/images/main/Dr.-Charmaine-Image.webp",
-    specialisation: "Advanced Laser Treatments & Skincare",
-    qualifications: [
-      "Expert in Advanced Laser Treatments including Pico Laser",
-      "Specializes in Pigmentation, Acne Scars & Uneven Skin Tone",
-      "Expertise in Personalized Skincare Routines",
-    ],
-    awards: [],
-    bio: "Dr. Charmaine Grace is a dedicated Aesthetic Medical Doctor at Nexus Clinic in Kuala Lumpur, Malaysia. She specializes in advanced laser treatments including Pico Laser for pigmentation, acne scars, and uneven skin tone. She believes in tailoring treatments to individual needs and continuously updates her skills to provide the latest effective treatments.",
-    instagram: "https://instagram.com/charmaineegrace",
-    linkedin: "https://linkedin.com/in/dr-charmaine-grace",
-    rating: 5,
-  },
   {
     id: 5,
     name: "Phr. Anum Jawed",
@@ -235,7 +202,9 @@ function DoctorCard({
             <Linkedin className="w-4 h-4" />
           </a>
           <a
-            href="#consultation"
+            href="https://wa.me/60167745699"
+            target="_blank"
+            rel="noopener noreferrer"
             className="ml-auto text-xs font-semibold tracking-wide text-cream bg-wine hover:bg-brown transition-colors px-4 py-2 rounded-full"
           >
             Book Consultation

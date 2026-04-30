@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { wordpressService } from "../services/wordpress";
 import { adaptWordPressPosts } from "../utils/blogAdapter";
 import type { WordPressPost } from "../types/wordpress";
@@ -19,12 +19,14 @@ export function useBlogData(
   searchQuery: string,
   initialPage = 1,
   postsPerPage = 9,
+  initialPosts?: WordPressPost[],
 ): UseBlogDataReturn {
-  const [allPosts, setAllPosts] = useState<WordPressPost[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [allPosts, setAllPosts] = useState<WordPressPost[]>(initialPosts || []);
+  const [loading, setLoading] = useState(!initialPosts?.length);
   const [error, setError] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(initialPage);
   const [hasMore, setHasMore] = useState(true);
+  const isInitialRender = useRef(true);
 
   const fetchPosts = async (page: number, isLoadMore = false) => {
     try {
@@ -81,6 +83,13 @@ export function useBlogData(
 
   // Reset and fetch when category or search changes
   useEffect(() => {
+    // Skip the very first fetch if we already have server-pre-fetched posts
+    // with no active filters — avoids a loading flash on initial render
+    if (isInitialRender.current && initialPosts?.length && activeCategory === "all" && !searchQuery) {
+      isInitialRender.current = false;
+      return;
+    }
+    isInitialRender.current = false;
     setCurrentPage(1);
     setAllPosts([]); // Clear posts when category/search changes
     fetchPosts(1, false);

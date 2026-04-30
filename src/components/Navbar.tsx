@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect,useCallback } from "react";
+import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -503,7 +503,12 @@ const MobileInlineSearch = ({
 
 // ── Main Navbar ──────────
 const Navbar = ({ locale }: { locale?: string }) => {
-  const { t } = useTranslation();
+  const { t: tFallback, i18n } = useTranslation('common');
+  const t = useMemo(
+    () => (typeof i18n.getFixedT === 'function' ? i18n.getFixedT(locale || 'en', 'common') : tFallback),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [locale, i18n]
+  );
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);

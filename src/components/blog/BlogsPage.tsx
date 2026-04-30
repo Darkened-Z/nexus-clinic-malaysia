@@ -47,9 +47,14 @@ const ErrorMessage = ({ message, onRetry }: ErrorMessageProps) => {
 // Data & Constants
 import { categories } from '../../constants/blog';
 import type { CategoryValue } from "../../types/blog";
+import type { WordPressPost } from "../../types/wordpress";
 import { useBlogData } from "../../hooks/useBlogData";
 
-export default function BlogsPage() {
+interface BlogsPageProps {
+  initialPosts?: WordPressPost[];
+}
+
+export default function BlogsPage({ initialPosts }: BlogsPageProps) {
   const [activeCategory, setActiveCategory] = useState<CategoryValue>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [searchFocused, setSearchFocused] = useState<boolean>(false);
@@ -62,7 +67,7 @@ export default function BlogsPage() {
     loadMore,
     hasMore,
     refetch,
-  } = useBlogData(activeCategory, searchQuery);
+  } = useBlogData(activeCategory, searchQuery, 1, 9, initialPosts);
 
   // Filter out featured post from the list if it exists
   const filteredPosts = posts.filter(p => p.id !== featuredPost?.id);

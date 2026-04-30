@@ -1,6 +1,8 @@
 import BlogPage from "@/src/components/blog/BlogsPage";
 import { FloatingWhatsapp } from "@/src/components/Whatsapp";
 import { languages } from "@/src/i18n/settings";
+import { wordpressService } from "@/src/services/wordpress";
+import type { WordPressPost } from "@/src/types/wordpress";
 import { Metadata } from "next";
 
 const baseurl = process.env.BASE_URL || "https://www.nexus-clinic.com"
@@ -17,10 +19,17 @@ export async function generateStaticParams() {
   return languages.map((locale: string) => ({ locale }));
 }
 
-export default function Page() {
+export default async function Page() {
+  let initialPosts: WordPressPost[] = [];
+  try {
+    initialPosts = await wordpressService.getPosts({ perPage: 9 });
+  } catch {
+    // fall through — client will fetch on mount
+  }
+
   return (
     <>
-      <BlogPage />
+      <BlogPage initialPosts={initialPosts} />
       <FloatingWhatsapp isActive={true} hideOnMobile={false} />
     </>
   );

@@ -29,7 +29,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/consultation",
     "/awards-and-certifications",
     "/fraqtional-laser-resurfacing",
-    
+    "/blogs",
+    "/doctors/dr-preetha-nair",
+    "/doctors/dr-ashvinia-bala",
+    "/doctors/dr-anum-jawed",
   ];
   // const staticUrls = languages.flatMap((locale) =>
   //   staticRoutes.map((route) => ({
