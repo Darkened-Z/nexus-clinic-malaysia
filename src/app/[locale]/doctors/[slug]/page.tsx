@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { Star, Award, GraduationCap, Instagram, Linkedin, Stethoscope, ArrowLeft } from "lucide-react";
 import { doctors } from "@/src/data/doctorProfiles";
@@ -50,15 +49,16 @@ export default async function DoctorProfilePage({
       {/* Hero */}
       <section className="relative bg-cream overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12">
-          {/* Photo */}
-          <div className="relative w-64 h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden shadow-lg shrink-0">
-            <Image
-              src={doctor.photo}
-              alt={`Portrait of ${doctor.name}`}
-              fill
-              className="object-cover object-top"
-              priority
-            />
+          {/* Responsive photo: portrait on mobile, landscape on desktop */}
+          <div className="relative w-72 md:w-[560px] h-96 md:h-80 rounded-2xl overflow-hidden shadow-lg shrink-0">
+            <picture className="absolute inset-0 w-full h-full">
+              <source media="(min-width: 768px)" srcSet={doctor.photoLandscape} />
+              <img
+                src={doctor.photo}
+                alt={`Portrait of ${doctor.name}`}
+                className="w-full h-full object-cover object-top"
+              />
+            </picture>
           </div>
 
           {/* Info */}
