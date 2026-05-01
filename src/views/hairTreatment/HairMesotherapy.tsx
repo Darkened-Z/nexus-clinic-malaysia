@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -13,18 +12,9 @@ import {
   ArrowRight,
   AlertCircle,
   Activity,
-  Zap,
-  Eye,
   AlertTriangle,
-  Scissors,
   TrendingUp,
-  DollarSign,
-  Layers,
   Users,
-  Stethoscope,
-  Droplets,
-  FileText,
-  Leaf,
   Phone,
   Mail,
   Syringe,
@@ -35,7 +25,6 @@ import {
   fadeInLeft,
   fadeInRight,
   fadeInUp,
-  scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
@@ -360,7 +349,7 @@ export default function HairMesotherapyLanding({ locale }: HairMesotherapyProps)
           </div>
 
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Speak to a Doctor About Hair Mesotherapy
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -384,8 +373,18 @@ export default function HairMesotherapyLanding({ locale }: HairMesotherapyProps)
               <p className="text-taupe font-inter">For hair loss treatment, hair mesotherapy delivers a customized cocktail of vitamins, minerals, amino acids, and growth factors directly into the scalp at the level of the dermal papilla and hair follicle base.</p>
               <p className="text-taupe font-inter">Because the active ingredients are delivered directly to their target zone rather than absorbed through the gut or diffusing through the skin, mesotherapy achieves follicle-level concentrations that neither oral nor topical treatments can consistently replicate.</p>
               <div className="bg-wine/5 p-4 rounded-xl border-l-4 border-wine">
-                <p className="text-wine font-inter font-semibold text-sm">Citation:</p>
-                <p className="text-taupe font-inter text-sm mt-1">Azar RP, Bdeir N, Dagher K. Mesotherapy in the Treatment of Androgenetic Alopecia. Journal of Cosmetic Dermatology. 2017;16(1):e16-e22.</p>
+                  <p className="text-sm text-taupe">
+                    Azar RP, Bdeir N, Dagher K. Mesotherapy in the Treatment of Androgenetic Alopecia. 
+                    <a 
+                      href="https://pubmed.ncbi.nlm.nih.gov/27550304/" 
+                      target="_blank" 
+                      rel="nofollow" 
+                      className="text-wine font-bold italic"
+                    >
+                      Journal of Cosmetic Dermatology
+                    </a>. 
+                    2017;16(1):e16-e22. This clinical study of mesotherapy for androgenetic alopecia documented significant improvements in hair density, diameter, and anagen phase prolongation following a structured course of mesotherapy injections, supporting its use as a non-surgical treatment for pattern hair loss.
+                  </p>
               </div>
             </motion.div>
             <motion.div variants={fadeInRight} className="relative">
@@ -471,6 +470,23 @@ export default function HairMesotherapyLanding({ locale }: HairMesotherapyProps)
           fadeInUp={fadeInUp}
           className="py-20 px-4"
         />
+        <p className="text-center text-brown">
+              Patients wanting to explore PRP as a complement to or alternative to mesotherapy can read more about{' '}
+              <a 
+                href="/hair/prp-hair-treatment-malaysia/" 
+                className="text-wine font-bold italic"
+              >
+                PRP hair treatment in Malaysia
+              </a>{' '}
+              and{' '}
+              <a 
+                href="/hair/exosome-hair-treatment-malaysia/" 
+                className="text-wine font-bold italic"
+              >
+                exosome hair treatment
+              </a>{' '}
+              at Nexus Clinic.
+            </p>
         </motion.div>
       </section>
 
@@ -516,7 +532,6 @@ export default function HairMesotherapyLanding({ locale }: HairMesotherapyProps)
           viewport={{ once: true }}
           className="container mx-auto max-w-6xl"
         >
-          {/* Mesotherapy for Skin Rejuvenation Table */}
           <TableForPages
             columns={[
               { key: "application", header: "Skin Application", className: "font-semibold" },
@@ -534,6 +549,16 @@ export default function HairMesotherapyLanding({ locale }: HairMesotherapyProps)
             fadeInUp={fadeInUp}
             className="py-20 px-4"
           />
+          <p className="text-center text-brown max-w-2xl mx-auto">
+              Patients combining mesotherapy with other skin treatments may also be interested in{' '}
+              <a 
+                href="/face/skin-booster-malaysia/" 
+                className="text-wine font-bold italic"
+              >
+                skin booster treatment at Nexus Clinic
+              </a>{' '}
+              for deep hydration and collagen support.
+            </p>
         </motion.div>
       </section>
 
@@ -842,7 +867,7 @@ export default function HairMesotherapyLanding({ locale }: HairMesotherapyProps)
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Book  Free Assessment

@@ -68,6 +68,9 @@ export function SingleBlogPost({ content, postSlug }: SingleBlogPostProps) {
                 
               );
               img.loading = 'lazy';
+              if (!img.alt || img.alt.trim() === '') {
+                img.alt = 'Nexus Clinic treatment image';
+              }
             }
             
             if (figure) {
@@ -148,6 +151,9 @@ export function SingleBlogPost({ content, postSlug }: SingleBlogPostProps) {
         if (group.length === 1) {
           const img = group[0];
           img.loading = 'lazy';
+          if (!img.alt || img.alt.trim() === '') {
+            img.alt = 'Nexus Clinic treatment image';
+          }
           img.classList.add(
             'w-full',
             'h-auto',
@@ -416,8 +422,15 @@ export function SingleBlogPost({ content, postSlug }: SingleBlogPostProps) {
             'duration-200',
             'font-medium'
           );
-          link.target = '_blank';
-          link.rel = 'noopener noreferrer';
+          const href = link.getAttribute('href') || '';
+          const isInternal =
+            href.includes('nexus-clinic.com') ||
+            href.startsWith('/') ||
+            href.startsWith('#');
+          if (!isInternal) {
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+          }
         });
         
         if (index === 0 && p.textContent && p.textContent.length > 0) {
@@ -439,6 +452,30 @@ export function SingleBlogPost({ content, postSlug }: SingleBlogPostProps) {
     processFancyHeadings();
     processLists();
     processParagraphs();
+
+    // Rewrite blog.nexus-clinic.com links to point to the main domain
+    const processLinks = () => {
+      const container = contentRef.current;
+      if (!container) return;
+      const links = container.querySelectorAll('a[href]');
+      links.forEach((link) => {
+        const href = link.getAttribute('href') || '';
+        if (href.includes('blog.nexus-clinic.com')) {
+          try {
+            const url = new URL(href);
+            const pathname = url.pathname.replace(/^\//, '').replace(/\/$/, '');
+            const newHref = pathname ? `/blogs/${pathname}` : '/blogs';
+            link.setAttribute('href', newHref);
+            // Internal link — remove _blank
+            link.removeAttribute('target');
+            link.removeAttribute('rel');
+          } catch {
+            // Not a valid URL, skip
+          }
+        }
+      });
+    };
+    processLinks();
   }, [content]);
 
   return (

@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import {
-  ArrowRight,
   Shield,
   TrendingDown,
   AlertCircle,
@@ -28,6 +27,7 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
+import Image from "next/image";
 const PageOzempicMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
   const { t } = useTranslation(locale, "weightLoss/ozempic");
 
@@ -252,10 +252,12 @@ const PageOzempicMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
 
             <motion.div variants={fadeInRight}>
               <div className="relative rounded-3xl overflow-hidden shadow-xl">
-                <img
+                <Image
                   src="/images/main/ozempic-malaysia.webp"
                   alt="Medical professional explaining Ozempic treatment"
-                  className="w-full h-auto"
+                  width={600}
+                  height={400}
+                  className="w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-brown/40 to-transparent"></div>
               </div>
@@ -822,7 +824,7 @@ const PageOzempicMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
               variants={scaleIn}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="/contact-us"
+              href="/contact-us/"
               className="px-12 py-5 bg-wine text-light font-inter text-lg rounded-full hover:bg-rose transition-colors shadow-xl hover:shadow-2xl"
             >
               Book Free Assessment

@@ -9,7 +9,7 @@ import DermalFiller from "@/src/views/faceTreatment/DermalFiller";
 import LipFiller from "@/src/views/faceTreatment/LipFiller";
 import ChinFiller from "@/src/views/faceTreatment/ChinFiller";
 import JawlineFiller from "@/src/views/faceTreatment/JawlineFiller";
-import MasseterBotox from "@/src/views/faceTreatment/MasseterBotox";
+import BotoxMalaysia from "@/src/views/faceTreatment/BotoxMalaysia";
 import NoseThreadLift from "@/src/views/faceTreatment/NoseThreadLift";
 import SkinBooster from "@/src/views/faceTreatment/SkinBooster";
 import NoseFiller from "@/src/views/faceTreatment/NoseFiller";
@@ -29,7 +29,7 @@ const components = {
   LipFiller,
   ChinFiller,
   JawlineFiller,
-  MasseterBotox,
+  BotoxMalaysia,
   NoseThreadLift,
   SkinBooster,
   NoseFiller,

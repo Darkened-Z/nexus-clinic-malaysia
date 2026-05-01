@@ -1,15 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Droplets,
   Heart,
   Shield,
-  Clock,
-  Sparkles,
-  AlertCircle,
   CheckCircle2,
   XCircle,
-  Users,
   Activity,
   Eye,
   HeartPulse,
@@ -19,8 +14,6 @@ import {
   MapPin,
   ChevronDown,
   Syringe,
-  Scissors,
-  Calendar,
   TrendingUp,
 } from "lucide-react";
 
@@ -33,6 +26,7 @@ import {
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
 import TableForPages from "@/src/components/TableForPages";
+import Image from "next/image";
 const OShotLanding = () => {
   const faqs = [
     {
@@ -206,7 +200,7 @@ const OShotLanding = () => {
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="/contact-us"
+                  href="/contact-us/"
                   className="px-8 py-4 bg-wine text-white rounded-full font-semibold hover:bg-rose transition-colors shadow-lg"
                 >
                   Book Your O-Shot Consultation
@@ -256,7 +250,7 @@ const OShotLanding = () => {
                   </div>
 
                   <div className="bg-wine bg-opacity-5 p-4 rounded-xl">
-                    <p className="text-brown text-sm italic">
+                    <p className="text-light text-sm italic">
                       <span className="font-semibold">Clear expectations:</span>{" "}
                       The O-Shot is an emerging regenerative therapy. Sexual pleasure
                       and orgasm enhancement benefits are reported by many women who
@@ -352,9 +346,11 @@ const OShotLanding = () => {
             <motion.div variants={fadeInRight} className="relative">
               <div className="absolute inset-0 bg-linear-to-br from-wine to-rose opacity-10 rounded-3xl transform -rotate-3" />
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/images/regenerative/o-shot.webp"
                   alt="O-Shot Procedure at Nexus Clinic"
+                  width={400}
+                  height={300}
                   className="w-full h-auto object-cover"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-brown via-transparent to-transparent" />
@@ -507,7 +503,15 @@ const OShotLanding = () => {
               <span className="font-semibold">Sexual activity:</span> Resume 3 days after treatment
             </p>
           </motion.div>
-        </div>
+
+          <p className="text-center">
+          For women whose O-Shot concerns are also connected to hormonal changes from perimenopause or menopause including vaginal dryness and reduced sexual drive, our{' '}
+          <a href="/regenerative/hormone-replacement-therapy-malaysia/" className="text-wine font-bold italic">
+            hormone replacement therapy in Malaysia
+          </a>{' '}
+          provides the full hormonal context that often needs to be addressed alongside vaginal rejuvenation treatment.
+        </p>
+                </div>
       </motion.section>
 
       {/* O-Shot vs Other Options Comparison */}
@@ -572,6 +576,18 @@ const OShotLanding = () => {
               approach for postmenopausal women with both vaginal atrophy and reduced sexual pleasure.
               The oestrogen provides hormonal restoration while PRP delivers growth factor stimulation.
             </p>
+            <p className="text-sm text-taupe">
+              Runels C et al. A Pilot Study of the Effect of Localized Injections of Autologous Platelet Rich Plasma (PRP) for the Treatment of Female Sexual Dysfunction. 
+              <a 
+                href="https://www.longdom.org/open-access/a-pilot-study-of-the-effect-of-localized-injections-of-autologous-platelet-rich-plasma-prp-for-the-treatment-of-female-sexual-dysfunction-2167-0420.1000169.pdf" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                Journal of Women's Health Care
+              </a>. 
+              2014;3(4):169. This pilot study explored the use of localized PRP injections to improve sexual response and treat dysfunction in women, concluding that the growth factors in PRP successfully enhanced arousal and overall sexual satisfaction scores.
+            </p>
           </motion.div>
         </div>
       </motion.section>
@@ -634,6 +650,14 @@ const OShotLanding = () => {
               </div>
             </motion.div>
           </div>
+
+          <p className="text-center">
+          For women whose sexual health concerns also intersect with PCOS-related hormonal imbalance, our{' '}
+          <a href="/regenerative/pcos-treatment-malaysia/" className="text-wine font-bold italic">
+            PCOS treatment in Malaysia
+          </a>{' '}
+          provides context on how PCOS affects women's sexual health and how hormonal management integrates with vaginal rejuvenation treatment.
+        </p>
         </div>
       </motion.section>
 

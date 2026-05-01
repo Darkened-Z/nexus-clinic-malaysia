@@ -33,6 +33,7 @@ import SectionBeforeAfter from "../../components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
+import Image from "next/image";
 const GLP1LandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
   const { t } = useTranslation(locale, "weightLoss/glp1");
 
@@ -256,9 +257,11 @@ const GLP1LandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
 
             <motion.div variants={fadeInRight}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/images/weight-loss/GLP-1 Injection Treatment.webp"
                   alt="Doctor consultation at Nexus Clinic Kuala Lumpur"
+                  width={600}
+                  height={400}
                   className="w-full h-auto object-cover"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-brown/50 to-transparent" />
@@ -896,7 +899,7 @@ const GLP1LandingPage = ({ locale = fallbackLng }: { locale?: string }) => {
               whileInView="visible"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="/contact-us"
+              href="/contact-us/"
               className="bg-light text-wine px-12 py-4 rounded-full font-medium text-lg hover:bg-cream transition-colors shadow-xl inline-flex items-center gap-2"
             >
               Book Free Consultation

@@ -85,16 +85,16 @@ export default function HairHub({ locale }: HairHubProps) {
     ];
 
   const concernMapping = [
-    { concern: "Receding hairline", treatment: "FUE Hair Transplant or Medical Hair Loss Treatment", link: "/hair/fue-hair-transplant-malaysia" },
-    { concern: "Thinning at the crown", treatment: "PRP Hair Treatment, Exosome Hair Treatment, Minoxidil, Finasteride", link: "/hair/prp-hair-treatment-malaysia" },
-    { concern: "Early-stage hair loss", treatment: "Minoxidil, Finasteride, PRP Hair Treatment", link: "/hair/hair-loss-treatment-malaysia" },
-    { concern: "Diffuse thinning across the scalp", treatment: "Hair Loss Treatment Plan or Mesotherapy", link: "/hair/mesotherapy-hair-loss-malaysia" },
-    { concern: "Weak hair density after stress or illness", treatment: "PRP Hair Treatment or Mesotherapy", link: "/hair/prp-hair-treatment-malaysia" },
-    { concern: "Patchy beard growth", treatment: "Beard Transplant", link: "/hair/beard-transplant-malaysia" },
-    { concern: "Looking for long-term hairline restoration", treatment: "Hair Transplant or FUE Hair Transplant", link: "/hair/hair-transplant-malaysia" },
-    { concern: "Want a non-surgical treatment first", treatment: "PRP, Mesotherapy, Exosome, Minoxidil", link: "/hair/exosome-hair-treatment-malaysia" },
-    { concern: "Ongoing male pattern hair loss", treatment: "Finasteride and Minoxidil, with doctor monitoring", link: "/hair/finasteride-treatment-malaysia" },
-    { concern: "Not sure what is causing your hair loss", treatment: "Doctor-Led Hair Loss Assessment", link: "/contact-us" },
+    { concern: "Receding hairline", treatment: "FUE Hair Transplant or Medical Hair Loss Treatment", link: "/hair/fue-hair-transplant-malaysia/" },
+    { concern: "Thinning at the crown", treatment: "PRP Hair Treatment, Exosome Hair Treatment, Minoxidil, Finasteride", link: "/hair/prp-hair-treatment-malaysia/" },
+    { concern: "Early-stage hair loss", treatment: "Minoxidil, Finasteride, PRP Hair Treatment", link: "/hair/hair-loss-treatment-malaysia/" },
+    { concern: "Diffuse thinning across the scalp", treatment: "Hair Loss Treatment Plan or Mesotherapy", link: "/hair/mesotherapy-hair-loss-malaysia/" },
+    { concern: "Weak hair density after stress or illness", treatment: "PRP Hair Treatment or Mesotherapy", link: "/hair/prp-hair-treatment-malaysia/" },
+    { concern: "Patchy beard growth", treatment: "Beard Transplant", link: "/hair/beard-transplant-malaysia/" },
+    { concern: "Looking for long-term hairline restoration", treatment: "Hair Transplant or FUE Hair Transplant", link: "/hair/hair-transplant-malaysia/" },
+    { concern: "Want a non-surgical treatment first", treatment: "PRP, Mesotherapy, Exosome, Minoxidil", link: "/hair/exosome-hair-treatment-malaysia/" },
+    { concern: "Ongoing male pattern hair loss", treatment: "Finasteride and Minoxidil, with doctor monitoring", link: "/hair/finasteride-treatment-malaysia/" },
+    { concern: "Not sure what is causing your hair loss", treatment: "Doctor-Led Hair Loss Assessment", link: "/contact-us/" },
   ];
 
   const faqData = [
@@ -292,7 +292,7 @@ export default function HairHub({ locale }: HairHubProps) {
                 </div>
                 <h3 className="font-georgia text-xl text-brown mb-2 px-6">{treatment.name}</h3>
                 <p className="text-taupe font-inter text-sm mb-4 px-6">{treatment.description}</p>
-                <Link href={`/hair/${treatment.slug}`}>
+                <Link href={`/hair/${treatment.slug}/`}>
                   <button className="inline-flex items-center gap-2 text-wine font-inter font-semibold text-sm hover:gap-3 transition-all px-6">
                     View Treatment Details
                     <ArrowRight className="w-4 h-4" />
@@ -334,9 +334,8 @@ export default function HairHub({ locale }: HairHubProps) {
                     <td className="p-4 text-brown font-inter font-medium">{item.treatment}</td>
                     <td className="p-4">
                       <Link href={item.link}>
-                        <button className="inline-flex items-center gap-1 text-wine font-inter text-sm hover:gap-2 transition-all">
+                        <button className="text-wine font-inter text-sm hover:font-bold transition-all">
                           View Details
-                          <ArrowRight className="w-3 h-3" />
                         </button>
                       </Link>
                     </td>

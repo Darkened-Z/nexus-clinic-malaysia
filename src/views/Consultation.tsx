@@ -101,7 +101,7 @@ const treatmentCategories: TreatmentCategory[] = [
     name: "Hair Treatments",
     slug: "hair",
     description: "Comprehensive hair restoration from medical therapy to FUE hair transplant, designed for natural density and long-term confidence.",
-    imageSrc: "/images/treatment/hair-restoration.png",
+    imageSrc: "/images/treatment/hair-restoration.webp",
     treatments: [
       { name: "Hair Transplant Malaysia", slug: "hair-transplant-malaysia", description: "Surgical hair restoration for long-term density.", imageUrl: "/images/hair/hair-transpalnt.jpeg" },
       { name: "FUE Hair Transplant Malaysia", slug: "fue-hair-transplant-malaysia", description: "Minimal scarring, natural-looking results.", imageUrl: "/images/hair/fue-hair-transplant.webp" },
@@ -266,7 +266,11 @@ const treatmentCategories: TreatmentCategory[] = [
               <div className={`grid md:grid-cols-2 gap-12 items-center mb-12 ${idx % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
                 <motion.div variants={fadeInLeft} className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-xl">
                   <div className="absolute inset-0 bg-gradient-to-t from-brown/30 to-transparent z-10" />
-                  <Image src={category.imageSrc} alt={category.name} fill className="object-cover" />
+                  <Image 
+                    src={category.imageSrc} 
+                    alt={category.name} 
+                    fill 
+                    className="object-cover" />
                 </motion.div>
                 
                 <motion.div variants={fadeInRight}>
@@ -276,7 +280,7 @@ const treatmentCategories: TreatmentCategory[] = [
                   <p className="text-taupe font-inter text-lg leading-relaxed mb-6">
                     {category.description}
                   </p>
-                  <Link href={`/${category.slug}`}>
+                  <Link href={`/${category.slug}/`}>
                     <button className="inline-flex items-center gap-2 text-wine font-inter font-semibold border-b border-wine/30 hover:border-wine transition-all pb-1">
                       View All {category.name}
                       <ChevronRight className="w-4 h-4" />
@@ -315,7 +319,7 @@ const treatmentCategories: TreatmentCategory[] = [
                         whileHover={{ y: -5 }}
                         className="w-[280px] md:w-[320px] flex-shrink-0 bg-light rounded-xl border border-taupe/10 hover:shadow-xl transition-all duration-300 overflow-hidden group"
                       >
-                        <Link href={`/${category.slug}/${treatment.slug}`} className="block h-full">
+                        <Link href={`/${category.slug}/${treatment.slug}/`} className="block h-full">
                           {/* Image Container */}
                           <div className="h-48 relative overflow-hidden bg-wine/5">
                             <Image

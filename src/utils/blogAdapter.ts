@@ -2,6 +2,15 @@ import type { WordPressPost } from '../types/wordpress';
 import type { Post, CategoryValue } from '../types/blog';
 import { processFAQs } from './faqExtractor';
 
+// Strip WordPress page-builder shortcodes (Visual Composer, Divi, Elementor, etc.)
+// that occasionally leak into the rendered content. We deliberately only target
+// shortcode tags whose name contains an underscore (e.g. [vc_row], [/vc_column_text],
+// [et_pb_section ...]). This avoids stripping legitimate bracketed text such as
+// footnotes "[1]" or simple tokens "[note]".
+function stripBuilderShortcodes(html: string): string {
+  return html.replace(/\[\/?[a-z][a-z0-9]*_[a-z0-9_]*(?:\s[^\]]*)?\]/gi, '');
+}
+
 const categoryMapping: Record<string, CategoryValue> = {
   'skincare': 'skincare',
   'weight-loss': 'weight',
@@ -61,13 +70,14 @@ export function adaptWordPressPost(post: WordPressPost, index: number): Post {
     robots: post.yoast_head_json.robots ? `${post.yoast_head_json.robots.index}, ${post.yoast_head_json.robots.follow}` : 'index, follow'
   } : undefined;
     const { items: faqs, html: contentWithProcessedFAQs } = processFAQs(post.content.rendered);
+    const cleanedContent = stripBuilderShortcodes(contentWithProcessedFAQs);
     // console.log(faqs);
   return {
     id: post.id,
     category: getCategoryFromWordPress(post),
     tag: getTagFromWordPress(post),
     title: post.title.rendered,
-    content: contentWithProcessedFAQs,
+    content: cleanedContent,
     date: formatDate(post.date),
     readTime: getReadTime(post.content.rendered),
     image: featuredImage,

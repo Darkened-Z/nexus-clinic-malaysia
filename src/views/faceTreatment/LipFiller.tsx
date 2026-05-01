@@ -194,7 +194,7 @@ const LipFillerLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             />
             {treatmentOverview?.cta && (
               <motion.div variants={fadeInUp} className="text-center">
-                <Link href="/contact-us" className="inline-block bg-wine text-white px-8 py-3 rounded-full font-medium hover:bg-wine/90 transition-colors">
+                <Link href="/contact-us/" className="inline-block bg-wine text-white px-8 py-3 rounded-full font-medium hover:bg-wine/90 transition-colors">
                   {treatmentOverview.cta.text}
                 </Link>
                 <p className="text-sm text-taupe mt-2">{treatmentOverview.cta.subtext}</p>
@@ -227,7 +227,7 @@ const LipFillerLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                 {whatIsLipFiller?.products}
               </p>
               {whatIsLipFiller?.cta && (
-                <Link href="/contact-us" className="bg-wine text-white px-8 py-3 rounded-full font-medium hover:bg-wine/90 transition-colors">
+                <Link href="/contact-us/" className="bg-wine text-white px-8 py-3 rounded-full font-medium hover:bg-wine/90 transition-colors">
                   {whatIsLipFiller.cta.text}
                 </Link>
               )}
@@ -302,7 +302,7 @@ const LipFillerLanding = ({ locale = fallbackLng }: { locale?: string }) => {
 
             {lipEnhancementStyles?.cta && (
               <motion.div variants={fadeInUp} className="text-center">
-                <Link href="/contact-us" className="bg-wine text-white px-8 py-3 rounded-full font-medium hover:bg-wine/90 transition-colors">
+                <Link href="/contact-us/" className="bg-wine text-white px-8 py-3 rounded-full font-medium hover:bg-wine/90 transition-colors">
                   {lipEnhancementStyles.cta.text}
                 </Link>
                 <p className="text-sm text-taupe mt-2">{lipEnhancementStyles.cta.subtext}</p>
@@ -348,7 +348,7 @@ const LipFillerLanding = ({ locale = fallbackLng }: { locale?: string }) => {
 
             {lipFillerVsLipFlip?.cta && (
               <motion.div variants={fadeInUp} className="text-center">
-                <Link href="/contact-us" className="bg-wine text-white px-8 py-3 rounded-full font-medium hover:bg-wine/90 transition-colors">
+                <Link href="/contact-us/" className="bg-wine text-white px-8 py-3 rounded-full font-medium hover:bg-wine/90 transition-colors">
                   {lipFillerVsLipFlip.cta.text}
                 </Link>
                 <p className="text-sm text-taupe mt-2">{lipFillerVsLipFlip.cta.subtext}</p>
@@ -385,9 +385,7 @@ const LipFillerLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               <p className="text-sm text-taupe">
                 {whoIsItFor?.suitability}
               </p>
-              <p className="text-sm text-wine">
-                {whoIsItFor?.combinationNote}
-              </p>
+              <p className="text-sm text-wine" dangerouslySetInnerHTML={{ __html: whoIsItFor?.combinationNote }}/>
             </motion.div>
 
             <motion.div variants={fadeInRight} className="bg-wine p-8 rounded-2xl text-white">
@@ -450,7 +448,7 @@ const LipFillerLanding = ({ locale = fallbackLng }: { locale?: string }) => {
 
             {commonMistakes?.cta && (
               <motion.div variants={fadeInUp} className="text-center">
-                 <Link href="/contact-us" className="bg-wine text-white px-8 py-3 rounded-full font-medium hover:bg-wine/90 transition-colors">
+                 <Link href="/contact-us/" className="bg-wine text-white px-8 py-3 rounded-full font-medium hover:bg-wine/90 transition-colors">
                   {commonMistakes.cta.text}
                 </Link>
                 <p className="text-sm text-taupe mt-2">{commonMistakes.cta.subtext}</p>
@@ -508,12 +506,13 @@ const LipFillerLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               variants={fadeInUp}
               className="bg-wine/10 p-6 rounded-xl"
             >
-              <p className="text-brown italic">{whyNexus?.citation}</p>
+              <p className="text-brown italic" dangerouslySetInnerHTML={{ __html: whyNexus?.citation }} />
               <p className="text-sm text-taupe mt-2">— {whyNexus?.citationSource}</p>
+               <p className="text-sm text-wine" dangerouslySetInnerHTML={{ __html: whyNexus?.combinationNote }}/>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="text-center">
-              <Link href="/contact-us" className="bg-wine text-white px-8 py-3 rounded-full font-medium hover:bg-wine/90 transition-colors">
+              <Link href="/contact-us/" className="bg-wine text-white px-8 py-3 rounded-full font-medium hover:bg-wine/90 transition-colors">
                 {whyNexus?.cta?.text}
               </Link>
               <p className="text-sm text-taupe mt-2">{whyNexus?.cta?.subtext}</p>
@@ -558,7 +557,7 @@ const LipFillerLanding = ({ locale = fallbackLng }: { locale?: string }) => {
 
             {procedure?.cta && (
               <motion.div variants={fadeInUp} className="text-center">
-                <Link href="/contact-us" className="bg-wine text-white px-8 py-3 rounded-full font-medium hover:bg-wine/90 transition-colors">
+                <Link href="/contact-us/" className="bg-wine text-white px-8 py-3 rounded-full font-medium hover:bg-wine/90 transition-colors">
                   {procedure.cta.text}
                 </Link>
                 <p className="text-sm text-taupe mt-2">{procedure.cta.subtext}</p>
@@ -606,7 +605,7 @@ const LipFillerLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                 {pricing?.factors?.items?.map((factor: any, index: number) => (
                   <div key={index}>
                     <p className="font-semibold text-brown">{factor.title}</p>
-                    <p className="text-sm text-taupe">{factor.description}</p>
+                    <p className="text-sm text-taupe" dangerouslySetInnerHTML={{ __html: factor.description }} />
                   </div>
                 ))}
               </div>
@@ -622,7 +621,7 @@ const LipFillerLanding = ({ locale = fallbackLng }: { locale?: string }) => {
 
             {pricing?.cta && (
               <motion.div variants={fadeInUp} className="text-center">
-                <Link href="/contact-us" className="bg-wine text-white px-8 py-3 rounded-full font-medium hover:bg-wine/90 transition-colors">
+                <Link href="/contact-us/" className="bg-wine text-white px-8 py-3 rounded-full font-medium hover:bg-wine/90 transition-colors">
                   {pricing.cta.text}
                 </Link>
                 <p className="text-sm text-taupe mt-2">{pricing.cta.subtext}</p>
@@ -683,9 +682,7 @@ const LipFillerLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               </div>
             </motion.div>
 
-            <motion.p variants={fadeInUp} className="text-center text-taupe">
-              {sideEffectsAndAftercare?.combinationNote}
-            </motion.p>
+            <motion.p variants={fadeInUp} className="text-center text-taupe" dangerouslySetInnerHTML={{ __html: sideEffectsAndAftercare?.combinationNote }} />
           </motion.div>
         </div>
       </section>
@@ -712,7 +709,7 @@ const LipFillerLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               {finalCta?.stats}
             </motion.p>
             <motion.div variants={fadeInUp}>
-              <Link href="/contact-us" className="bg-white text-wine px-8 py-3 rounded-full font-medium hover:bg-cream transition-colors">
+              <Link href="/contact-us/" className="bg-white text-wine px-8 py-3 rounded-full font-medium hover:bg-cream transition-colors">
                 {finalCta?.cta?.text}
               </Link>
               <p className="text-white/80 text-sm mt-2">{finalCta?.cta?.subtext}</p>

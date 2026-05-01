@@ -7,13 +7,6 @@ import {
   Target,
   Sparkles,
   FileCheck,
-  Droplets,
-  Smartphone,
-  Heart,
-  CheckCircle2,
-  Clock,
-  AlertCircle,
-  TrendingUp,
 } from "lucide-react";
 import { staggerContainer, fadeInUp, fadeInRight, fadeInLeft } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
@@ -233,6 +226,18 @@ const AntiAgingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               fadeInUp={fadeInUp}
               className="py-20 px-4"
             />
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+              Bakir S, et al. A case series on safety and tolerability of human umbilical cord-derived mesenchymal stem cells on patients in Malaysia. 
+              <a 
+                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11062224/" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                PMC (PubMed Central)
+              </a>. 
+              2022;11062224. (Clinical update: My Bliss Clinic, 2025). This clinical investigation documents the high safety profile and therapeutic potential of cord-derived MSCs in the Malaysian population, highlighting significant improvements in systemic markers and tissue repair without adverse effects.
+            </p>
         </motion.div>
       </section>
 
@@ -363,7 +368,12 @@ const AntiAgingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
           >
             <p className="text-taupe">
               The combination row in this treatment menu is the most clinically important for Malaysian patients seeking comprehensive anti-aging results. Stem cell therapies (MSCs, PRP, exosomes) address the cellular biology of aging from within. Structural treatments (thread lift, HIFU, fractional CO2) address the physical consequences of collagen loss and sagging skin that have already occurred. Using both categories in sequence creates an anti-aging effect that is significantly greater than either category alone.
-            </p>
+                For women whose anti-aging concerns intersect with hormonal changes at perimenopause or menopause that accelerate skin aging and collagen loss, our{' '}
+                <Link href="/regenerative/hormone-replacement-therapy-malaysia/" className="text-wine font-bold italic">
+                  hormone replacement therapy in Malaysia
+                </Link>{' '}
+                provides important context on how restoring oestrogen levels supports skin collagen and overall anti-aging outcomes.
+              </p>
           </motion.div>
         </motion.div>
       </section>
@@ -411,6 +421,13 @@ const AntiAgingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
           fadeInUp={fadeInUp}
           className="py-20 px-4"
         />
+        <p className="text-center max-w-2xl mx-auto text-taupe">
+          For women whose anti-aging concerns intersect with hormonal changes at perimenopause or menopause that accelerate skin aging and collagen loss, our{' '}
+          <Link href="/regenerative/hormone-replacement-therapy-malaysia/" className="text-wine font-bold italic">
+            hormone replacement therapy in Malaysia
+          </Link>{' '}
+          provides important context on how restoring oestrogen levels supports skin collagen and overall anti-aging outcomes.
+        </p>
         </motion.div>
       </section>
 
@@ -489,7 +506,7 @@ const AntiAgingLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             At Nexus Clinic KL, every anti-aging patient receives a treatment plan tailored to their specific aging biology, not a generic protocol. All stem cell therapies are compliant with the Ministry of Health Malaysia regulatory framework. All treatments are doctor-performed by registered medical, LCP-certified doctors with over 15 years of combined clinical experience.
           </motion.p>
           <motion.div variants={fadeInUp}>
-            <Link href="/contact-us" className="bg-light text-wine px-12 py-4 rounded-full font-medium text-lg hover:bg-cream transition-all duration-300 shadow-2xl">
+            <Link href="/contact-us/" className="bg-light text-wine px-12 py-4 rounded-full font-medium text-lg hover:bg-cream transition-all duration-300 shadow-2xl">
               Book Your Anti-Aging Assessment
             </Link>
           </motion.div>

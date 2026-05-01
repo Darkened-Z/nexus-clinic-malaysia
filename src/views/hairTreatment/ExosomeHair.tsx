@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -10,19 +9,9 @@ import {
   Heart,
   Shield,
   ArrowRight,
-  AlertCircle,
   Activity,
-  Zap,
-  Eye,
-  AlertTriangle,
-  Droplet,
   TrendingUp,
-  DollarSign,
-  Layers,
-  Users,
-  Target,
   Syringe,
-  FlaskRound,
   Microscope,
 } from "lucide-react";
 import {
@@ -290,7 +279,7 @@ export default function ExosomeLanding({ locale }: ExosomeHairTreatmentProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Speak to a Doctor 
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -326,6 +315,18 @@ export default function ExosomeLanding({ locale }: ExosomeHairTreatmentProps) {
           fadeInUp={fadeInUp}
           className="py-20 px-4"
         />
+        <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+          Rajendran RL, Gangadaran P, Bak SS, Oh JM, Sung YK, Lee J, Ahn BC. Extracellular Vesicles Derived from MSCs Activates Dermal Papilla Cell In Vitro and Promotes Hair Follicle Conversion from Telogen to Anagen in Mice. 
+          <a 
+            href="https://pubmed.ncbi.nlm.nih.gov/29142307/" 
+            target="_blank" 
+            rel="nofollow" 
+            className="text-wine font-bold italic"
+          >
+            Scientific Reports
+          </a>. 
+          2017;7(1):15560. This study demonstrated that mesenchymal stem cell-derived extracellular vesicles significantly promoted hair follicle regeneration by converting follicles from the resting (telogen) to the active (anagen) growth phase, providing direct evidence for the mechanism by which exosomes promote hair growth.
+        </p>
         </motion.div>
       </section>
 
@@ -412,6 +413,24 @@ export default function ExosomeLanding({ locale }: ExosomeHairTreatmentProps) {
                   Most patients notice reduced shedding within 2 to 4 weeks. Visible improvement in density typically becomes noticeable after 2 to 3 months.
                 </p>
               </div>
+
+              <p className="text-brown mt-4">
+                  Patients exploring broader skin rejuvenation can also enquire about{' '}
+                  <a 
+                    href="/face/skin-booster-malaysia/" 
+                    className="text-wine font-bold italic"
+                  >
+                    skin booster treatment at Nexus Clinic
+                  </a>{' '}
+                  and{' '}
+                  <a 
+                    href="/skin/pico-laser-malaysia/" 
+                    className="text-wine font-bold italic"
+                  >
+                    pico laser treatment in Malaysia
+                  </a>{' '}
+                  as complementary skin quality treatments.
+                </p>
             </motion.div>
 
             <motion.div
@@ -549,6 +568,23 @@ export default function ExosomeLanding({ locale }: ExosomeHairTreatmentProps) {
           fadeInUp={fadeInUp}
           className="py-20 px-4"
         />
+        <p className="text-center text-brown">
+            Patients combining exosome therapy with other hair loss solutions can explore{' '}
+            <Link 
+              href="/hair/prp-hair-treatment-malaysia/" 
+              className="text-wine font-bold italic"
+            >
+              PRP hair treatment in Malaysia
+            </Link>{' '}
+            and{' '}
+            <Link 
+              href="/hair/mesotherapy-hair-loss-malaysia/" 
+              className="text-wine font-bold italic"
+            >
+              mesotherapy hair loss treatment
+            </Link>{' '}
+            as complementary protocols that address different aspects of the hair restoration process.
+          </p>
         </motion.div>
       </section>
 
@@ -584,7 +620,7 @@ export default function ExosomeLanding({ locale }: ExosomeHairTreatmentProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-10">
-            <Link href="/contact-us" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
+            <Link href="/contact-us/" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
               Book Your Free Consultation
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -620,7 +656,7 @@ export default function ExosomeLanding({ locale }: ExosomeHairTreatmentProps) {
           />
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Get Your Personalised Exosome Treatment Quote
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -695,7 +731,7 @@ export default function ExosomeLanding({ locale }: ExosomeHairTreatmentProps) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Free Consultation

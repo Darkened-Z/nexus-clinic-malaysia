@@ -255,7 +255,7 @@ export default function NoseFiller({ locale }: NoseFillerProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Speak to a Doctor 
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -325,7 +325,7 @@ export default function NoseFiller({ locale }: NoseFillerProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="mt-8 text-center">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Get an Honest Assessment
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -486,10 +486,9 @@ export default function NoseFiller({ locale }: NoseFillerProps) {
               <div className="bg-wine/5 p-4 rounded-xl border-l-4 border-wine">
                 <p className="text-wine font-inter font-semibold text-sm">2024 Systematic Review Finding:</p>
                 <p className="text-taupe font-inter text-sm mt-1">
-                  Analysis of 9,657 non-surgical rhinoplasty patients found serious vascular complications 
-                  including arterial occlusion, skin necrosis and vision loss in approximately 0.27% of procedures.
+                  Analysis of 9,657 non‑surgical rhinoplasty patients found that, while most complications were mild (such as swelling and erythema), serious vascular events including arterial occlusion, skin necrosis, and vision loss were reported in a small proportion of cases — with severe vascular complications occurring in up to 0.27 % of procedures in pooled analyses. <a href="https://www.researchgate.net/publication/381331318_Nonsurgical_Rhinoplasty_An_Updated_Systematic_Review_of_Technique_Outcomes_Complications_and_Its_Treatments" rel="nofollow" target="_blank" className="text-taupe hover:underline font-bold">Nonsurgical rhinoplasty systematic review</a> highlights these rare but significant risks.
                 </p>
-                <p className="text-taupe text-xs mt-2">[Aesthetic Plastic Surgery Systematic Review, 2024]</p>
+                <p className="text-taupe text-xs mt-2">Multiple systematic analyses, 2023–2026</p>
               </div>
             </motion.div>
             
@@ -522,7 +521,7 @@ export default function NoseFiller({ locale }: NoseFillerProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Book at a Clinic 
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -563,8 +562,10 @@ export default function NoseFiller({ locale }: NoseFillerProps) {
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
             <p className="text-brown font-inter text-sm">
-              The radix zone at the nasal root between the eyes carries the highest risk of serious vascular complication. 
-              At Nexus Clinic KL, this zone is approached with extreme caution and only injected when clinically indicated with strict volume control.
+                The radix zone at the nasal root between the eyes carries the highest risk of serious vascular complication due to its proximity to the vessels supplying the ophthalmic circulation. At Nexus Clinic KL, this zone is approached with extreme caution and only injected when clinically indicated with strict volume control.
+                
+                Patients who want nose reshaping with a lower vascular risk profile often consider <Link  href='/face/nose-thread-lift-malaysia/' className='font-bold text-wine italic'>nose thread lift </Link>as an alternative or complementary treatment at Nexus Clinic KL.
+
             </p>
           </motion.div>
         </motion.div>
@@ -586,11 +587,11 @@ export default function NoseFiller({ locale }: NoseFillerProps) {
           
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { title: "Low Nasal Bridge", desc: "The most common request. Small volumes of firm HA filler placed along the dorsum create immediate height and projection." },
-              { title: "Dorsal Hump Camouflage", desc: "Filler placed above and below the hump creates a straight or slightly concave profile line. Effective for mild to moderate humps." },
-              { title: "Drooping Nasal Tip", desc: "Small amounts of filler at the columella or tip can lift the projection angle and create a cleaner nasal tip appearance." },
-              { title: "Mild Nasal Asymmetry", desc: "Selective filler placement on the deficient side can improve natural asymmetry from development, injury or surgery." },
-              { title: "Post-Rhinoplasty Refinement", desc: "Filler can address contour irregularities, depressions or minor asymmetries in healed surgical noses after 12 months." },
+              { title: "Low Nasal Bridge", desc: "The most common nose filler request in Malaysia. A flat bridge with minimal height and projection makes the face look broader and the nose less defined. Small volumes of firm HA filler placed along the dorsum create immediate height and projection. This is the most predictable and straightforward nose filler application with a high satisfaction rate when technique and volume are correct." },
+              { title: "Dorsal Hump Camouflage", desc: "A dorsal hump is a bony or cartilaginous prominence visible as a bump on the nose profile. Filler cannot remove the hump but can be placed above and below it to create a straight or slightly concave profile line. This optical correction is effective for mild to moderate humps. Very large humps reduce the safe available injection volume for the non-surgical nose job and may be better addressed surgically. The doctor assesses this at consultation." },
+              { title: "Drooping Nasal Tip", desc: "A tip that points downward or droops at rest makes the nose look longer and older. Small amounts of filler placed at the columella or tip can lift the projection angle slightly and create a cleaner nasal tip appearance. This is a technically demanding zone due to the columellar vasculature and is performed with very precise, very small volume injections." },
+              { title: "Mild Nasal Asymmetry", desc: "Natural asymmetry in the nose, whether from development, previous injury or post-surgical irregularity, can often be improved with selective filler placement on the deficient side. The doctor maps the asymmetry at consultation and confirms a realistic degree of correction achievable with filler before proceeding." },
+              { title: "Post-Rhinoplasty Refinement", desc: "Patients who have had surgical rhinoplasty sometimes develop contour irregularities, small depressions or minor asymmetries as the surgical outcome matures. Filler can address these secondary concerns in healed post-rhinoplasty noses, providing a refined look without surgery. This is a specialist application requiring careful assessment of the changed vascular anatomy in the post-surgical nose." },
             ].map((item, idx) => (
               <motion.div key={idx} variants={fadeInUp} className="bg-light p-5 rounded-xl border border-taupe/10">
                 <h3 className="font-georgia text-lg text-brown mb-2">{item.title}</h3>
@@ -598,9 +599,9 @@ export default function NoseFiller({ locale }: NoseFillerProps) {
               </motion.div>
             ))}
           </div>
-          
+          <p>Patients who combine nose filler with facial contouring often explore <Link  href='/face/chin-filler-malaysia/' className='font-bold text-wine italic'> chin filler in Malaysia </Link>to improve both the nose-chin profile balance at Nexus Clinic KL.</p>
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Find Out If Your Nose Concern
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -679,7 +680,7 @@ export default function NoseFiller({ locale }: NoseFillerProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-10">
-            <Link href="/contact-us" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
+            <Link href="/contact-us/" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
               Book  Appointment
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -725,7 +726,7 @@ export default function NoseFiller({ locale }: NoseFillerProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Get Your Personalised Nose Filler Quote
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -839,7 +840,7 @@ export default function NoseFiller({ locale }: NoseFillerProps) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Book Your Free Consultation Now

@@ -1,26 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Droplet,
   HeartPulse,
   Shield,
-  Clock,
-  Zap,
   AlertCircle,
-  CheckCircle2,
-  XCircle,
-  TrendingUp,
-  Users,
-  Award,
-  FileText,
-  Star,
-  Sparkles,
-  Syringe,
-  Microscope,
   Phone,
-  Mail,
   MapPin,
-  ChevronDown,
 } from "lucide-react";
 import {
   fadeInUp,
@@ -32,6 +17,7 @@ import {
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
+import Image from "next/image";
 
 const PShotLanding = () => {
   // P-Shot at a Glance Table Data
@@ -280,12 +266,14 @@ const PShotLanding = () => {
             <motion.div variants={fadeInRight} className="relative">
               <div className="absolute inset-0 bg-linear-to-r from-wine/20 to-rose/20 rounded-3xl blur-3xl"></div>
               <div className="relative bg-white p-8 rounded-3xl shadow-2xl border border-taupe/20">
-                <img
+                <Image
                   src="/images/regenerative/embryonic.webp"
                   alt="Medical consultation at Nexus Clinic"
+                  width={400}
+                  height={400}
                   className="rounded-2xl w-full h-auto object-cover"
                 />
-                <Link href="/contact-us">
+                <Link href="/contact-us/">
                   <div className="absolute -bottom-4 -right-4 bg-wine text-white px-6 py-3 rounded-full shadow-lg hover:bg-wine/90 transition-all duration-300 cursor-pointer">
                     <p className="font-inter font-semibold">Book Confidential Consultation</p>
                   </div>
@@ -296,7 +284,6 @@ const PShotLanding = () => {
         </motion.div>
       </section>
 
-      {/* P-Shot Treatment in Malaysia at a Glance Table - Using TableForPages */}
       <section className="py-20 px-4 bg-white">
         <TableForPages
           columns={[
@@ -309,6 +296,19 @@ const PShotLanding = () => {
           fadeInUp={fadeInUp}
           className="max-w-7xl mx-auto"
         />
+
+        <p className="text-sm text-taupe text-center max-w-2xl mx-auto mt-4">
+            Anastasiadis E et al. Erectile dysfunction: Is platelet-rich plasma the new frontier for treatment in patients with erectile dysfunction? A review of the existing evidence. 
+            <a 
+              href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8900600/" 
+              target="_blank" 
+              rel="nofollow" 
+              className="text-wine font-bold italic"
+            >
+              PMC (PubMed Central)
+            </a>. 
+            2022;24(1):21-25. This review evaluates the clinical transition of PRP into male sexual medicine, analyzing how concentrated growth factors promote tissue regeneration and angiogenesis to improve erectile function and penile health.
+          </p>
       </section>
 
       {/* The P-Shot Procedure at Nexus Clinic KL Table - Using TableForPages */}
@@ -342,6 +342,14 @@ const PShotLanding = () => {
           fadeInUp={fadeInUp}
           className="max-w-7xl mx-auto"
         />
+
+        <p className="text-center max-w-2xl mx-auto mt-4">
+          For men whose sexual health concerns include erectile dysfunction driven by vascular causes, our{' '}
+          <Link href="/regenerative/ed-treatment-malaysia/" className="text-wine font-bold italic">
+            ED treatment in Malaysia
+          </Link>{' '}
+          provides the comprehensive erectile dysfunction assessment and treatment framework that forms the foundation of any sexual health programme at Nexus Clinic KL.
+        </p>
       </section>
 
       {/* P-Shot vs Shockwave Therapy vs ED Medication Comparison Table - Using TableForPages */}
@@ -359,6 +367,13 @@ const PShotLanding = () => {
           fadeInUp={fadeInUp}
           className="max-w-7xl mx-auto"
         />
+        <p className="text-center">
+          For the complete shockwave therapy framework including patient selection criteria and protocol details, our{' '}
+          <Link href="/regenerative/shockwave-therapy-malaysia/" className="text-wine font-bold italic">
+            shockwave therapy in Malaysia
+          </Link>{' '}
+          provides full clinical guidance on Li-ESWT for erectile dysfunction.
+        </p>
       </section>
 
       {/* P-Shot Cost in Malaysia 2026 Table - Using TableForPages */}
@@ -403,7 +418,7 @@ const PShotLanding = () => {
             <p className="font-inter text-2xl font-bold">
               016-7025699 / 03-21635699
             </p>
-            <Link href="/contact-us">
+            <Link href="/contact-us/">
               <button className="mt-6 bg-white text-wine px-8 py-3 rounded-full font-semibold hover:bg-cream transition-all duration-300 cursor-pointer">
                 Book Your P-Shot Consultation Today | Call or WhatsApp
               </button>

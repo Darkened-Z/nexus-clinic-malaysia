@@ -3,47 +3,21 @@
 import { motion } from "framer-motion";
 import {
   HeartPulse,
-  Shield,
-  Brain,
   Activity,
   Sparkles,
   Pill,
   Syringe,
   Zap,
   Stethoscope,
-  AlertCircle,
   CheckCircle2,
   XCircle,
   Phone,
-  MapPin,
   ArrowRight,
-  Heart,
-  Scale,
-  Moon,
-  Dumbbell,
-  Wine,
   TestTube,
-  ShieldCheck,
   Calendar,
-  Timer,
-  TrendingUp,
-  Users,
-  Lock,
   MessageCircle,
-  Target,
-  AlertTriangle,
-  Droplets,
   ClipboardList,
-  Eye,
-  Gauge,
-  FileText,
   Building,
-  Award,
-  Clock,
-  BarChart3,
-  Thermometer,
-  Briefcase,
-  Star,
 } from "lucide-react";
 import {
   fadeInUp,
@@ -57,6 +31,8 @@ import { fallbackLng } from "@/src/i18n/settings";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
+import Link from "next/link";
+import Image from "next/image";
 export default function EDTreatment({
   locale = fallbackLng,
 }: {
@@ -314,16 +290,18 @@ export default function EDTreatment({
             className="py-20 px-4"
           />
 
-          {/* Footer Callout */}
-          <motion.div 
-            variants={fadeInUp} 
-            className="mt-8 p-6 rounded-xl text-center" 
-            style={{ backgroundColor: "#4B3A33" }}
-          >
-            <p className="text-white">
-              Find Out What Is Causing Your ED at Nexus Clinic KL | Cause-First Assessment Before Any Treatment
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+              Rezali MS et al. Prevalence and associated factors of moderate to severe erectile dysfunction among adult men in Malaysia. 
+              <a 
+                href="https://pubmed.ncbi.nlm.nih.gov/38114674/" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                Scientific Reports
+              </a>. 
+              2023;13(1):22634. (Updated clinical context: Discover Public Health, 2025). This large-scale study identifies key metabolic and lifestyle risk factors associated with male sexual health, emphasizing the high prevalence of under-diagnosed conditions in the primary care setting.
             </p>
-          </motion.div>
         </motion.section>
 
         {/* ED as Cardiovascular Signal Section */}
@@ -415,16 +393,12 @@ export default function EDTreatment({
             className="py-20 px-4"
           />
 
-          {/* Footer Callout */}
-          <motion.div 
-            variants={fadeInUp} 
-            className="mt-8 p-6 rounded-xl text-center" 
-            style={{ backgroundColor: "#4B3A33" }}
-          >
-            <p className="text-white">
-              Get the Right Oral Medication Prescription for Your Lifestyle at Nexus Clinic KL
-            </p>
-          </motion.div>
+          <p className="text-center max-w-2xl mx-auto mt-8 text-sm">
+            For broader men's health context including low testosterone which frequently coexists with erectile dysfunction in Malaysian men, see our{' '}
+            <Link href="/regenerative/testosterone-therapy-malaysia/" className="text-wine font-bold italic">
+              testosterone therapy in Malaysia
+            </Link>.
+          </p>
         </motion.section>
 
         {/* Shockwave Therapy Evidence Table */}
@@ -558,7 +532,7 @@ export default function EDTreatment({
                   Men whose ED has a primary hormonal driver require testosterone restoration as part of their treatment plan. Testosterone is confirmed low on two fasting morning measurements with consistent symptoms.
                 </p>
                 <p style={{ color: "#4B3A33" }}>
-                  Testosterone therapy alone may restore erections in purely hormonal ED. In mixed ED cases, combination therapy with testosterone plus PDE5 inhibitors provides synergistic benefit.
+                  <Link href="/regenerative/testosterone-therapy-malaysia/" className="font-bold text-wine italic">Testosterone therapy</Link> alone may restore erections in purely hormonal ED. In mixed ED cases, combination therapy with testosterone plus PDE5 inhibitors provides synergistic benefit.
                 </p>
               </motion.div>
             </div>
@@ -813,10 +787,12 @@ export default function EDTreatment({
           className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
         >
           <div className="absolute inset-0">
-            <img
+            <Image
               src={images.modernClinic}
               alt="Nexus Clinic Modern Facility"
               className="w-full h-full object-cover"
+              width={1200}
+              height={800}
             />
             <div
               className="absolute inset-0"
@@ -840,7 +816,7 @@ export default function EDTreatment({
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="/contact-us"
+                  href="/contact-us/"
                   className="px-8 py-4 rounded-lg font-medium flex items-center gap-2"
                   style={{ background: "white", color: "#8C4F58" }}
                 >

@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -12,25 +11,14 @@ import {
   ArrowRight,
   AlertCircle,
   Activity,
-  Zap,
-  Eye,
-  AlertTriangle,
-  Droplet,
   TrendingUp,
-  DollarSign,
-  Layers,
-  Users,
-  Target,
   Syringe,
-  Brain,
-  TestTube,
 } from "lucide-react";
 import {
   staggerContainer,
   fadeInLeft,
   fadeInRight,
   fadeInUp,
-  scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
@@ -293,7 +281,7 @@ export default function FinasterideLanding({ locale }: FinasterideLandingProps) 
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Speak to a Doctor
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -329,6 +317,19 @@ export default function FinasterideLanding({ locale }: FinasterideLandingProps) 
             fadeInUp={fadeInUp}
             className="py-20 px-4"
           />
+
+          <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+            Leyden J et al. Finasteride in the treatment of men with frontal male pattern hair loss. 
+            <a 
+              href="https://pubmed.ncbi.nlm.nih.gov/10365924/" 
+              target="_blank" 
+              rel="nofollow" 
+              className="text-wine font-bold italic"
+            >
+              Journal of the American Academy of Dermatology
+            </a>. 
+            1999;40(6 Pt 1):930-937. This clinical study demonstrated that daily finasteride treatment significantly increased hair count and improved hair growth in the frontal scalp (hairline) area, extending its proven efficacy beyond just the vertex of the head.
+          </p>
         </motion.div>
       </section>
 
@@ -391,6 +392,20 @@ export default function FinasterideLanding({ locale }: FinasterideLandingProps) 
             fadeInUp={fadeInUp}
             className="py-20 px-4"
           />
+            <p className="text-brown">
+              The most important message from this side effects section for Malaysian men is to only take finasteride under medical supervision where a doctor has conducted the full informed consent discussion and where monitoring is available. The convenience of buying finasteride from an online pharmacy or telehealth service without an in-person consultation means that sexual side effects and mood changes are less likely to be detected and managed promptly, and that the rare but serious risk of suicidal ideation associated with finasteride is less likely to be identified before it becomes serious. At Nexus Clinic KL, every finasteride prescription includes a documented informed consent discussion, baseline assessment and structured follow-up under strict medical supervision. If at any point during finasteride treatment you experience persistent sexual dysfunction, significant mood changes, depression or any thoughts of self-harm, seek medical help immediately and stop the medication.
+            </p>
+            
+            <p className="text-brown">
+              For men whose hair loss is associated with hormonal imbalances including low testosterone or thyroid dysfunction, our{' '}
+              <a 
+                href="/regenerative/hormone-test-malaysia/" 
+                className="text-wine font-bold italic"
+              >
+                hormone test Malaysia
+              </a>{' '}
+              provides the comprehensive hormonal blood test assessment that can identify treatable hormonal drivers of hair loss.
+            </p>
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl border-l-4 border-wine">
             <p className="text-wine font-inter font-semibold text-sm flex items-center gap-2">
               <AlertCircle className="w-4 h-4" />
@@ -576,6 +591,18 @@ export default function FinasterideLanding({ locale }: FinasterideLandingProps) 
             fadeInUp={fadeInUp}
             className="py-20 px-4"
           />
+
+          <p className="text-center text-brown">
+            The scalp assessment and hair density photography row in this programme table is the component most often absent from Malaysian hair loss treatment services, whether at a pharmacy, klinik or online telehealth platform. Without objective photographic documentation of hair density at baseline and at regular intervals, it is impossible to determine objectively whether finasteride is working for a specific patient; the gradual nature of hair loss and hair regrowth means that subjective patient assessment is unreliable; men sometimes stop finasteride because they think it is not working when objective photography would show that hair loss has stabilised or even partially improved. At Nexus Clinic KL, structured hair density photography is a standard component of every hair loss treatment programme, not an optional extra.
+          </p>
+
+          <p className="text-center">
+            For men whose hair loss coincides with other symptoms of hormonal decline including fatigue, reduced libido or muscle loss, our{' '}
+            <a href="/regenerative/testosterone-therapy-malaysia/" className="text-wine font-bold italic">
+              testosterone therapy in Malaysia
+            </a>{' '}
+            provides the complete testosterone assessment and treatment framework at this specialist clinic.
+          </p>
         </motion.div>
       </section>
 
@@ -605,7 +632,7 @@ export default function FinasterideLanding({ locale }: FinasterideLandingProps) 
             fadeInUp={fadeInUp}
           />
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Get Your Hair Loss Programme Pricing
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -642,7 +669,7 @@ export default function FinasterideLanding({ locale }: FinasterideLandingProps) 
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Free Assessment

@@ -1,33 +1,38 @@
 {
   "hero": {
-    "heading1": "Redefine Your",
-    "heading2": "Natural Beauty",
-    "description": "At Nexus Clinic, we offer doctor-led aesthetic treatments focused on the face, skin, and medical weight loss. Our approach is simple — natural-looking results, personalized care, and treatments designed to help you feel confident in your own skin.",
+    "subtitle": "Award Winning LCP Certified Aesthetic Clinic",
+    "heading": "Natural Looking Results with Personalized Medical Aesthetic Care",
+    "description": "At Nexus Clinic, we offer doctor led aesthetic treatments focused on the face, skin, and medical weight loss. Our approach is simple  natural looking results, personalized care, and treatments designed to help you feel confident in your own skin.",
     "cta1": "Book Consultation",
-    "cta2": "View Treatment",
-    "scanFace": "Scan Your Face",
-    "skinTreatment": "Natural Skin Treatment",
-    "viewRecommendations": "View Recommendations",
-    "stat1Value": "40+",
-    "stat1Label1": "Traditional & Modern",
-    "stat1Label2": "Beauty Treatments",
-    "stat2Value": "7+",
-    "stat2Label1": "Professional Expert",
-    "stat2Label2": "Beauticians",
-    "customersVisited": "Customers Visited Us",
+    "cta2": "Explore Treatments",
     "scroll": "SCROLL"
   },
-  "beforeAfter": {
-    "badge": "Real Results",
-    "title1": "Thoughtfully",
-    "title2": "Achieved",
-    "desc": "Every treatment at Nexus Clinic begins with a clear understanding of your goals. We focus on results that feel elegant, natural, and suited to your features — whether that means smoother skin, softer lines, improved facial balance, or support with your weight loss journey.",
-    "before": "Before",
-    "after": "After",
-    "dragToCompare": "Drag to compare",
-    "failedToLoad": "Failed to load images",
-    "disclaimer": "Results vary from person to person. A consultation helps us recommend the most suitable approach for you.",
-    "cta": "Start Your Transformation"
+  "whyChoose": {
+    "subtitle": "Why Patients Choose Nexus Clinic",
+    "title": "Where Science Meets",
+    "titleHighlight": "Artistry",
+    "description": "At Nexus Clinic, we believe in enhancing your natural beauty through evidence-based treatments. Our doctor-led approach ensures safety, efficacy, and results you'll love.",
+    "yearsValue": "15+",
+    "yearsLabel1": "Years of",
+    "yearsLabel2": "Excellence",
+    "features": {
+      "moh": {
+        "title": "Natural-Looking Results",
+        "desc": "We believe the best aesthetic results are the ones that look fresh, soft, and never overdone"
+      },
+      "doctor": {
+        "title": "Doctor-Led Care",
+        "desc": "Your treatments are guided by experienced medical professionals who prioritize both safety and results."
+      },
+      "personalized": {
+        "title": "Personalized Treatment Plans",
+        "desc": "No two faces, skin types, or goals are the same. Every plan is tailored to you."
+      },
+      "premium": {
+        "title": "Modern Aesthetic Solutions",
+        "desc": "We combine medical knowledge with modern aesthetic techniques to deliver refined, balanced results."
+      }
+    }
   },
   "services": {
     "subtitle": "Care That Fits Your Goals",
@@ -55,33 +60,6 @@
         "title": "Hair Restoration",
         "subtitle": "PRP & Mesotherapy",
         "description": "Nexus Clinic offers advanced hair restoration treatments, including PRP and mesotherapy, to support natural hair growth and reduce hair loss."
-      }
-    }
-  },
-  "whyChoose": {
-    "subtitle": "Why Patients Choose Nexus Clinic",
-    "title": "Where Science Meets",
-    "titleHighlight": "Artistry",
-    "description": "At Nexus Clinic, we believe in enhancing your natural beauty through evidence-based treatments. Our doctor-led approach ensures safety, efficacy, and results you'll love.",
-    "yearsValue": "15+",
-    "yearsLabel1": "Years of",
-    "yearsLabel2": "Excellence",
-    "features": {
-      "moh": {
-        "title": "Natural-Looking Results",
-        "desc": "We believe the best aesthetic results are the ones that look fresh, soft, and never overdone"
-      },
-      "doctor": {
-        "title": "Doctor-Led Care",
-        "desc": "Your treatments are guided by experienced medical professionals who prioritize both safety and results."
-      },
-      "personalized": {
-        "title": "Personalized Treatment Plans",
-        "desc": "No two faces, skin types, or goals are the same. Every plan is tailored to you."
-      },
-      "premium": {
-        "title": "Modern Aesthetic Solutions",
-        "desc": "We combine medical knowledge with modern aesthetic techniques to deliver refined, balanced results."
       }
     }
   },
@@ -128,5 +106,49 @@
     "optionHair": "Hair Restoration",
     "placeholderMessage": "Your Message",
     "submitButton": "Submit Enquiry"
+  },
+  "faq": {
+    "items": [
+      {
+        "q": "What does Nexus Clinic specialize in?",
+        "a": "Nexus Clinic specializes in aesthetic treatments for the face, skin, and medical weight loss. Our goal is to provide personalized care with natural-looking results."
+      },
+      {
+        "q": "Is Nexus Clinic a doctor-led aesthetic clinic?",
+        "a": "Yes, Nexus Clinic is a doctor-led aesthetic clinic. Patient safety, treatment suitability, and natural results are at the heart of our approach."
+      },
+      {
+        "q": "What treatments are available at Nexus Clinic?",
+        "a": "At Nexus Clinic, we offer a range of aesthetic services that may include facial rejuvenation, skin treatments, and medical weight loss support. Your recommended treatment depends on your needs and goals."
+      },
+      {
+        "q": "Does Nexus Clinic focus on natural-looking results?",
+        "a": "Yes. At Nexus Clinic, we believe aesthetic treatments should enhance your features in a soft and balanced way. We focus on results that look refreshed, not overdone."
+      },
+      {
+        "q": "Can I visit Nexus Clinic for skin concerns?",
+        "a": "Yes, Nexus Clinic offers treatments for common skin concerns such as dullness, uneven texture, acne, pigmentation, and signs of aging. A consultation helps us guide you to the right option."
+      },
+      {
+        "q": "Does Nexus Clinic offer weight loss treatments?",
+        "a": "Yes, Nexus Clinic provides medically guided weight loss support for patients looking for a more structured and professional approach to their journey."
+      },
+      {
+        "q": "How do I know which treatment at Nexus Clinic is right for me?",
+        "a": "The best way is to book a consultation at Nexus Clinic. We will assess your concerns, listen to your goals, and recommend a treatment plan that fits you."
+      },
+      {
+        "q": "Is Nexus Clinic suitable for first-time aesthetic patients?",
+        "a": "Yes. Many patients visit Nexus Clinic for their first aesthetic consultation. We explain everything clearly and recommend only what is suitable for you."
+      },
+      {
+        "q": "Where is Nexus Clinic located?",
+        "a": "Nexus Clinic is located at LG 10, Wisma UOA II, Jalan Pinang, Kuala Lumpur."
+      },
+      {
+        "q": "How can I book an appointment with Nexus Clinic?",
+        "a": "You can contact Nexus Clinic by phone or use the booking form on the website to arrange your consultation."
+      }
+    ]
   }
 }

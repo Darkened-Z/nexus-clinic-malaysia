@@ -10,18 +10,18 @@ import {
   Globe,
   Phone,
   ChevronRight,
-  Sparkles,
   Calendar,
   Search,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import "@/src/lib/vibration.css";
-
+import Image from "next/image";
+import Link from "next/link";
 const navItems = [
   {
     label: "nav.weightLoss",
     fallback: "Weight Loss",
-    href: "#",
+    href: "/weight-loss/",
     submenu: {
       weightLoss: {
         items: [
@@ -36,8 +36,6 @@ const navItems = [
         { key: "submenu.weightLoss.glp1", fallback: "glp-1-programme-malaysia" },
         { key: "submenu.weightLoss.zepbound", fallback: "zepbound-malaysia" },
         { key: "submenu.weightLoss.ivDrips", fallback: "iv-drip-malaysia" },
-        // { key: "submenu.weightLoss.semaglutide", fallback: "wegovy-malaysia" }, // or create separate
-        // { key: "submenu.weightLoss.tirzepatide", fallback: "mounjaro-malaysia" }, // or create separate
         ],
       },
     },
@@ -521,7 +519,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
 
   // Check if current page is blogs page
   useEffect(() => {
-    const isBlogs = pathname.includes('/blogs');
+    const isBlogs = pathname.includes('/blogs/');
     setIsBlogsPage(isBlogs);
     
     // On blogs page, force locale to 'en' for display
@@ -545,33 +543,63 @@ const Navbar = ({ locale }: { locale?: string }) => {
   useEffect(() => {
     const newSearchIndex = buildSearchIndex(getText);
     setSearchIndex(newSearchIndex);
-  }, [getText]); // Only depend on getText, remove isBlogsPage
+  }, [getText]);
+  
 
-  // Build locale-aware href for language switcher
   const getLocaleHref = useCallback((langCode: string) => {
-    const localePrefix = /^\/(en|id|ar|ms|zh)(\/|$)/;
-    const match = pathname.match(localePrefix);
-    const basePath = match ? pathname.replace(localePrefix, "/") : pathname;
-    const cleanPath = basePath === "" ? "/" : basePath;
-
+    if (isBlogsPage || pathname.includes('/blogs/')) {
+      return '/blogs/';
+    }
+    
+    const localePrefixRegex = /^\/(id|ar|ms|zh)(\/|$)/;
+    const hasPrefixMatch = pathname.match(localePrefixRegex);
+    
+    let basePath = pathname;
+    
+    if (hasPrefixMatch) {
+      basePath = pathname.replace(localePrefixRegex, "/");
+    } else {
+      basePath = pathname;
+    }
+    
+    const cleanPath = basePath === "" || basePath === "/" ? "/" : basePath;
+    
     if (langCode === "en") {
       return cleanPath;
     }
-
+    
     return cleanPath === "/" ? `/${langCode}` : `/${langCode}${cleanPath}`;
-  }, [pathname]);
+  }, [pathname, isBlogsPage]);
 
-  // Build locale-aware href for nav links - blogs always go to /blogs without locale
-  const getNavHref = useCallback((path: string) => {
-    // If it's the blogs link, always go to /blogs without locale prefix
-    if (path === '/blogs') {
-      return '/blogs';
+  const handleLangClick = useCallback((langCode: string) => {
+    document.cookie = `i18next=${langCode}; path=/; max-age=31536000; SameSite=Lax`;
+    
+    const newHref = getLocaleHref(langCode);
+    
+    const currentLang = currentLocale || 'en';
+    if (langCode === currentLang && newHref === pathname) {
+      setIsLangOpen(false);
+      return;
     }
     
-    // For other paths, add locale prefix if not English
+    setTimeout(() => {
+      window.location.href = newHref;
+    }, 50);
+  }, [getLocaleHref, currentLocale, pathname]);
+
+  const getNavHref = useCallback((path: string) => {
+    if (path === '/blogs/' || path === '/blogs' || path.startsWith('/blogs/')) {
+      return '/blogs/';
+    }
+    
+    if (isBlogsPage) {
+      return path;
+    }
+
     if (!currentLocale || currentLocale === "en") return path;
+    
     return `/${currentLocale}${path}`;
-  }, [currentLocale]);
+  }, [currentLocale, isBlogsPage]);
 
   useEffect(() => {
     const checkTime = () => {
@@ -649,62 +677,69 @@ const Navbar = ({ locale }: { locale?: string }) => {
             : "bg-transparent"
         }`}
       >
-        {/* Top Bar */}
-        <AnimatePresence>
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              className=" bg-green text-light/90 text-xs fixed top-0 left-0 right-0 z-50"
-            >
-              <div className="max-w-5xl mx-auto px-6 lg:px-8">
-                <div className="flex items-center justify-between py-2">
-                  <div className="">
-                    <a href="/">
-                      {isScrolled && (
-                        <motion.img
-                          key="scroll-logo"
-                          src="/images/logo_nexus_white.webp"
-                          alt="Nexus Logo"
-                          initial={{ opacity: 0, y: -10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -10 }}
-                          transition={{ duration: 0.3 }}
-                          className="h-15 object-contain"
-                        />
-                      )}
-                    </a>
-                    {!isScrolled && (
-                      <div className="hidden lg:flex items-center gap-6">
-                        <a
-                          href="tel:0167025699"
-                          className="flex items-center gap-2 hover:text-cream transition-colors"
-                        >
-                          <Phone size={12} />
-                          <span>016-702 5699</span>
-                        </a>
-                        <span className="text-light/40">|</span>
-                        <span className="text-light">
-                          Mon - Sat: 9:00 AM - 6:00 PM
-                        </span>
-                      </div>
-                    )}
-                  </div>
-                  <div className="flex items-center justify-end w-full lg:w-auto">
-                    <a
-                      href="https://api.whatsapp.com/send?phone=60168245699&text=Any%20Dr%20Available%20%3F%20(%20HB%20)"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-white border border-green text-green hover:bg-transparent hover:text-white hover:border-white font-semibold text-sm px-5 py-2 rounded-full transition-all duration-300 animate-vibration-slow"
-                    >
-                      Consult with experts
-                    </a>
-                  </div>
+      {/* Top Bar */}
+      <AnimatePresence>
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          exit={{ opacity: 0, height: 0 }}
+          className="bg-green text-light/90 text-xs fixed top-0 left-0 right-0 z-50"
+        >
+          <div className="max-w-5xl mx-auto px-6 lg:px-8">
+            <div className="flex items-center justify-between py-2">
 
-                </div>
+              {/* LEFT SIDE */}
+              <div className="flex items-center gap-4">
+                
+                {isScrolled ? (
+                  <Link
+                    className="flex items-center"
+                    href="/"
+                  >
+                    <Image
+                      src="/images/logo_nexus_white.webp"
+                      alt="Nexus Logo"
+                      width={120}
+                      height={40}
+                      className="h-auto w-auto"
+                    />
+                  </Link>
+                ) : (
+                  <div className="hidden lg:flex items-center gap-6">
+                    <a
+                      href="tel:0167025699"
+                      className="flex items-center gap-2 hover:text-cream transition-colors"
+                    >
+                      <Phone size={12} />
+                      <span>016-702 5699</span>
+                    </a>
+
+                    <span className="text-light/40">|</span>
+
+                    <span className="text-light">
+                      Mon - Sat: 9:00 AM - 6:00 PM
+                    </span>
+                  </div>
+                )}
+
               </div>
-            </motion.div>
-        </AnimatePresence>
+
+              {/* RIGHT SIDE */}
+              <div className="flex items-center">
+                <a
+                  href="https://api.whatsapp.com/send?phone=60168245699&text=Any%20Dr%20Available%20%3F%20(%20HB%20)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white border border-green text-green hover:bg-transparent hover:text-white hover:border-white font-semibold text-sm px-5 py-2 rounded-full transition-all duration-300 animate-vibration-slow"
+                >
+                 {getText("nav.topButton", "Consult with experts")}
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </motion.div>
+      </AnimatePresence>
 
         {/* Main Nav */}
         {!isScrolled && (
@@ -713,21 +748,19 @@ const Navbar = ({ locale }: { locale?: string }) => {
             {/* Logo */}
             <AnimatePresence>
               {!isMobileSearchOpen && (
-                <motion.a
+                <Link
                   href={getNavHref("/")}
-                  whileTap={{ scale: 0.98 }}
-                  initial={{ opacity: 1 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0, width: 0 }}
-                  transition={{ duration: 0.2 }}
-                  className="shrink-0 relative z-10 overflow-hidden"
+                  className="shrink-0 relative z-10 overflow-hidden transition-transform duration-200 hover:translate-x-1"
                 >
-                  <img
+                  <Image
                     src="/images/logo.png"
                     alt="Nexus Clinic Logo"
-                    className="h-24 md:h-32 w-auto"
+                    width={150}
+                    height={150}
+                    loading="lazy"
+                    className="h-full w-auto"
                   />
-                </motion.a>
+                </Link>
               )}
             </AnimatePresence>
 
@@ -811,14 +844,13 @@ const Navbar = ({ locale }: { locale?: string }) => {
                                       {categoryData.items.map(
                                         (subItem: { key: string; fallback: string }, idx: number) => (
                                           <li key={idx}>
-                                            <motion.a
+                                            <Link
                                               href={getNavHref(`/${getCategoryPath(category)}/${subItem.fallback}/`)}
-                                              whileHover={{ x: 4 }}
                                               className="group/item flex items-center gap-2 text-taupe hover:text-wine text-sm py-1.5 transition-all duration-200"
                                             >
                                               <span className="w-1.5 h-1.5 rounded-full bg-taupe/30 group-hover/item:bg-wine group-hover/item:scale-125 transition-all duration-200" />
                                               <span>{getText(subItem.key, subItem.fallback)}</span>
-                                            </motion.a>
+                                            </Link>
                                           </li>
                                         ),
                                       )}
@@ -830,7 +862,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
                           </div>
                           <div className="bg-linear-to-r from-cream to-cream/50 px-6 py-4 border-t border-rose/10">
                             <a
-                              href={getNavHref("/contact-us")}
+                              href={getNavHref("/contact-us/")}
                               className="flex items-center justify-between group"
                             >
                               <div className="flex items-center gap-3">
@@ -915,14 +947,11 @@ const Navbar = ({ locale }: { locale?: string }) => {
                             </p>
                           </div>
                           {languages.map((lang, idx) => (
-                            <motion.a
+                            <Link
                               key={lang.code}
                               href={getLocaleHref(lang.code.toLowerCase())}
-                              initial={{ opacity: 0, x: -10 }}
-                              animate={{ opacity: 1, x: 0 }}
-                              transition={{ delay: idx * 0.03 }}
-                              whileHover={{ backgroundColor: "#F3EFEE",borderColor: "#8C4F58",scale: 1.02 }}
-                              className="flex items-center gap-3 px-4 py-2.5 text-brown border-b border-cream transition-colors"
+                              onClick={() => handleLangClick(lang.code.toLowerCase())}
+                              className="flex items-center gap-3 px-4 py-2.5 text-brown border-b border-cream transition-colors hover:bg-[#F3EFEE] hover:border-[#8C4F58] last:border-0 hover:scale-102"
                             >
                               {/* <span className="text-lg">{lang.flag}</span> */}
                               <div>
@@ -933,7 +962,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
                                   {lang.label}
                                 </span>
                               </div>
-                            </motion.a>
+                            </Link>
                           ))}
                         </motion.div>
                       </>
@@ -943,18 +972,13 @@ const Navbar = ({ locale }: { locale?: string }) => {
               )}
 
               {/* CTA */}
-              <motion.a
-                href={getNavHref("/contact-us")}
-                whileHover={{
-                  scale: 1.03,
-                  boxShadow: "0 8px 30px rgba(140, 79, 88, 0.3)",
-                }}
-                whileTap={{ scale: 0.97 }}
-                className="ml-4 bg-green text-light px-6 py-2.5 rounded-full font-inter font-semibold text-sm shadow-lg shadow-green/20 hover:bg-green/90 transition-all duration-300 flex items-center gap-2"
+              <Link
+                href={getNavHref("/contact-us/")}
+                className="ml-4 bg-green text-light px-6 py-2.5 rounded-full font-inter font-semibold text-sm shadow-lg shadow-green/20 hover:bg-green/90 transition-all duration-300 flex items-center gap-2 hover:shadow-green/30 hover:scale-105"
               >
                 <Calendar size={16} />
                 <span>{getText("nav.bookNow", "Book Now")}</span>
-              </motion.a>
+              </Link>
             </nav>
 
             {/* Mobile: Right Actions */}
@@ -1121,19 +1145,14 @@ const Navbar = ({ locale }: { locale?: string }) => {
                                         <div className="grid grid-cols-1 gap-1">
                                           {categoryData.items.map(
                                             (subItem: { key: string; fallback: string }, idx: number) => (
-                                              <motion.a
+                                              <Link
                                                 key={idx}
                                                 href={getNavHref(`/${getCategoryPath(category)}/${subItem.fallback}/`)}
-                                                initial={{ opacity: 0, x: -10 }}
-                                                animate={{ opacity: 1, x: 0 }}
-                                                transition={{
-                                                  delay: idx * 0.02,
-                                                }}
                                                 className="text-taupe hover:text-wine text-sm py-2.5 px-3 rounded-lg hover:bg-light transition-all duration-200 flex items-center gap-2"
                                               >
                                                 <span className="w-1.5 h-1.5 rounded-full bg-taupe/30" />
                                                 {getText(subItem.key, subItem.fallback)}
-                                              </motion.a>
+                                              </Link>
                                             ),
                                           )}
                                         </div>
@@ -1171,18 +1190,15 @@ const Navbar = ({ locale }: { locale?: string }) => {
                       </p>
                       <div className="flex flex-wrap gap-2 px-2">
                         {languages.map((lang, idx) => (
-                          <motion.a
+                          <Link
                             key={lang.code}
                             href={getLocaleHref(lang.code.toLowerCase())}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.35 + idx * 0.03 }}
-                            whileTap={{ scale: 0.95 }}
+                            onClick={() => handleLangClick(lang.code.toLowerCase())}
                             className="flex items-center gap-2 bg-cream hover:bg-rose/10 px-4 py-2.5 rounded-xl text-brown hover:text-wine text-sm font-inter transition-all duration-200"
                           >
                             {/* <span>{lang.flag}</span> */}
                             <span className="font-medium">{lang.code}</span>
-                          </motion.a>
+                          </Link>
                         ))}
                       </div>
                     </motion.div>
@@ -1196,7 +1212,7 @@ const Navbar = ({ locale }: { locale?: string }) => {
                     className="pt-6 space-y-3"
                   >
                     <a
-                      href={getNavHref("/contact-us")}
+                      href={getNavHref("/contact-us/")}
                       className="flex max-w-[93%] items-center justify-center gap-2 bg-wine text-light px-6 py-4 rounded-xl font-inter font-semibold text-center shadow-lg shadow-wine/20 hover:bg-wine/90 transition-all duration-200"
                     >
                       <Calendar size={18} />

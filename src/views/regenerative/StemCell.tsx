@@ -20,6 +20,7 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import TableForPages from "@/src/components/TableForPages";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import Link from "next/link";
+import Image from "next/image";
 
 const StemCellLanding = ({ locale = fallbackLng }: { locale?: string }) => {
   const { t } = useTranslation(locale, "regenerative/stemCell");
@@ -303,9 +304,11 @@ const StemCellLanding = ({ locale = fallbackLng }: { locale?: string }) => {
 
             <motion.div variants={fadeInRight} className="relative">
               <div className="absolute inset-0 bg-linear-to-br from-wine/20 to-rose/20 rounded-3xl blur-2xl" />
-              <img
+              <Image
                 src="/images/regenerative/stem-cell-therapy.webp"
                 alt="Stem cell therapy microscopic view"
+                width={400}
+                height={400}
                 className="relative z-10 rounded-3xl shadow-2xl w-full object-cover"
               />
             </motion.div>
@@ -329,6 +332,18 @@ const StemCellLanding = ({ locale = fallbackLng }: { locale?: string }) => {
           fadeInUp={fadeInUp}
           className="container mx-auto px-6"
         />
+        <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+            Pittenger MF et al. Multilineage Potential of Adult Human Mesenchymal Stem Cells. 
+            <a 
+              href="https://pubmed.ncbi.nlm.nih.gov/10102814/" 
+              target="_blank" 
+              rel="nofollow" 
+              className="text-wine font-bold italic"
+            >
+              Science
+            </a>. 
+            1999;284(5411):143-147. This landmark study established the multilineage differentiation capacity of MSCs derived from adult bone marrow, forming the scientific basis for MSC-based regenerative therapy globally.
+          </p>
       </section>
 
       {/* Stem Cell Therapies and Conditions Table - Using TableForPages */}
@@ -461,7 +476,9 @@ const StemCellLanding = ({ locale = fallbackLng }: { locale?: string }) => {
 
             <motion.div variants={fadeInUp} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
               <h3 className="font-georgia text-xl text-wine mb-3">Localised MSC Injection</h3>
-              <p className="text-taupe">For conditions requiring targeted repair, such as osteoarthritis knee treatment, cartilage regeneration, or localised tissue damage, stem cells are delivered directly to the treatment site. This approach maximises the concentration of cells at the area of repair and reduces the total dosage required. Patients with orthopaedic concerns, hair restoration goals, or skin rejuvenation objectives may benefit from localised injection protocols.</p>
+              <p className="text-taupe">For conditions requiring targeted repair, such as osteoarthritis knee treatment, cartilage regeneration, or localised tissue damage, stem cells are delivered directly to the treatment site. This approach maximises the concentration of cells at the area of repair and reduces the total dosage required. Patients with orthopaedic concerns, hair restoration goals, or skin rejuvenation objectives may benefit from localised injection protocols. Those exploring hair regeneration may also benefit from 
+                <Link href="/hair/exosome-hair-treatment-malaysia/" className="text-wine font-bold italic">exosome hair treatment </Link> as a complementary cellular therapy for scalp regeneration.
+            </p>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -530,6 +547,17 @@ const StemCellLanding = ({ locale = fallbackLng }: { locale?: string }) => {
           fadeInUp={fadeInUp}
           className="container mx-auto px-6"
         />
+        <p className="text-center max-w-2xl mx-auto text-sm text-taupe">
+            Stem cell therapy pricing in Malaysia varies significantly based on cell source, dosage, and treatment complexity. Nexus Clinic KL provides transparent, itemised pricing after every consultation. The table below reflects current 2026 indicative pricing. All consultations are complimentary. Patients combining stem cell therapy with{' '}
+            <Link href="/hair/prp-hair-treatment-malaysia/" className="text-wine font-bold italic">
+              PRP hair treatment
+            </Link>{' '}
+            or{' '}
+            <Link href="/regenerative/shockwave-therapy-malaysia/" className="text-wine font-bold italic">
+              shockwave therapy in Malaysia
+            </Link>{' '}
+            may be eligible for integrated programme pricing. Final pricing is confirmed after your medical assessment.
+          </p>
       </section>
 
       {/* Safety Section */}
@@ -603,7 +631,7 @@ const StemCellLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                 Phone: 016-7025699 / 03-21635699
               </p>
 
-              <Link href="/contact-us">
+              <Link href="/contact-us/">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

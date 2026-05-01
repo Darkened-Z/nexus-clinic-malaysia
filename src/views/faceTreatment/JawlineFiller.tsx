@@ -74,7 +74,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
       focus: "Mandible body and lower border definition",
       volume: "1.5 to 3ml typically across the full jawline",
       product: "Juvederm Volux or Radiesse",
-      combo: "Often combined with chin filler",
+      combo: "Often combined with<a href='/face/chin-filler-malaysia/' class='font-bold text-wine italic'> chin filler </a>",
       outcome: "Chiselled jaw that photographs well",
     },
     {
@@ -338,7 +338,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Speak to a Doctor 
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -375,7 +375,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
             className="py-20 px-4"
           />
           <motion.div variants={fadeInUp} className="mt-8 text-center">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Find Out Your Root Cause
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -410,7 +410,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
                   <div><span className="font-inter font-semibold text-brown">Primary Focus:</span> <span className="text-taupe">{item.focus}</span></div>
                   <div><span className="font-inter font-semibold text-brown">Volume Used:</span> <span className="text-taupe">{item.volume}</span></div>
                   <div><span className="font-inter font-semibold text-brown">Product Choice:</span> <span className="text-taupe">{item.product}</span></div>
-                  <div><span className="font-inter font-semibold text-brown">Often Combined With:</span> <span className="text-taupe">{item.combo}</span></div>
+                  <div><span className="font-inter font-semibold text-brown">Often Combined With:</span> <span className="text-taupe"  dangerouslySetInnerHTML={{ __html:item.combo}} /></div>
                   <div><span className="font-inter font-semibold text-brown">Key Outcome:</span> <span className="text-taupe">{item.outcome}</span></div>
                 </div>
               </motion.div>
@@ -418,7 +418,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-10">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Tailored Jawline Plans
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -454,7 +454,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
           />
           
           <motion.div variants={fadeInUp} className="mt-8 text-center">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
              Book a Free Assessment
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -491,9 +491,11 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
               fadeInUp={fadeInUp}
               className="py-20 px-4"
             />
-          
+          <p>Patients who combine jawline filler with a broader facial plan often include 
+            <Link href='/face/cheek-filler-malaysia/' className='font-bold text-wine italic'> Cheek filler </Link>
+        can also be used in combination with jawline filler for a complete enhancement of facial contour. at Nexus Clinic for mid-face support that balances the newly defined lower face.</p>
           <motion.div variants={fadeInUp} className="mt-8 text-center">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Book Your Free Consultation
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -544,7 +546,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
 
             <motion.div variants={fadeInRight} className="space-y-6">
               <div className="bg-cream p-6 rounded-2xl border border-taupe/20">
-                <h3 className="font-georgia text-2xl text-brown mb-4">Dermal Filler Products Used for Jawline Contouring</h3>
+                <h3 className="font-georgia text-2xl text-brown mb-4"><a href='/face/dermal-filler-malaysia/' className='font-bold text-wine italic'>Dermal Filler  </a> Products Used for Jawline Contouring</h3>
                 <div className="space-y-4">
                   {fillerProducts.map((product, idx) => (
                     <div key={idx} className="border-l-4 border-wine pl-4">
@@ -559,11 +561,11 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
                 </div>
                 <div className="mt-4 p-3 bg-wine/5 rounded-lg">
                   <p className="text-taupe text-xs">
-                    Allergan/AbbVie Malaysia reported in 2023 that Juvederm Volux was the fastest-growing filler product in the structural contouring category in Malaysia, with a 47% increase in prescription volume.
+                    <a href='https://www.allergan.com' rel='nofollow' target='_blank' className='text-taupe hover:underline font-bold'>Allergan/AbbVie Malaysia</a> reported in 2023 that Juvederm Volux was the fastest-growing filler product in the structural contouring category in Malaysia, with a 47% increase in prescription volume.
                   </p>
                   <p className="text-taupe text-xs mt-1">[AbbVie Malaysia Aesthetic Market Summary Report, 2023]</p>
                 </div>
-                <Link href="/contact-us" className="mt-4 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                <Link href="/contact-us/" className="mt-4 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all">
                   Product Suits Your Jawline
                   <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -605,7 +607,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-10">
-            <Link href="/contact-us" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
+            <Link href="/contact-us/" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
               Book Your Jawline Assessment
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -654,7 +656,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
           </section>
           
           <motion.div variants={fadeInUp} className="mt-8 text-center">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Get Your Personalised Jawline Quote
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -765,7 +767,7 @@ export default function JawlineFiller({ locale }: JawlineFillerProps) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Book Your Free Consultation Now

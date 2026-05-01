@@ -1,18 +1,28 @@
-"use client";
-
 import i18next from "i18next";
-import {
-  initReactI18next,
-  useTranslation as useTranslationOrg,
-} from "react-i18next";
+import { initReactI18next, useTranslation as useTranslationOrg } from "react-i18next";
 import resourcesToBackend from "i18next-resources-to-backend";
 import { useEffect } from "react";
-import { getOptions, languages } from "./settings";
+import { getOptions, languages, fallbackLng } from "./settings";
 
 const runsOnServerSide = typeof window === "undefined";
 
-// Only initialize once
+
+const getInitialLanguage = () => {
+  if (typeof window === "undefined") return undefined;
+  
+  const match = document.cookie.match(/i18next=([^;]+)/);
+  if (match) return match[1];
+
+  const path = window.location.pathname;
+  const localeMatch = path.match(/^\/(en|id|ar|ms|zh)(\/|$)/);
+  if (localeMatch) return localeMatch[1];
+  
+  return fallbackLng;
+};
+
 if (!i18next.isInitialized) {
+  const initialLng = getInitialLanguage();
+  
   i18next
     .use(initReactI18next)
     .use(
@@ -22,10 +32,12 @@ if (!i18next.isInitialized) {
       )
     )
     .init({
-      ...getOptions(),
-      lng: undefined,
+      ...getOptions(initialLng),
+      lng: initialLng,
       detection: {
-        order: ["path", "htmlTag"],
+        order: ["cookie", "path", "htmlTag"],
+        lookupCookie: "i18next",
+        caches: ["cookie"],
       },
       preload: runsOnServerSide ? languages : [],
     });
@@ -39,17 +51,20 @@ export function useTranslation(
   const ret = useTranslationOrg(ns, options);
   const { i18n } = ret;
 
-  // On client side, change language when locale prop changes
   useEffect(() => {
     if (lng && i18n.resolvedLanguage !== lng) {
       i18n.changeLanguage(lng);
+      document.cookie = `i18next=${lng}; path=/; max-age=31536000; SameSite=Lax`;
     }
   }, [lng, i18n]);
 
-  // On server side, change language synchronously
   if (runsOnServerSide && lng && i18n.resolvedLanguage !== lng) {
     i18n.changeLanguage(lng);
   }
 
-  return ret;
+  return {
+    ...ret,
+    t: i18n.getFixedT(lng, ns ?? null, options?.keyPrefix),
+    i18n,
+  };
 }

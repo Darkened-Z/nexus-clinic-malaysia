@@ -3,39 +3,19 @@
 import { motion } from "framer-motion";
 import {
   Activity,
-  Droplets,
   Heart,
   Brain,
   Moon,
   Dumbbell,
   Shield,
-  Calendar,
-  Clock,
   CheckCircle,
   FlaskRound as Flask,
-  Syringe,
-  Pill,
-  AlertTriangle,
   Phone,
   MapPin,
-  HeartPulse,
   Zap,
   Scale,
   Sparkles,
-  BarChart3,
-  Thermometer,
-  Briefcase,
   Award,
-  Star,
-  TrendingUp,
-  Droplet,
-  FileText,
-  Stethoscope,
-  Microscope,
-  ClipboardList,
-  Eye,
-  Gauge,
-  TestTube,
   Pill as PillIcon,
   Users,
   Building,
@@ -55,6 +35,7 @@ import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
 import AllPagesHero from '@/src/components/AllPagesHero'
+import Image from "next/image";
 const TestosteroneLanding = ({ locale = fallbackLng }: { locale?: string }) => {
   const { t } = useTranslation(locale, "regenerative/testosterone");
 
@@ -64,7 +45,7 @@ const TestosteroneLanding = ({ locale = fallbackLng }: { locale?: string }) => {
       "https://images.unsplash.com/photo-1579154204601-01588f351e67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     clinicInterior:
       "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2091&q=80",
-    patientCare: "/images/treatment/happy-patient.png",
+    patientCare: "/images/treatment/happy-patient.webp",
   };
 
   const transformations = [
@@ -424,9 +405,10 @@ const TestosteroneLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                 variants={fadeInRight}
                 className="relative h-96 rounded-3xl overflow-hidden group"
               >
-                <img
+                <Image
                   src={images.doctorConsultation}
                   alt="Doctor consultation at Nexus Clinic"
+                  fill
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div
@@ -444,6 +426,18 @@ const TestosteroneLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                 </div>
               </motion.div>
             </div>
+              <p className="text-sm text-taupe text-center max-w-2xl mx-auto mt-8">
+                  Walia A, Coady P, Sofia‐Hernandez B, et al. Testosterone Replacement, Where Are We in 2025? 
+                  <a 
+                    href="https://onlinelibrary.wiley.com/doi/abs/10.1002/tre.1016" 
+                    target="_blank" 
+                    rel="nofollow" 
+                    className="text-wine font-bold italic"
+                  >
+                    Trends in Urology & Men's Health
+                  </a>. 
+                  2025;16. This comprehensive review examines the current state of testosterone therapy, highlighting the removal of FDA boxed warnings following the TRAVERSE trial and the shift toward individualized, risk-stratified patient management.
+              </p>
           </div>
         </motion.section>
 
@@ -671,11 +665,13 @@ const TestosteroneLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             fadeInUp={fadeInUp}
             className="container mx-auto px-4 sm:px-6 lg:px-8"
           />
-          <motion.div variants={fadeInUp} className="mt-8 p-6 rounded-xl text-center max-w-3xl mx-auto" style={{ backgroundColor: "var(--color-brown)" }}>
-            <p className="text-white">
-              Start TRT with Structured Monitoring Built In | Book at Nexus Clinic KL
+            <p className="text-center text-brown mt-4 max-w-3xl mx-auto">
+              Patients managing androgenic skin changes as a side effect of TRT including acne may find our{' '}
+              <Link href="/skin/acne-treatment-malaysia/" className="text-wine font-bold italic">
+                acne treatment in Malaysia
+              </Link>{' '}
+              relevant as hormonal skin changes are a documented treatment side effect addressed concurrently at Nexus Clinic KL.
             </p>
-          </motion.div>
         </motion.section>
 
         {/* Process Steps */}
@@ -852,8 +848,12 @@ const TestosteroneLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               className="text-lg mb-12 max-w-4xl mx-auto"
               style={{ color: "var(--color-brown)" }}
             >
-              Our licensed men's health doctors bring over 15 years of combined experience, have completed over 5,000 procedures and provide discreet healthcare services that assess and address testosterone deficiency, erectile dysfunction, low libido and the broader cluster of health concerns affecting men's well-being and quality of life in Malaysia.
-            </motion.p>
+                Our licensed men's health doctors bring over 15 years of combined experience, have completed over 5,000 procedures and provide discreet healthcare services that assess and address{' '}
+                <Link href="/regenerative/ed-treatment-malaysia/" className="text-wine font-bold italic">
+                  testosterone deficiency, erectile dysfunction, low libido
+                </Link>{' '}
+                and the broader cluster of health concerns affecting men's well-being and quality of life in Malaysia.
+           </motion.p>
 
             <motion.div
               variants={scaleIn}
@@ -918,7 +918,7 @@ const TestosteroneLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               Call or WhatsApp today to schedule your confidential consultation.
             </motion.p>
 
-            <Link href="/contact-us">
+            <Link href="/contact-us/">
               <motion.button
                 variants={scaleIn}
                 whileHover={{ scale: 1.05 }}

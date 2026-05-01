@@ -246,7 +246,7 @@ function LightboxModal({
             </div>
 
             <a
-              href="/consultation"
+              href="/consultation/"
               className="mt-auto block text-center bg-wine hover:bg-brown transition-colors text-cream font-semibold text-sm py-3 rounded-full"
               onClick={onClose}
             >

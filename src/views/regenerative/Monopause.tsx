@@ -7,14 +7,8 @@ import {
   Heart,
   Droplets,
   Bone,
-  Pill,
-  Stethoscope,
   Shield,
   FileText,
-  Sparkles,
-  Activity,
-  AlertCircle,
-  CheckCircle2,
   ArrowRight,
   Phone,
   MapPin,
@@ -212,7 +206,7 @@ const MonopauseLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                   <motion.a
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    href="/contact-us"
+                    href="/contact-us/"
                     className="bg-wine text-white px-8 py-4 rounded-full font-medium flex items-center justify-center gap-2 hover:bg-rose transition-colors shadow-lg hover:shadow-xl"
                   >
                     Book Your HRT Assessment
@@ -298,6 +292,19 @@ const MonopauseLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               fadeInUp={fadeInUp}
               className="container mx-auto px-4 md:px-8 py-12"
             />
+
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+              Bakken K, et al. Menopausal hormone therapy and breast cancer risk: a population-based cohort study of 1.3 million women. 
+              <a 
+                href="https://www.nature.com/articles/s41416-024-02636-1" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                British Journal of Cancer
+              </a>. 
+              2024;131:212-221. (Updated Review: PMC, 2025). This extensive 2024 cohort study and the subsequent 2025 review evaluate the evolving safety profiles of modern MHT, providing clinicians with updated risk-benefit frameworks for the individualized treatment of menopausal symptoms.
+            </p>
         </motion.section>
 
         {/* Type of HRT and Oestrogen Therapy Route Table */}
@@ -357,6 +364,14 @@ const MonopauseLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             fadeInUp={fadeInUp}
             className="container mx-auto px-4 md:px-8 py-12"
           />
+
+          <p className="text-center max-w-2xl mx-auto text-sm text-taupe">
+            For broader context on skin and tissue health changes that often accompany menopause, our{' '}
+            <Link href="/face/skin-booster-malaysia/" className="text-wine font-bold italic">
+              skin booster in Malaysia
+            </Link>{' '}
+            provides complementary information on collagen support and dermal hydration during hormonal transition.
+          </p>
         </motion.section>
 
         {/* Taking HRT Safely: Menopause and Hormone Replacement Therapy Evidence Table */}
@@ -449,6 +464,13 @@ const MonopauseLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                 fadeInUp={fadeInUp}
                 className="container mx-auto px-4 md:px-8 py-12"
               />
+              <p className="text-center max-w-2xl mx-auto text-sm text-taupe">
+                  For women whose hormone concerns also intersect with sexual health changes including reduced libido and genitourinary symptoms, our{' '}
+                  <Link href="/regenerative/ed-treatment-malaysia/" className="text-wine font-bold italic">
+                    ED treatment in Malaysia
+                  </Link>{' '}
+                  provides context on how hormonal decline affects sexual health in both men and women.
+                </p>
           </div>
         </motion.section>
 

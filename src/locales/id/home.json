@@ -1,107 +1,154 @@
 {
   "hero": {
-    "heading1": "Definisikan Kembali",
-    "heading2": "Kecantikan Alami Anda",
-    "description": "Kami mengkhususkan diri dalam meningkatkan kecantikan alami Anda, menciptakan pancaran abadi dengan harmoni sains & seni.",
-    "cta1": "Atur Jadwal",
-    "cta2": "Lihat Perawatan Anda",
-    "scanFace": "Pindai Wajah Anda",
-    "skinTreatment": "Perawatan Kulit Alami",
-    "viewRecommendations": "Lihat Rekomendasi",
-    "stat1Value": "40+",
-    "stat1Label1": "Perawatan Kecantikan",
-    "stat1Label2": "Tradisional & Modern",
-    "stat2Value": "7+",
-    "stat2Label1": "Ahli Kecantikan",
-    "stat2Label2": "Profesional",
-    "customersVisited": "Pelanggan Mengunjungi Kami",
+    "subtitle": "Klinik Estetika Berpenghargaan Tersertifikasi LCP",
+    "heading": "Hasil Alami dengan Perawatan Estetika Medis yang Dipersonalisasi",
+    "description": "Di Nexus Clinic, kami menawarkan perawatan estetika yang dipimpin oleh dokter dengan fokus pada wajah, kulit, dan penurunan berat badan medis. Pendekatan kami sederhana - hasil yang terlihat alami, perawatan personal, dan perawatan yang dirancang untuk membantu Anda merasa percaya diri dengan kulit Anda sendiri.",
+    "cta1": "Booking Konsultasi",
+    "cta2": "Jelajahi Perawatan",
     "scroll": "GULIR"
   },
-  "beforeAfter": {
-    "badge": "Hasil Nyata",
-    "title1": "Sebelum &",
-    "title2": "Sesudah",
-    "desc": "Geser untuk melihat transformasi luar biasa yang dicapai oleh klien kami dengan perawatan GLP-1",
-    "before": "Sebelum",
-    "after": "Sesudah",
-    "dragToCompare": "Geser untuk membandingkan",
-    "failedToLoad": "Gagal memuat gambar",
-    "disclaimer": "Hasil dapat bervariasi. Hasil individu tergantung pada berbagai faktor.",
-    "cta": "Mulai Transformasi Anda"
-  },
-  "services": {
-    "subtitle": "Keahlian Kami",
-    "title": "Perawatan",
-    "titleHighlight": "Spesialis",
-    "description": "Temukan rangkaian lengkap layanan estetika medis kami, masing-masing disesuaikan dengan kebutuhan unik Anda.",
-    "explore": "Jelajahi",
-    "items": {
-      "facial": {
-        "title": "Peremajaan Wajah",
-        "subtitle": "Anti-Penuaan & Konturing",
-        "description": "Botox, filler, dan perawatan pengencangan wajah canggih"
-      },
-      "weightLoss": {
-        "title": "Penurunan Berat Badan Medis",
-        "subtitle": "Program Berbasis Sains",
-        "description": "Ozempic, Mounjaro & konturing tubuh"
-      },
-      "skin": {
-        "title": "Perawatan Kulit",
-        "subtitle": "Jerawat & Pigmentasi",
-        "description": "Terapi laser & pengelupasan kimiawi"
-      },
-      "hair": {
-        "title": "Restorasi Rambut",
-        "subtitle": "PRP & Mesoterapi",
-        "description": "Solusi kerontokan rambut canggih"
-      }
-    }
-  },
   "whyChoose": {
-    "subtitle": "Mengapa Nexus Clinic",
-    "title": "Di Mana Sains Bertemu",
+    "subtitle": "Mengapa Pasien Memilih Nexus Clinic",
+    "title": "Di mana Sains Bertemu",
     "titleHighlight": "Seni",
-    "description": "Di Nexus Clinic, kami percaya dalam meningkatkan kecantikan alami Anda melalui perawatan berbasis bukti. Pendekatan kami yang dipimpin dokter memastikan keamanan, efektivitas, dan hasil yang akan Anda sukai.",
+    "description": "Di Nexus Clinic, kami percaya pada peningkatan kecantikan alami Anda melalui perawatan berbasis bukti. Pendekatan yang dipimpin dokter kami memastikan keamanan, kemanjuran, dan hasil yang akan Anda sukai.",
     "yearsValue": "15+",
     "yearsLabel1": "Tahun",
     "yearsLabel2": "Keunggulan",
     "features": {
-      "moh": { "title": "Terdaftar MOH", "desc": "Sepenuhnya memenuhi standar medis" },
-      "doctor": { "title": "Perawatan Dipimpin Dokter", "desc": "Tenaga medis profesional berlisensi" },
-      "personalized": { "title": "Rencana Personal", "desc": "Disesuaikan dengan kebutuhan unik Anda" },
-      "premium": { "title": "Produk Premium", "desc": "Perawatan yang disetujui FDA" }
+      "moh": {
+        "title": "Hasil Alami",
+        "desc": "Kami percaya hasil estetika terbaik adalah yang tampak segar, lembut, dan tidak pernah berlebihan"
+      },
+      "doctor": {
+        "title": "Perawatan Dipimpin Dokter",
+        "desc": "Perawatan Anda dipandu oleh profesional medis berpengalaman yang memprioritaskan keselamatan dan hasil."
+      },
+      "personalized": {
+        "title": "Rencana Perawatan Personal",
+        "desc": "Tidak ada dua wajah, jenis kulit, atau tujuan yang sama. Setiap rencana disesuaikan untuk Anda."
+      },
+      "premium": {
+        "title": "Solusi Estetika Modern",
+        "desc": "Kami menggabungkan pengetahuan medis dengan teknik estetika modern untuk memberikan hasil yang halus dan seimbang."
+      }
+    }
+  },
+  "services": {
+    "subtitle": "Perawatan yang Sesuai dengan Tujuan Anda",
+    "title": "Perawatan",
+    "titleHighlight": "Spesialis",
+    "description": "Temukan berbagai layanan estetika medis komprehensif kami, masing-masing disesuaikan dengan kebutuhan unik Anda.",
+    "explore": "Jelajahi",
+    "items": {
+      "facial": {
+        "title": "Estetika Wajah",
+        "subtitle": "Memperbaiki. Mengangkat. Menyegarkan.",
+        "description": "Kami menawarkan perawatan estetika wajah yang dirancang untuk meningkatkan fitur alami Anda dengan hasil yang lembut dan seimbang. Mulai dari perawatan kerutan hingga kontur dan harmoni wajah, perawatan kami direncanakan dengan cermat untuk menyesuaikan dengan wajah dan tujuan Anda."
+      },
+      "weightLoss": {
+        "title": "Penurunan Berat Badan Medis",
+        "subtitle": "Jalan Cerdas Menuju Penurunan Berat Badan",
+        "description": "Nexus Clinic menawarkan perawatan penurunan berat badan medis yang aman dan dipimpin ahli untuk hasil yang berkelanjutan."
+      },
+      "skin": {
+        "title": "Perawatan Kulit",
+        "subtitle": "Kulit Lebih Bersih, Sehat, dan Cerah",
+        "description": "Nexus Clinic menyediakan perawatan lanjutan untuk jerawat, pigmentasi, dan penuaan untuk meningkatkan tekstur dan warna kulit."
+      },
+      "hair": {
+        "title": "Restorasi Rambut",
+        "subtitle": "PRP & Mesoterapi",
+        "description": "Nexus Clinic menawarkan perawatan restorasi rambut terkini, termasuk PRP dan mesoterapi, untuk mendukung pertumbuhan rambut alami dan mengurangi kerontokan rambut."
+      }
     }
   },
   "testimonials": {
     "subtitle": "Testimoni",
-    "title": "Apa Kata",
-    "titleHighlight": "Pasien",
-    "titleEnd": "Kami",
+    "title": "Apa yang Disukai Pasien",
+    "titleHighlight": "Tentang Nexus Clinic",
+    "titleEnd": "Katakan",
     "reviews": "(500+ Ulasan)",
     "items": [
-      { "quote": "Nexus Clinic tidak hanya mengubah penampilan saya, tetapi juga kepercayaan diri saya. Para dokter benar-benar mendengarkan dan menciptakan solusi yang dipersonalisasi.", "author": "Sarah Chen", "role": "Eksekutif Bisnis" },
-      { "quote": "Saya terkesan dengan pendekatan transparan mereka. Mereka tidak pernah memaksakan perawatan yang tidak diperlukan. Klinik yang benar-benar dapat Anda percayai.", "author": "Michael Tan", "role": "Pengusaha" },
-      { "quote": "Program penurunan berat badan ini mengubah hidup saya. Dengan bimbingan medis yang tepat, saya mencapai tujuan saya dengan aman dan berkelanjutan.", "author": "Emily Wong", "role": "Direktur Kreatif" }
+      {
+        "quote": "Saya sangat suka betapa alaminya hasil perawatan saya. Tim di Nexus Clinic membuat saya merasa nyaman sejak awal, dan semuanya dijelaskan dengan sangat jelas.",
+        "author": "Sarah Chen",
+        "role": "Eksekutif Bisnis"
+      },
+      {
+        "quote": "Kulit saya terlihat lebih segar, halus, dan sehat. Nexus Clinic merekomendasikan perawatan yang tepat untuk saya tanpa mendorong hal-hal tambahan.",
+        "author": "Michael Tan",
+        "role": "Pengusaha"
+      },
+      {
+        "quote": "Saya menginginkan perbaikan yang halus, bukan sesuatu yang dramatis. Nexus Clinic memahami persis apa yang saya maksud, dan saya sangat senang dengan hasilnya.",
+        "author": "Emily Wong",
+        "role": "Direktur Kreatif"
+      }
     ]
   },
   "contact": {
     "subtitle": "Hubungi Kami",
     "title": "Kunjungi",
     "titleHighlight": "Nexus Clinic",
-    "address": "LG 10, Wisma UOA II, Jalan Pinang, KL",
-    "phone": "016-702 5699 / 03-2163 5699",
-    "hours": "Sen - Sab: 9:00 AM - 6:00 PM",
-    "formTitle": "Pesan Konsultasi Anda",
+    "description": "Kami menyambut Anda di Nexus Clinic untuk perawatan estetika personal di lingkungan yang nyaman dan modern. Apakah Anda tertarik dengan estetika wajah, perawatan kulit, atau penurunan berat badan medis, tim kami siap membantu Anda mengambil langkah selanjutnya dengan percaya diri.",
+    "address": "LG 10, Lantai Dasar Bawah, Wisma UOA 2, Kuala Lumpur, 50450 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia",
+    "phone": "016-7025699 / 03-21635699",
+    "hours": "Senin - Sabtu: 09:00 - 18:00",
+    "formTitle": "Booking Konsultasi Anda",
     "placeholderName": "Nama Anda",
     "placeholderEmail": "Alamat Email",
     "placeholderPhone": "Nomor Telepon",
     "selectTreatment": "Pilih Minat Perawatan",
-    "optionFacial": "Wajah & Anti-Penuaan",
+    "optionFacial": "Perawatan Wajah & Anti Penuaan",
     "optionWeightLoss": "Program Penurunan Berat Badan",
     "optionSkin": "Perawatan Kulit",
     "optionHair": "Restorasi Rambut",
     "placeholderMessage": "Pesan Anda",
     "submitButton": "Kirim Pertanyaan"
+  },
+  "faq": {
+    "items": [
+      {
+        "q": "Apa spesialisasi Nexus Clinic?",
+        "a": "Nexus Clinic mengkhususkan diri dalam perawatan estetika untuk wajah, kulit, dan penurunan berat badan medis. Tujuan kami adalah memberikan perawatan pribadi dengan hasil yang alami."
+      },
+      {
+        "q": "Apakah Nexus Clinic adalah klinik estetika yang dipimpin dokter?",
+        "a": "Ya, Nexus Clinic adalah klinik estetika yang dipimpin dokter. Keselamatan pasien, kesesuaian perawatan, dan hasil alami adalah inti dari pendekatan kami."
+      },
+      {
+        "q": "Perawatan apa saja yang tersedia di Nexus Clinic?",
+        "a": "Di Nexus Clinic, kami menawarkan berbagai layanan estetika yang meliputi rejuvenasi wajah, perawatan kulit, dan dukungan penurunan berat badan medis. Perawatan yang direkomendasikan tergantung pada kebutuhan dan tujuan Anda."
+      },
+      {
+        "q": "Apakah Nexus Clinic fokus pada hasil yang alami?",
+        "a": "Ya. Di Nexus Clinic, kami percaya perawatan estetika harus meningkatkan fitur Anda dengan cara yang lembut dan seimbang. Kami fokus pada hasil yang terlihat segar, tidak berlebihan."
+      },
+      {
+        "q": "Dapatkah saya mengunjungi Nexus Clinic untuk masalah kulit?",
+        "a": "Ya, Nexus Clinic menawarkan perawatan untuk masalah kulit umum seperti kusam, tekstur tidak merata, jerawat, pigmentasi, dan tanda-tanda penuaan. Konsultasi membantu kami mengarahkan Anda ke pilihan yang tepat."
+      },
+      {
+        "q": "Apakah Nexus Clinic menawarkan perawatan penurunan berat badan?",
+        "a": "Ya, Nexus Clinic menyediakan dukungan penurunan berat badan yang dipandu secara medis untuk pasien yang mencari pendekatan yang lebih terstruktur dan profesional untuk perjalanan mereka."
+      },
+      {
+        "q": "Bagaimana saya tahu perawatan mana di Nexus Clinic yang tepat untuk saya?",
+        "a": "Cara terbaik adalah dengan memesan konsultasi di Nexus Clinic. Kami akan menilai kekhawatiran Anda, mendengarkan tujuan Anda, dan merekomendasikan rencana perawatan yang sesuai untuk Anda."
+      },
+      {
+        "q": "Apakah Nexus Clinic cocok untuk pasien estetika pertama kali?",
+        "a": "Ya. Banyak pasien mengunjungi Nexus Clinic untuk konsultasi estetika pertama mereka. Kami menjelaskan semuanya dengan jelas dan hanya merekomendasikan apa yang sesuai untuk Anda."
+      },
+      {
+        "q": "Di mana lokasi Nexus Clinic?",
+        "a": "Nexus Clinic terletak di LG 10, Wisma UOA II, Jalan Pinang, Kuala Lumpur."
+      },
+      {
+        "q": "Bagaimana cara memesan janji temu dengan Nexus Clinic?",
+        "a": "Anda dapat menghubungi Nexus Clinic melalui telepon atau menggunakan formulir pemesanan di situs web untuk mengatur konsultasi Anda."
+      }
+    ]
   }
 }

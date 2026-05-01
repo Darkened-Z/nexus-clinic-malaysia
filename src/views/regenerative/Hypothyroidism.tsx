@@ -3,25 +3,14 @@
 import { motion } from "framer-motion";
 import {
   Activity,
-  Droplet,
-  Shield,
-  Clock,
-  Coffee,
-  Moon,
-  Apple,
   Heart,
-  AlertCircle,
   CheckCircle2,
   ChevronRight,
-  Sparkles,
-  Syringe,
-  Pill,
   Scale,
   Droplets,
   Users,
   HeartPulse,
   MapPin,
-  DollarSign,
 } from "lucide-react";
 import {
   fadeInUp,
@@ -34,6 +23,7 @@ import FAQWithSchema from "@/src/components/FAQWithSchema";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import TableForPages from "@/src/components/TableForPages";
+import Link from "next/link";
 const HypothyroidLanding = ({ locale = fallbackLng }: { locale?: string }) => {
   const { t } = useTranslation(locale, "regenerative/hypothyroidism");
 
@@ -126,7 +116,7 @@ const HypothyroidLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="/contact-us"
+                    href="/contact-us/"
                     className="bg-wine text-white px-8 py-4 rounded-full font-semibold hover:bg-rose transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2"
                   >
                     Book Your Hypothyroidism Assessment <ChevronRight className="w-4 h-4" />
@@ -134,7 +124,7 @@ const HypothyroidLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="/contact-us"
+                    href="/contact-us/"
                     className="border-2 border-wine text-wine px-8 py-4 rounded-full font-semibold hover:bg-wine hover:text-white transition-all duration-300 bg-white/50 backdrop-blur-sm"
                   >
                     Free Assessment
@@ -210,6 +200,18 @@ const HypothyroidLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               fadeInUp={fadeInUp}
               className="py-20 px-4"
             />
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+              Garber JR et al. Clinical practice guidelines for hypothyroidism in adults: cosponsored by the American Association of Clinical Endocrinologists and the American Thyroid Association. 
+              <a 
+                href="https://pubmed.ncbi.nlm.nih.gov/22954017/" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                Thyroid
+              </a>. 
+              2012;22(12):1200-1235. These comprehensive clinical guidelines establish the gold standard for the diagnosis and management of adult hypothyroidism, providing evidence-based protocols for TSH screening, levothyroxine therapy, and monitoring.
+            </p>
           </motion.div>
         </section>
 
@@ -329,8 +331,15 @@ const HypothyroidLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                 variants={fadeInUp} 
                 className="mt-8 p-6 bg-wine/10 rounded-2xl"
               >
-                <p className="text-taupe">
+                <p className="text-taupe text-center">
                   The cardiovascular row in this symptoms table is the most clinically consequential for Malaysian patients and their healthcare professionals. Dyslipidaemia, elevated LDL cholesterol and raised blood pressure are all established complications of hypothyroidism that are frequently managed as independent conditions without the hypothyroidism being identified as the underlying common driver.
+                </p>
+                <p className="text-center text-taupe">
+                  For women whose hypothyroidism symptoms overlap significantly with perimenopause, our{' '}
+                  <Link href="/regenerative/hormone-replacement-therapy-malaysia/" className="text-wine font-bold italic">
+                    hormone replacement therapy in Malaysia
+                  </Link>{' '}
+                  provides a framework for distinguishing and managing these two commonly co-occurring hormonal conditions.
                 </p>
               </motion.div>
           </motion.div>
@@ -435,6 +444,13 @@ const HypothyroidLanding = ({ locale = fallbackLng }: { locale?: string }) => {
                   fadeInUp={fadeInUp}
                   className="py-20 px-4"
                 />
+                <p className="text-center max-w-2xl mx-auto text-taupe">
+                  For patients whose hypothyroidism coexists with PCOS-related hormonal imbalance, our{' '}
+                  <Link href="/regenerative/pcos-treatment-malaysia/" className="text-wine font-bold italic">
+                    PCOS treatment in Malaysia
+                  </Link>{' '}
+                  provides context on how thyroid function is assessed as part of the broader hormonal evaluation for women with irregular cycles and metabolic concerns.
+                </p>
           </motion.div>
         </section>
 
@@ -530,7 +546,7 @@ const HypothyroidLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-wine text-white px-12 py-4 rounded-full font-semibold hover:bg-rose transition-all duration-300 shadow-lg hover:shadow-xl text-lg"
               >
                 Book Your  Assessment

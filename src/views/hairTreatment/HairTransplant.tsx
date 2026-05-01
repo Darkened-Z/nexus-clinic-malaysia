@@ -290,7 +290,7 @@ export default function HairTransplantLanding({ locale }: HairTransplantProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Speak to a Doctor
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -335,7 +335,6 @@ export default function HairTransplantLanding({ locale }: HairTransplantProps) {
         </motion.div>
       </section>
 
-      {/* Norwood Scale Guide Table */}
       <section className="py-20 px-4 bg-cream">
         <motion.div
           variants={staggerContainer}
@@ -344,7 +343,6 @@ export default function HairTransplantLanding({ locale }: HairTransplantProps) {
           viewport={{ once: true }}
           className="container mx-auto max-w-6xl"
         >
-        {/* Norwood Scale Guide Table */}
         <TableForPages
           columns={[
             { key: "stage", header: "Norwood Stage", className: "font-semibold" },
@@ -366,7 +364,18 @@ export default function HairTransplantLanding({ locale }: HairTransplantProps) {
           fadeInUp={fadeInUp}
           className="py-20 px-4"
         />
-        </motion.div>
+          <p className="text-center">
+            Patients with early-stage hair loss may also benefit from non-surgical hair preservation options.{' '}
+            <Link href="/hair/prp-hair-treatment-malaysia/" className="text-wine font-bold italic">
+              Nexus Clinic KL offers PRP hair treatment in Malaysia
+            </Link>{' '}
+            and{' '}
+            <Link href="/hair/hair-loss-treatment-malaysia/" className="text-wine font-bold italic">
+              hair loss treatment programmes
+            </Link>{' '}
+            for patients at earlier stages who are not yet ready for surgery.
+          </p>        
+          </motion.div>
       </section>
 
       {/* Hair Transplant Results Timeline Slider Section */}
@@ -532,7 +541,6 @@ export default function HairTransplantLanding({ locale }: HairTransplantProps) {
         </motion.div>
       </section>
 
-      {/* Growth Timeline Detailed Table */}
       <section className="py-20 px-4 bg-cream">
         <motion.div
           variants={staggerContainer}
@@ -541,24 +549,38 @@ export default function HairTransplantLanding({ locale }: HairTransplantProps) {
           viewport={{ once: true }}
           className="container mx-auto max-w-6xl"
         >
-            {/* Month-by-Month Hair Transplant Growth Timeline Table */}
-            <TableForPages
-              columns={[
-                { key: "period", header: "Timeframe", className: "font-semibold" },
-                { key: "happening", header: "What Happens to Transplanted Hair" },
-                { key: "experience", header: "What the Patient Experiences" },
-              ]}
-              data={growthTimeline.map((item) => ({
-                period: item.period,
-                happening: item.happening,
-                experience: item.experience,
-              }))}
-              title="Month-by-Month Hair Transplant Growth Timeline"
-              subtitle="What happens to transplanted hair and what the patient experiences"
-              variant="detailed"
-              fadeInUp={fadeInUp}
-              className="py-20 px-4"
-            />
+          <TableForPages
+            columns={[
+              { key: "period", header: "Timeframe", className: "font-semibold" },
+              { key: "happening", header: "What Happens to Transplanted Hair" },
+              { key: "experience", header: "What the Patient Experiences" },
+            ]}
+            data={growthTimeline.map((item) => ({
+              period: item.period,
+              happening: item.happening,
+              experience: item.experience,
+            }))}
+            title="Month-by-Month Hair Transplant Growth Timeline"
+            subtitle="What happens to transplanted hair and what the patient experiences"
+            variant="detailed"
+            fadeInUp={fadeInUp}
+            className="py-20 px-4"
+          />
+          <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+            Avram MR, Rogers NE. The Use of Low-Level Light for Hair Growth: Part I. 
+            <a 
+              href="https://pubmed.ncbi.nlm.nih.gov/19363487/" 
+              target="_blank" 
+              rel="nofollow"
+              className="text-wine font-bold italic"
+            >
+              Journal of Investigative Dermatology
+            </a>
+            . 2009 (reference to follicular unit transplantation outcomes documentation). 
+            This foundational work on follicular transplantation outcomes documents the 
+            standard hair growth timeline following successful transplantation, 
+            establishing month 12 to 15 as the benchmark for final result assessment.
+        </p>
         </motion.div>
       </section>
 
@@ -632,7 +654,7 @@ export default function HairTransplantLanding({ locale }: HairTransplantProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-10">
-            <Link href="/contact-us" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
+            <Link href="/contact-us/" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
               Book Your Free Consultation
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -678,7 +700,7 @@ export default function HairTransplantLanding({ locale }: HairTransplantProps) {
           </motion.p>
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Get Your Personalised Hair Transplant Quote
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -715,7 +737,7 @@ export default function HairTransplantLanding({ locale }: HairTransplantProps) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Free Consultation
@@ -725,14 +747,6 @@ export default function HairTransplantLanding({ locale }: HairTransplantProps) {
                 message="Hi, I'd like to book a consultation for hair transplant at Nexus Clinic KL. Please let me know available slots."
                 variant="light"
               />
-            </div>
-            <p className="text-cream/80 font-inter text-sm">
-              Limited slots available | Wisma UOA II, Jalan Pinang, KLCC — Serving Malaysia since 2001
-            </p>
-            <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center text-cream/70 text-sm">
-              <a href="tel:0167025699" className="hover:text-cream transition-colors">Call: 016-7025699</a>
-              <span>•</span>
-              <a href="https://wa.me/60321635699" className="hover:text-cream transition-colors">WhatsApp: 03-21635699</a>
             </div>
           </motion.div>
         </motion.div>

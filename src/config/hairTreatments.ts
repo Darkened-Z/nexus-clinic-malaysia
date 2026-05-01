@@ -37,13 +37,13 @@ export const hairTreatmentsMetadata: TreatmentMetadata[] = [
   {
     slug: 'mesotherapy-hair-loss-malaysia',
     component: 'HairMesotherapy',
-    title: 'Meta Title: Mesotherapy Hair Loss Treatment in Malaysia | Hair Mesotherapy and Klinik Scalp Rejuvenation at Nexus Clinic KL',
+    title: 'Mesotherapy Hair Loss Treatment in Malaysia | Hair Mesotherapy and Klinik Scalp Rejuvenation at Nexus Clinic KL',
     description: 'Instant, lasting results without surgery. Nexus Clinic KL offers non-surgical mesotherapy treatment for hair loss in Malaysia. Involves injecting a customized cocktail into the scalp to stop hair thinning and stimulate regrowth. Hair mesotherapy and klinik services for Kuala Lumpur, Johor Bahru, and beyond. Book now.',
     },
   {
     slug: 'exosome-hair-treatment-malaysia',
     component: 'ExosomeHair',
-    title: 'Meta Title: Expert Exosome Hair Loss Treatment in Malaysia | Exosome Therapy and Hair Stem Cell Clinic at Nexus Clinic KL',
+    title: 'Expert Exosome Hair Loss Treatment in Malaysia | Exosome Therapy and Hair Stem Cell Clinic at Nexus Clinic KL',
     description: 'Clinical trial data does not lie. Exosome therapy delivers 3x to 5x more growth factors than PRP to stimulate dormant hair follicles, promote hair growth, and regenerate the scalp. Nexus Clinic KL offers advanced exosome hair loss treatment in Malaysia for men and women in KL. Book your consultation today.',
     },
   {

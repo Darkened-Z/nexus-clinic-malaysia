@@ -275,7 +275,7 @@ export default function ChinFillerLanding({ locale }: ChinFillerProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link href="/contact-us"className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/"className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Speak to a Doctor About Your Chin Profile
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -295,7 +295,7 @@ export default function ChinFillerLanding({ locale }: ChinFillerProps) {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div variants={fadeInLeft} className="space-y-6">
               <h2 className="font-georgia text-3xl md:text-4xl text-brown">
-                The Side Profile Problem <span className="text-wine">Most Patients Get Wrong</span>
+                The Side Profile Problem <span className="text-wine italic">Most Patients Get Wrong</span>
               </h2>
               <p className="text-brown font-inter">
                 Most patients arriving at Nexus Clinic KL thinking they need a nose job leave with a chin filler plan instead. 
@@ -311,8 +311,10 @@ export default function ChinFillerLanding({ locale }: ChinFillerProps) {
                 Others see the change from their mid-twenties as fat pads thin and bone density decreases.
               </p>
               <div className="bg-cream p-5 rounded-xl border-l-4 border-wine">
-                <p className="font-georgia italic text-brown">"The International Society of Aesthetic Plastic Surgery (ISAPS) reported in 2024 that non-surgical chin and jawline augmentation saw a 34% increase across Southeast Asia."</p>
-                <p className="text-taupe text-xs mt-2">[ISAPS Global Statistics Report 2024]</p>
+                <p className="font-georgia italic text-brown">
+                  "The <a href='https://www.isaps.org/medical-professionals/isaps-global-statistics/' rel='nofollow' target='_blank' className='text-brown hover:underline font-bold'>International Society of Aesthetic Plastic Surgery (ISAPS)</a> reported in 2024 that non-surgical chin and jawline augmentation saw a 34% increase across Southeast Asia."
+                </p>               
+                 <p className="text-taupe text-xs mt-2">[ISAPS Global Statistics Report 2024]</p>
               </div>
             </motion.div>
             <motion.div variants={fadeInRight} className="relative">
@@ -324,7 +326,7 @@ export default function ChinFillerLanding({ locale }: ChinFillerProps) {
                   className="object-cover"
                 />
               </div>
-              <Link href="/contact-us" className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+              <Link href="/contact-us/" className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all">
                 Book a Consultation | Find Out If Chin Filler Is Right for You
                 <ArrowRight className="w-4 h-4" />
               </Link>
@@ -369,7 +371,7 @@ export default function ChinFillerLanding({ locale }: ChinFillerProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link href="/contact-us" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
+            <Link href="/contact-us/" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
               Not Sure If You Are a Candidate? Book a Free Clinical Assessment
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -413,7 +415,7 @@ export default function ChinFillerLanding({ locale }: ChinFillerProps) {
               </ul>
               <div className="bg-cream p-4 rounded-xl border-l-4 border-wine">
                 <p className="text-brown font-inter text-sm">
-                  Allergan/AbbVie Malaysia reported in 2023 that Juvederm Voluma remains the most prescribed chin and cheek filler brand in Malaysia.
+                  Allergan/AbbVie Malaysia reported in 2023 that Juvederm Voluma remains the most prescribed chin and <a href='/face/cheek-filler-malaysia/' className='font-bold text-wine italic'>cheek filler </a> brand in Malaysia.
                 </p>
                 <p className="text-taupe text-xs mt-1">[AbbVie Malaysia Aesthetic Market Summary Report, 2023]</p>
               </div>
@@ -438,7 +440,7 @@ export default function ChinFillerLanding({ locale }: ChinFillerProps) {
                     </div>
                   ))}
                 </div>
-                <Link href="/contact-us" className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                <Link href="/contact-us/" className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all">
                   Find Out Which Filler Suits Your Chin
                   <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -480,7 +482,7 @@ export default function ChinFillerLanding({ locale }: ChinFillerProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-10">
-            <Link href="/contact-us" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
+            <Link href="/contact-us/" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
               Book Your Chin Filler Appointment
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -541,13 +543,13 @@ export default function ChinFillerLanding({ locale }: ChinFillerProps) {
                   "Visible improvement immediately after treatment",
                   "Fully reversible with hyaluronidase for HA-based fillers",
                   "Temporary result lets you experience improvement before committing",
-                  "Can be combined with jawline filler or lip filler",
+                  "Can be combined with <a href='/face/jawline-filler-malaysia/' class='text-wine font-bold italic'>jawline filler  </a> or lip filler",
                   "Natural-looking results with right volume and technique",
                   "Minimal downtime. Most patients return to work same day",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2 text-taupe font-inter text-sm">
                     <CheckCircle className="w-4 h-4 text-wine shrink-0 mt-0.5" />
-                    <span>{item}</span>
+                    <span dangerouslySetInnerHTML={{ __html: item }} />
                   </li>
                 ))}
               </ul>
@@ -614,13 +616,14 @@ export default function ChinFillerLanding({ locale }: ChinFillerProps) {
                 variants={fadeInUp}
                 className="text-center text-taupe font-inter text-sm italic mt-4"
               >
-                * Final pricing confirmed at consultation. Price depends on filler brand, volume required and complexity.
+                
+                  For patients comparing non-surgical options, our<a href='/face/dermal-filler-malaysia/' className='font-bold text-wine italic'> dermal filler Malaysia </a> page covers the full range of HA filler treatments available at Nexus Clinic KL.
               </motion.p>
             </div>
           </section>
           
           <motion.div variants={fadeInUp} className="mt-8 text-center">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Get Your Personalised Chin Filler Quote
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -733,7 +736,7 @@ export default function ChinFillerLanding({ locale }: ChinFillerProps) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Book Your Free Consultation Now

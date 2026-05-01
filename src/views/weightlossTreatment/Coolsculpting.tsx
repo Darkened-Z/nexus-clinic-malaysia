@@ -570,7 +570,7 @@ const CoolSculptingLanding = ({
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="px-8 py-3 rounded-full bg-white font-semibold"
                 style={{ color: "var(--color-wine)" }}
               >
@@ -956,7 +956,7 @@ const CoolSculptingLanding = ({
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="/contact-us"
+                    href="/contact-us/"
                     className="w-full py-3 rounded-full bg-white font-semibold"
                     style={{ color: "var(--color-wine)" }}
                   >
@@ -1114,7 +1114,7 @@ const CoolSculptingLanding = ({
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="px-12 py-4 rounded-full bg-white font-semibold text-lg inline-flex items-center gap-2 mx-auto"
                 style={{ color: "var(--color-wine)" }}
               >

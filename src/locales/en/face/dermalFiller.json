@@ -29,9 +29,7 @@
       "first": "First, it replaces physical volume in areas where fat, muscle or bone have diminished over time, helping to smoothen the skin.",
       "second": "Second, it creates structural support that lifts and redefines facial contours from beneath. The result is a face that looks rested and proportioned, not frozen or filled, giving you a youthful look."
     },
-    "statistics": "According to the International Society of Aesthetic Plastic Surgery (ISAPS) 2024 Global Statistics Report, hyaluronic acid filler injections ranked as the second most performed non-surgical cosmetic procedure worldwide, with Southeast Asia recording one of the fastest regional growth rates at 31% over two years.",
-    "cta": "Find Out If Dermal Filler"
-  },
+    "statistics": "According to the <a href='https://www.isaps.org/medical-professionals/isaps-global-statistics/' rel='nofollow' target='_blank' class='text-wine hover:underline font-bold'>International Society of Aesthetic Plastic Surgery</a> (ISAPS) 2024 Global Statistics Report, hyaluronic acid filler injections ranked as the second most performed non-surgical cosmetic procedure worldwide, with Southeast Asia recording one of the fastest regional growth rates at 31% over two years."  },
   "faceAreas": {
     "title": "Face Areas Treated with Dermal Filler at Nexus Clinic KL",
     "description": "Dermal filler is a versatile treatment that can enhance facial features and provide youthful, natural-looking results. At Nexus Clinic KL, we treat the following areas as standalone appointments or as part of a combined facial plan to address lines and wrinkles effectively.",
@@ -39,31 +37,32 @@
       {
         "name": "Lip Filler",
         "description": "Adds volume, definition, and symmetry to the lips, enhancing your natural beauty. Whether the goal is subtle fullness or a more structured shape, lip filler is tailored to your anatomy and your preference. Overfilled lips are a technique problem, not a filler problem, and can be avoided with proper training.",
-        "cta": "Learn more about lip filler in Malaysia at Nexus Clinic KL."
+        "cta": "/face/lip-filler-malaysia/"
       },
       {
         "name": "Cheek Filler",
         "description": "Restores the midface volume that thins with age. Lifted cheeks create a ripple effect across the face, improving the appearance of nasolabial folds, under-eye hollows and overall facial structure without touching those areas directly.",
-        "cta": "Read more about cheek filler in Malaysia and expected outcomes."
+        "cta": "/face/cheek-filler-malaysia/"
       },
       {
         "name": "Chin Filler",
         "description": "Projects the chin forward to balance the lower face and improve the side profile. The most common reason patients feel their nose looks too large is that the chin is underprojected, not that the nose is actually oversized.",
-        "cta": "Explore ways to enhance your natural beauty. Chin filler in Malaysia can help you achieve a more youthful look."
+        "cta": "/face/chin-filler-malaysia/"
       },
       {
         "name": "Jawline Filler",
         "description": "Defines the jawline and creates clean angularity in the lower face. Results differ significantly from threading or skin tightening because the correction is structural rather than superficial.",
-        "cta": "Read about jawline filler in Malaysia including procedure steps and pricing."
+        "cta": "/face/jawline-filler-malaysia/"
       },
       {
         "name": "Nose Filler",
-        "description": "Smooths dorsal humps, refines the tip and improves profile symmetry without surgery. Results are immediate, reversible and carry none of the risks or recovery time associated with rhinoplasty."
+        "description": "Smooths dorsal humps, refines the tip and improves profile symmetry without surgery. Results are immediate, reversible and carry none of the risks or recovery time associated with rhinoplasty.",
+        "cta": "/face/nose-filler-malaysia/"
       },
       {
         "name": "Tear Trough and Under-Eye Filler",
         "description": "Fills the hollow that forms between the lower eyelid and the cheek, enhancing skin texture. This is one of the most technically demanding filler areas and requires a doctor with specific training in periorbital anatomy.",
-        "cta": "Discover tear trough filler in Malaysia and whether it suits your concern."
+        "cta": "/face/tear-trough-filler-malaysia/"
       },
       {
         "name": "Nasolabial Fold and Line Softening",

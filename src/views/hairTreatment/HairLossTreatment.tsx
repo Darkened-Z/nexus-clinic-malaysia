@@ -2,29 +2,16 @@
 
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
   CheckCircle,
   Clock,
-  Heart,
   Shield,
   ArrowRight,
-  AlertCircle,
   Activity,
-  Zap,
-  Eye,
-  AlertTriangle,
-  Scissors,
   TrendingUp,
-  DollarSign,
-  Layers,
-  Users,
   Stethoscope,
-  Droplets,
-  FileText,
-  Leaf,
   Phone,
   Mail,
 } from "lucide-react";
@@ -33,7 +20,6 @@ import {
   fadeInLeft,
   fadeInRight,
   fadeInUp,
-  scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import Whatsapp from "@/src/components/Whatsapp";
@@ -405,6 +391,16 @@ export default function HairLossTreatment({ locale }: HairLossTreatmentProps) {
             <p className="text-brown font-inter text-sm">
               <span className="font-semibold">Important:</span> The secondary hair loss from medical conditions row in this table is the most practically important for Malaysian patients who have been using hair loss treatment products without improvement. Many Malaysian women experiencing significant hair fall have an underlying thyroid condition, iron deficiency or PCOS-related hormonal imbalance as the primary cause. At Nexus Clinic KL, a blood test panel to identify medical causes is included where clinically suspected.
             </p>
+            <p className="text-center text-brown font-inter text-sm mt-4">
+              For women whose hair loss is connected to PCOS or other hormonal imbalances, our{' '}
+              <a 
+                href="/regenerative/pcos-treatment-malaysia/" 
+                className="text-wine font-bold italic"
+              >
+                PCOS treatment Malaysia page
+              </a>{' '}
+              provides the complete hormonal evaluation and treatment framework that addresses the root hormonal cause of hair loss alongside clinical hair regrowth treatment.
+            </p>
           </motion.div>
         </motion.div>
       </section>
@@ -440,10 +436,23 @@ export default function HairLossTreatment({ locale }: HairLossTreatmentProps) {
           className="py-20 px-4"
         />
 
-          <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl">
+          <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
             <p className="text-brown font-inter text-sm">
               The combination of treatments consistently produces better results than any single treatment alone. PRP provides growth factors, minoxidil promotes blood flow, finasteride blocks DHT, laser therapy provides additional stimulation, and scalp mesotherapy optimises the scalp environment. At Nexus Clinic KL, your treatment programme is customised to your specific hair loss type, degree of hair loss, lifestyle and budget.
             </p>
+
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto mt-4">
+                Gupta AK, Carviel J. A Mechanistic Model of Platelet-Rich Plasma Treatment for Androgenetic Alopecia. 
+                <a 
+                  href="https://pubmed.ncbi.nlm.nih.gov/27930514/" 
+                  target="_blank" 
+                  rel="nofollow" 
+                  className="text-wine font-bold italic"
+                >
+                  Dermatologic Surgery
+                </a>. 
+                2016;42(12):1335-1339. This study establishes the biological framework for how growth factors in PRP stimulate follicular stem cells and enhance vascularization to reverse hair thinning.
+              </p>
           </motion.div>
         </motion.div>
       </section>
@@ -478,9 +487,16 @@ export default function HairLossTreatment({ locale }: HairLossTreatmentProps) {
         />
 
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl">
-            <p className="text-brown font-inter text-sm">
-              <span className="font-semibold">Malaysia-specific note:</span> Environmental factors and nutritional deficiency are particularly relevant for Malaysian patients. Malaysia's year-round intense sun exposure, high-pollution urban environment, widespread use of chemical treatments on hair, and the high prevalence of iron deficiency among Malaysian women combine to create a unique set of contributing factors not addressed by simply prescribing finasteride or minoxidil.
-            </p>
+                <p className="text-center text-brown">
+                  The environmental factors and nutritional deficiency row in this causes of hair loss table is particularly relevant for Malaysian patients and is consistently underrepresented in Malaysian hair loss clinic content. Malaysia's year-round intense sun exposure, high-pollution urban environment, widespread use of chemical treatments on hair and the high prevalence of iron deficiency among Malaysian women combine to create a unique set of contributing factors to hair loss that are not addressed by simply prescribing finasteride or minoxidil. At Nexus Clinic KL, the comprehensive hair loss assessment addresses all four cause categories including environmental factors and nutritional status rather than assuming androgenetic alopecia as the default diagnosis without investigation. For patients whose hair loss is associated with hormonal imbalances that require a blood test panel to identify, our{' '}
+                  <a 
+                    href="/regenerative/hormone-test-malaysia/" 
+                    className="text-wine font-bold italic"
+                  >
+                    hormone test Malaysia page
+                  </a>{' '}
+                  provides the complete hormonal screening packages including thyroid, androgens and reproductive hormones that guide the most appropriate hair loss treatment.
+                </p>
           </motion.div>
         </motion.div>
       </section>
@@ -761,7 +777,7 @@ export default function HairLossTreatment({ locale }: HairLossTreatmentProps) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Book Your Assessment

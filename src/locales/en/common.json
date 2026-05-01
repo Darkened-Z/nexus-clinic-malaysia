@@ -7,7 +7,10 @@
     "blogs": "Blogs",
     "bookNow": "Book Now",
     "bookConsultation": "Book Your Consultation",
-    "selectLanguage": "Select Language"
+    "selectLanguage": "Select Language",
+    "topButton": "Consult with experts",
+    "doctors": "Doctors",
+    "gallery": "Gallery"
   },
   "search": {
     "placeholder": "Search treatments..."
@@ -61,7 +64,7 @@
       "newestML": "Newest",
       "profhiloML": "Profhilo",
       "sculptra": "Sculptra",
-      "karisma": "karisma",
+      "karisma": "Karisma",
       "plinest": "Plinest",
       "rejuran": "Rejuran"
     },
@@ -110,7 +113,7 @@
     "address": "LG 10, Lower Ground Floor, Wisma UOA 2, Kuala Lumpur, 50450 Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia",
     "phone": "+016-774 5699",
     "email": "contact@nexus-clinic.com",
-    "copyright": "© 2026 Aesthetics & Skin Care Clinic Near Me | ⁠ ⁠⁠Mozart Simfoni Sdn Bhd | Powered by",
+    "copyright": "© 2026 Aesthetics & Skin Care Clinic Near Me | Mozart Simfoni Sdn Bhd | Powered by",
     "privacyPolicy": "Privacy Policy",
     "termsOfUse": "Terms of Use"
   },

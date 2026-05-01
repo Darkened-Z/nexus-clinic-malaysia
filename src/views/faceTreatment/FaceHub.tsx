@@ -41,18 +41,18 @@ export default function FaceHub({ locale }: FaceHubProps) {
   ];
 
   const concernMapping = [
-    { concern: "Lines and wrinkles when you smile, frown or talk", treatment: "Botox", link: "/face/botox-malaysia" },
-    { concern: "Hollow or sunken cheeks, loss of midface fullness", treatment: "Cheek Filler", link: "/face/cheek-filler-malaysia" },
-    { concern: "Tired-looking eyes, dark shadows under the eyes", treatment: "Tear Trough or Under Eye Filler", link: "/face/tear-trough-filler-malaysia" },
-    { concern: "Flat or undefined jawline", treatment: "Jawline Filler or Jaw Botox", link: "/face/jawline-filler-malaysia" },
-    { concern: "Recessed or weak chin affecting the profile", treatment: "Chin Filler", link: "/face/chin-filler-malaysia" },
-    { concern: "Flat nose bridge or drooping tip", treatment: "Nose Thread Lift or Nose Filler", link: "/face/nose-thread-lift-malaysia" },
-    { concern: "Thin or undefined lips", treatment: "Lip Filler", link: "/face/lip-filler-malaysia" },
-    { concern: "Dull, dehydrated or textured skin", treatment: "Skin Booster (Profhilo, Rejuran, Juvelook)", link: "/face/skin-booster-malaysia" },
-    { concern: "Nose bump or asymmetry without surgery", treatment: "Nose Filler", link: "/face/nose-filler-malaysia" },
-    { concern: "Wide jaw from muscle bulk", treatment: "Jaw Slimming Botox", link: "/face/botox-malaysia" },
-    { concern: "Overall facial volume loss and descent with age", treatment: "Cheek Filler and Dermal Filler", link: "/face/cheek-filler-malaysia" },
-    { concern: "Want to understand all filler options first", treatment: "Dermal Filler Overview", link: "/face/dermal-filler-malaysia" },
+    { concern: "Lines and wrinkles when you smile, frown or talk", treatment: "Botox", link: "/face/botox-malaysia/" },
+    { concern: "Hollow or sunken cheeks, loss of midface fullness", treatment: "Cheek Filler", link: "/face/cheek-filler-malaysia/" },
+    { concern: "Tired-looking eyes, dark shadows under the eyes", treatment: "Tear Trough or Under Eye Filler", link: "/face/tear-trough-filler-malaysia/" },
+    { concern: "Flat or undefined jawline", treatment: "Jawline Filler or Jaw Botox", link: "/face/jawline-filler-malaysia/" },
+    { concern: "Recessed or weak chin affecting the profile", treatment: "Chin Filler", link: "/face/chin-filler-malaysia/" },
+    { concern: "Flat nose bridge or drooping tip", treatment: "Nose Thread Lift or Nose Filler", link: "/face/nose-thread-lift-malaysia/" },
+    { concern: "Thin or undefined lips", treatment: "Lip Filler", link: "/face/lip-filler-malaysia/" },
+    { concern: "Dull, dehydrated or textured skin", treatment: "Skin Booster (Profhilo, Rejuran, Juvelook)", link: "/face/skin-booster-malaysia/" },
+    { concern: "Nose bump or asymmetry without surgery", treatment: "Nose Filler", link: "/face/nose-filler-malaysia/" },
+    { concern: "Wide jaw from muscle bulk", treatment: "Jaw Slimming Botox", link: "/face/botox-malaysia/" },
+    { concern: "Overall facial volume loss and descent with age", treatment: "Cheek Filler and Dermal Filler", link: "/face/cheek-filler-malaysia/" },
+    { concern: "Want to understand all filler options first", treatment: "Dermal Filler Overview", link: "/face/dermal-filler-malaysia/" },
   ];
 
   const faqData = [
@@ -240,7 +240,7 @@ export default function FaceHub({ locale }: FaceHubProps) {
                 </div>
                 <h3 className="font-georgia text-xl text-brown mb-2 px-6">{treatment.name}</h3>
                 <p className="text-taupe font-inter text-sm mb-4 px-6">{treatment.description}</p>
-                <Link href={`/face/${treatment.slug}`}>
+                <Link href={`/face/${treatment.slug}/`}>
                   <button className="inline-flex items-center gap-2 text-wine font-inter font-semibold text-sm hover:gap-3 transition-all px-6">
                     View Treatment Details
                     <ArrowRight className="w-4 h-4" />
@@ -282,9 +282,8 @@ export default function FaceHub({ locale }: FaceHubProps) {
                     <td className="p-4 text-brown font-inter font-medium">{item.treatment}</td>
                     <td className="p-4">
                       <Link href={item.link}>
-                        <button className="inline-flex items-center gap-1 text-wine font-inter text-sm hover:gap-2 transition-all">
+                        <button className="text-wine font-inter text-sm hover:font-bold transition-all">
                           View Details
-                          <ArrowRight className="w-3 h-3" />
                         </button>
                       </Link>
                     </td>

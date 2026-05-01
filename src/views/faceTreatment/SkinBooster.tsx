@@ -52,7 +52,30 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
     { concern: "Ageing skin with collagen loss", bestBooster: "Juvelook or combination", why: "PDLLA triggers fibroblast activity to produce new collagen, improving firmness and density in skin that has lost structural integrity" },
     { concern: "All-round rejuvenation", bestBooster: "Profhilo + Rejuran combo", why: "Addresses hydration, elasticity and repair simultaneously. Popular protocol for patients wanting comprehensive skin quality improvement" },
   ];
+    const skinConcernsLinks: Record<string, string> = {
+      "Profhilo": "/face/profhilo-malaysia/",
+      "Rejuran Healer": "/face/rejuran-malaysia/",
+      "Plinest": "/face/plinest-malaysia/",
+    };
 
+    interface LinkedTextProps {
+      text: string;
+      link?: string;
+    }
+
+    const LinkedText: React.FC<LinkedTextProps> = ({ text, link }) => {
+      if (!link) return <>{text}</>;
+      return (
+        <a 
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-bold hover:underline text-wine"
+        >
+          {text}
+        </a>
+      );
+    };
   const productComparison = [
     { product: "Profhilo", active: "Ultra-high HA", benefit: "Deep hydration and bio-remodelling", sessions: "2 sessions", longevity: "6 months", bestAge: "30 to 55+" },
     { product: "Rejuran", active: "Salmon DNA PN", benefit: "Repair, texture, acne scars", sessions: "3 to 4 sessions", longevity: "6 to 9 months", bestAge: "25 to 50" },
@@ -268,7 +291,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Free Skin Assessment
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -333,7 +356,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Book a Consultation
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -357,7 +380,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
               </h2>
               <p className="text-brown font-inter">
                 A skin booster is an injectable treatment that delivers active ingredients into the mid to deep dermis using very fine needles. 
-                Unlike dermal filler, which adds volume and structure to specific areas, skin boosters are distributed across the full treatment area.
+                Unlike <Link  href='/face/dermal-filler-malaysia/' className='font-bold text-wine italic'>dermal filler </Link>, which adds volume and structure to specific areas, skin boosters are distributed across the full treatment area.
               </p>
               <p className="text-brown font-inter">
                 The key distinction is that skin boosters target skin quality while fillers target facial structure. 
@@ -365,9 +388,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
               </p>
               <div className="bg-cream p-4 rounded-xl border-l-4 border-wine">
                 <p className="text-brown font-inter text-sm">
-                  According to the International Society of Aesthetic Plastic Surgery 2024 Global Statistics Report, 
-                  injectable skin quality treatments including skin boosters saw a 41% increase in Southeast Asia, 
-                  the highest growth rate of any non-surgical aesthetic category in the region.
+                  According to the <a href="https://www.isaps.org/medical-professionals/isaps-global-statistics/" rel="nofollow" target="_blank" className="text-brown hover:underline font-bold">International Society of Aesthetic Plastic Surgery 2024 Global Statistics Report</a>, non‑surgical injectable skin quality treatments including skin boosters showed strong growth in Southeast Asia. Global aesthetic market analyses also project that the skin boosters sector (injectable treatments designed to improve hydration, elasticity, and skin quality) is expanding rapidly worldwide and across the Asia‑Pacific region, with industry forecasts highlighting double‑digit market growth and increasing adoption of these minimally invasive treatments. 
                 </p>
                 <p className="text-taupe text-xs mt-1">[ISAPS Global Statistics Report 2024]</p>
               </div>
@@ -381,7 +402,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
                   className="object-cover"
                 />
               </div>
-              <Link href="/contact-us" className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+              <Link href="/contact-us/" className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all">
                 Get the Right Booster 
                 <ArrowRight className="w-4 h-4" />
               </Link>
@@ -408,26 +429,12 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
                 ]}
                 data={skinConcerns.slice(0, 6).map((item) => ({
                   concern: item.concern,
-                  bestBooster: item.bestBooster,
-                  why: item.why,
-                }))}
-                title="Skin Booster Selector"
-                subtitle="Match your skin concern to the right treatment"
-                variant="detailed"
-                fadeInUp={fadeInUp}
-                className="py-20 px-4"
-              />
-          
-              {/* Skin Booster Selector Table - Complete (All Skin Concerns) */}
-              <TableForPages
-                columns={[
-                  { key: "concern", header: "Skin Concern", className: "font-semibold" },
-                  { key: "bestBooster", header: "Best Booster" },
-                  { key: "why", header: "Why It Works" },
-                ]}
-                data={skinConcerns.map((item) => ({
-                  concern: item.concern,
-                  bestBooster: item.bestBooster,
+                  bestBooster: (
+                    <LinkedText 
+                      text={item.bestBooster}
+                      link={skinConcernsLinks[item.bestBooster]}
+                    />
+                  ),
                   why: item.why,
                 }))}
                 title="Skin Booster Selector"
@@ -438,7 +445,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
               />
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Get Your Personalised Booster quote
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -481,7 +488,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
         />
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Ask About Products
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -527,7 +534,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Get a Protocol Recommendation 
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -565,12 +572,10 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
               />
               
               {/* Footnote */}
-              <motion.p 
-                variants={fadeInUp}
-                className="text-center text-taupe font-inter text-sm italic mt-4"
-              >
-                * Most treatments require multiple sessions depending on skin condition and goals. Final pricing confirmed during consultation.
-              </motion.p>
+              <p className="text-center max-w-4xl mt-4">
+                All pricing at Nexus Clinic KL is confirmed at consultation before any commitment is made. You receive a clear treatment plan and cost breakdown to take home before deciding.
+                  Patients looking for a complete anti-aging plan often combine skin booster treatment with other methods to improve skin elasticity and hydration. <Link  href='/face/botox-malaysia/' className='font-bold text-wine italic'>Botox in Malaysia </Link> for muscle relaxation alongside skin quality improvement at Nexus Clinic KL.
+              </p>
             </div>
           </section>
           
@@ -590,10 +595,12 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
                 <span>Number of sessions: Booking an initial protocol together is more cost-efficient</span>
               </li>
             </ul>
+            <p className="text-center mt-4">Patients wanting to enhance their skin booster results with targeted treatment for acne scars often explore 
+             <Link  href='/skin/acne-scar-treatment-malaysia/' className='font-bold text-wine italic'> acne scar treatment Malaysia </Link> at Nexus Clinic KL.</p>
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Get Your Personalised Skin Booster Price
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -690,7 +697,7 @@ export default function SkinBooster({ locale }: SkinBoosterProps) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Book Your Free Consultation Now

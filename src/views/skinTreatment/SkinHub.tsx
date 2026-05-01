@@ -4,49 +4,10 @@ import {
   Sparkles,
   Award,
   MapPin,
-  Calendar,
   CheckCircle,
-  Syringe,
   Clock,
-  Heart,
   Shield,
   ArrowRight,
-  AlertCircle,
-  Activity,
-  Zap,
-  Eye,
-  AlertTriangle,
-  Droplet,
-  Scissors,
-  TrendingUp,
-  Sun,
-  Thermometer,
-  Flower2,
-  Layers,
-  Target,
-  ChevronRight,
-  XCircle,
-  Phone,
-  MessageCircle,
-  Users,
-  FileText,
-  Flame,
-  Snowflake,
-  HelpCircle,
-  Camera,
-  Moon,
-  Lightbulb,
-  Smile,
-  Frown,
-  EyeOff,
-  Gem,
-  Feather,
-  Wind,
-  Bug,
-  Droplets,
-  ScanFace,
-  Ban,
-  Sparkle,
 } from "lucide-react";
 import {
   staggerContainer,
@@ -158,21 +119,21 @@ export default function SkinHub({ locale }: SkinHubProps) {
     ];
 
   const concernMapping = [
-    { concern: "Active acne and ongoing breakouts", treatment: "Acne Treatment", link: "/skin/acne-treatment-malaysia" },
-    { concern: "Indented acne scars or rough texture", treatment: "Acne Scar Treatment", link: "/skin/acne-scar-treatment-malaysia" },
-    { concern: "Uneven skin tone and dark marks", treatment: "Pigmentation Treatment or Pico Laser", link: "/skin/pigmentation-treatment-malaysia" },
-    { concern: "Hormonal or stubborn facial pigmentation", treatment: "Melasma Treatment", link: "/skin/melasma-treatment-malaysia" },
-    { concern: "A raised or visible mole you want removed", treatment: "Mole Removal", link: "/skin/mole-removal-malaysia" },
-    { concern: "Dull, congested, dehydrated skin", treatment: "Hydrafacial", link: "/skin/hydrafacial-malaysia" },
-    { concern: "Dark eye circles and tired looking under eyes", treatment: "Dark Eye Circle Treatment", link: "/skin/dark-eye-circle-treatment-malaysia" },
-    { concern: "Redness, flushing, or sensitivity", treatment: "Rosacea Treatment", link: "/skin/rosacea-treatment-malaysia" },
-    { concern: "Dry, itchy, irritated patches", treatment: "Eczema Treatment", link: "/skin/eczema-treatment-malaysia" },
-    { concern: "Raised scar tissue that keeps growing", treatment: "Keloid Treatment", link: "/skin/keloid-treatment-malaysia" },
-    { concern: "Stretch marks after weight change or pregnancy", treatment: "Stretch Mark Removal", link: "/skin/stretch-mark-removal-malaysia" },
-    { concern: "Unwanted facial or body hair", treatment: "Laser Hair Removal", link: "/skin/laser-hair-removal-malaysia" },
-    { concern: "Tattoo you want faded or removed", treatment: "Tattoo Removal or Pico Laser", link: "/skin/tattoo-removal-malaysia" },
-    { concern: "Looking for overall brighter and clearer skin", treatment: "Skin Whitening Treatment or Hydrafacial", link: "/skin/skin-whitening-treatment-malaysia" },
-    { concern: "Not sure what your skin actually needs", treatment: "Doctor Led Skin Assessment", link: "/contact-us" },
+    { concern: "Active acne and ongoing breakouts", treatment: "Acne Treatment", link: "/skin/acne-treatment-malaysia/" },
+    { concern: "Indented acne scars or rough texture", treatment: "Acne Scar Treatment", link: "/skin/acne-scar-treatment-malaysia/" },
+    { concern: "Uneven skin tone and dark marks", treatment: "Pigmentation Treatment or Pico Laser", link: "/skin/pigmentation-treatment-malaysia/" },
+    { concern: "Hormonal or stubborn facial pigmentation", treatment: "Melasma Treatment", link: "/skin/melasma-treatment-malaysia/" },
+    { concern: "A raised or visible mole you want removed", treatment: "Mole Removal", link: "/skin/mole-removal-malaysia/" },
+    { concern: "Dull, congested, dehydrated skin", treatment: "Hydrafacial", link: "/skin/hydrafacial-malaysia/" },
+    { concern: "Dark eye circles and tired looking under eyes", treatment: "Dark Eye Circle Treatment", link: "/skin/dark-eye-circle-treatment-malaysia/" },
+    { concern: "Redness, flushing, or sensitivity", treatment: "Rosacea Treatment", link: "/skin/rosacea-treatment-malaysia/" },
+    { concern: "Dry, itchy, irritated patches", treatment: "Eczema Treatment", link: "/skin/eczema-treatment-malaysia/" },
+    { concern: "Raised scar tissue that keeps growing", treatment: "Keloid Treatment", link: "/skin/keloid-treatment-malaysia/" },
+    { concern: "Stretch marks after weight change or pregnancy", treatment: "Stretch Mark Removal", link: "/skin/stretch-mark-removal-malaysia/" },
+    { concern: "Unwanted facial or body hair", treatment: "Laser Hair Removal", link: "/skin/laser-hair-removal-malaysia/" },
+    { concern: "Tattoo you want faded or removed", treatment: "Tattoo Removal or Pico Laser", link: "/skin/tattoo-removal-malaysia/" },
+    { concern: "Looking for overall brighter and clearer skin", treatment: "Skin Whitening Treatment or Hydrafacial", link: "/skin/skin-whitening-treatment-malaysia/" },
+    { concern: "Not sure what your skin actually needs", treatment: "Doctor Led Skin Assessment", link: "/contact-us/" },
   ];
 
   const faqData = [
@@ -369,7 +330,7 @@ export default function SkinHub({ locale }: SkinHubProps) {
                 </div>
                 <h3 className="font-georgia text-xl text-brown mb-2 px-6">{treatment.name}</h3>
                 <p className="text-taupe font-inter text-sm mb-4 px-6">{treatment.description}</p>
-                <Link href={`/skin/${treatment.slug}`}>
+                <Link href={`/skin/${treatment.slug}/`}>
                   <button className="inline-flex items-center gap-2 text-wine font-inter font-semibold text-sm hover:gap-3 transition-all px-6">
                     View Treatment Details
                     <ArrowRight className="w-4 h-4" />
@@ -411,9 +372,8 @@ export default function SkinHub({ locale }: SkinHubProps) {
                     <td className="p-4 text-brown font-inter font-medium">{item.treatment}</td>
                     <td className="p-4">
                       <Link href={item.link}>
-                        <button className="inline-flex items-center gap-1 text-wine font-inter text-sm hover:gap-2 transition-all">
+                        <button className="text-wine font-inter text-sm hover:font-bold transition-all">
                           View Details
-                          <ArrowRight className="w-3 h-3" />
                         </button>
                       </Link>
                     </td>

@@ -26,7 +26,7 @@ export function BlogCard({ post, index }: BlogCardProps) {
         borderColor: "rgba(172,153,144,0.2)",
       }}
     >
-      <Link href={`/blogs/${slug}`}
+      <Link href={`/blogs/${slug}/`}
           className="flex flex-col h-full">
         {/* Rest of your component remains the same */}
         <div className="relative overflow-hidden h-48">

@@ -5,31 +5,17 @@ import Whatsapp from "@/src/components/Whatsapp";
 import {
   ChevronRight,
   Shield,
-  Heart,
   Activity,
   AlertCircle,
-  CheckCircle2,
-  XCircle,
-  MapPin,
   Sparkles,
-  Brain,
-  Bone,
-  Layers,
-  Sun,
-  Award,
   Droplets,
-  MessageCircle,
   Calendar,
-  Star,
-  Clock,
 } from "lucide-react";
-
 import {
   staggerContainer,
   fadeInLeft,
   fadeInRight,
   fadeInUp,
-  scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
 import { useTranslation } from "@/src/i18n/client";
@@ -82,8 +68,8 @@ const faqData = [
   },
 ];
 
-const MasseterBotoxPage = ({ locale = fallbackLng }: { locale?: string }) => {
-  const { t } = useTranslation(locale, "face/masseterBotox");
+const BotoxMalaysia = ({ locale = fallbackLng }: { locale?: string }) => {
+  const { t } = useTranslation(locale, "face/botoxMalaysia");
 
   
   return (
@@ -133,12 +119,12 @@ const MasseterBotoxPage = ({ locale = fallbackLng }: { locale?: string }) => {
             <p className="text-lg text-brown/80 leading-relaxed mb-4">
               Botox only treats dynamic wrinkles, meaning lines caused by muscle movement. Frown lines, forehead creases, crow's feet, and bunny lines on the nose all form because the same muscles contract in the same way thousands of times per day for years. Botox interrupts that cycle. Static wrinkles, meaning lines that are visible at rest due to collagen loss and skin thinning, require a different approach.
             </p>
-            <p className="text-sm text-taupe italic mt-4">
-              According to the International Society of Aesthetic Plastic Surgery 2024 Global Statistics Report, botulinum toxin injections ranked as the single most performed non-surgical cosmetic procedure worldwide for the seventh consecutive year, with Southeast Asia recording a 29% year-on-year growth in procedure volume among patients aged 25 to 45.
-            </p>
+              <p className="text-taupe text-xs">
+                According to the <Link href='https://www.isaps.org/medical-professionals/isaps-global-statistics/' rel='nofollow' target='_blank' className='text-taupe hover:underline font-bold'>International Society of Aesthetic Plastic Surgery 2024 Global Statistics Report</Link>, botulinum toxin injections ranked as the single most performed non-surgical cosmetic procedure worldwide for the seventh consecutive year, with Southeast Asia recording a 29% year-on-year growth in procedure volume among patients aged 25 to 45.
+              </p>
             <div className="flex justify-center mt-6">
               <motion.a
-                href="/contact-us"
+                href="/contact-us/"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-wine hover:bg-wine/90 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md flex items-center gap-2"
@@ -199,11 +185,13 @@ const MasseterBotoxPage = ({ locale = fallbackLng }: { locale?: string }) => {
 
           <motion.p variants={fadeInUp} className="text-brown/80 mt-6">
             At Nexus Clinic KL, the doctor identifies which wrinkle type you have at consultation before recommending any treatment. Patients who book expecting Botox to fix volume-related concerns leave with a clearer understanding of which treatment actually addresses their concern and a plan that achieves the result they came in for.
+ 
+            Patients with static facial lines or volume-related concerns alongside their dynamic wrinkles often benefit from combining Botox with <Link  href='/face/dermal-filler-malaysia/' className='font-bold text-wine italic'>dermal filler treatment</Link> at Nexus Clinic KL.
           </motion.p>
 
           <div className="flex justify-center mt-6">
             <motion.a
-                href="/contact-us"
+                href="/contact-us/"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-wine hover:bg-wine/90 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md flex items-center gap-2"
@@ -275,7 +263,7 @@ const MasseterBotoxPage = ({ locale = fallbackLng }: { locale?: string }) => {
 
           <div className="flex justify-center mt-6">
             <motion.a
-              href="/contact-us"
+              href="/contact-us/"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-wine hover:bg-wine/90 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md flex items-center gap-2"
@@ -309,15 +297,20 @@ const MasseterBotoxPage = ({ locale = fallbackLng }: { locale?: string }) => {
             <div><h3 className="font-georgia text-xl text-wine mb-2">Brow Lift</h3><p className="text-brown/80">Strategic Botox placement depresses the muscles that pull the brows downward, allowing the brow elevator muscle to lift unopposed. Creates a subtle arch and opens the eye area without surgery. Typically 2 to 4 units per side.</p></div>
             <div><h3 className="font-georgia text-xl text-wine mb-2">Bunny Lines</h3><p className="text-brown/80">Diagonal lines across the upper nose bridge caused by the nasalis muscle scrunching. Often appear or worsen after forehead Botox when the nasalis compensates. Treated with small doses on either side of the nose.</p></div>
             <div><h3 className="font-georgia text-xl text-wine mb-2">Gummy Smile</h3><p className="text-brown/80">A gummy smile occurs when the upper lip elevator muscles pull the lip too far upward on smiling, exposing more gum than desired. A very small dose of Botox into the elevator muscles reduces the lift and creates a more balanced smile with immediate effect.</p></div>
-            <div><h3 className="font-georgia text-xl text-wine mb-2">Jaw Slimming and Masseter Reduction</h3><p className="text-brown/80">Botox into the masseter muscles reduces their bulk over 4 to 6 weeks, slimming a wide or square lower face caused by muscle overdevelopment. Popular among women seeking a V-line result and men wanting to soften a heavy lower face. Results last 4 to 6 months.</p></div>
+            <div><h3 className="font-georgia text-xl text-wine mb-2">Jaw Slimming and Masseter Reduction</h3>
+            <p className="text-brown/80">
+             Botox into the masseter muscles reduces their bulk over 4 to 6 weeks, slimming a wide or square lower face caused by muscle overdevelopment. Popular among women seeking a V-line result and men wanting to soften a heavy lower face. Results last 4 to 6 months. Frequently combined with chin filler for complete lower face reshaping.Patients 
+              combining jaw Botox with lower face contouring often explore <Link  href='/face/chin-filler-malaysia/' className='font-bold text-wine italic'>chin filler in Malaysia </Link> to complete the V-shape result at Nexus Clinic KL.</p></div>
             <div><h3 className="font-georgia text-xl text-wine mb-2">Neck Bands and Platysmal Bands</h3><p className="text-brown/80">Vertical neck bands caused by the platysma muscle tightening with age. Botox relaxes the muscle, softening the bands and improving the neck-jaw profile. Sometimes called a Nefertiti lift when combined with jawline placement.</p></div>
             <div><h3 className="font-georgia text-xl text-wine mb-2">Hyperhidrosis</h3><p className="text-brown/80">Botox is highly effective for excessive sweating in the underarms, palms and feet. It blocks the nerve signals that activate sweat glands in the treated area. Results last 6 to 12 months, longer than any other Botox indication.</p></div>
             <div><h3 className="font-georgia text-xl text-wine mb-2">Lip Flip</h3><p className="text-brown/80">A small dose of Botox placed above the upper lip relaxes the orbicularis oris muscle, causing the upper lip to curl slightly outward. Creates the appearance of a fuller upper lip without adding filler volume.</p></div>
+
+            <p>Patients considering a lip flip alongside lip volume often explore <Link href='/face/lip-filler-malaysia/' className='font-bold text-wine italic'>lip filler in Kuala Lumpur </Link> for a combined result at Nexus Clinic KL.</p>
           </div>
 
           <div className="flex justify-center mt-8">
             <motion.a
-              href="/contact-us"
+              href="/contact-us/"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-wine hover:bg-wine/90 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md flex items-center gap-2"
@@ -364,7 +357,7 @@ const MasseterBotoxPage = ({ locale = fallbackLng }: { locale?: string }) => {
 
           <div className="flex justify-center mt-6">
             <motion.a
-              href="/contact-us"
+              href="/contact-us/"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-wine hover:bg-wine/90 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md flex items-center gap-2"
@@ -434,7 +427,7 @@ const MasseterBotoxPage = ({ locale = fallbackLng }: { locale?: string }) => {
 
           <div className="flex flex-wrap gap-4 mt-8">
             <motion.a
-              href="/contact-us"
+              href="/contact-us/"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-wine hover:bg-wine/90 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md flex items-center gap-2"
@@ -489,7 +482,7 @@ const MasseterBotoxPage = ({ locale = fallbackLng }: { locale?: string }) => {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="/contact-us"
+              href="/contact-us/"
               className="bg-wine hover:bg-wine/90 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md flex items-center gap-2"
             >
               <Calendar className="w-4 h-4" />
@@ -533,6 +526,8 @@ const MasseterBotoxPage = ({ locale = fallbackLng }: { locale?: string }) => {
                 <li>• Avoid saunas, steam rooms for 48 hours</li>
                 <li>• Assess your full result at 14 days</li>
               </ul>
+              <p>Patients who combine Botox with skin quality treatments often explore 
+                <Link href='/face/skin-booster-malaysia/' className='font-bold text-wine italic'> skin booster in Malaysia </Link> at Nexus Clinic KL for a more complete rejuvenation outcome.</p>
             </div>
           </div>
         </div>
@@ -566,7 +561,7 @@ const MasseterBotoxPage = ({ locale = fallbackLng }: { locale?: string }) => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-white text-wine hover:bg-white/90 px-8 py-3 rounded-full font-medium shadow-lg flex items-center gap-2"
-              href="/contact-us"
+              href="/contact-us/"
             >
               <Calendar className="w-4 h-4" />
               Free Consultation
@@ -581,4 +576,4 @@ const MasseterBotoxPage = ({ locale = fallbackLng }: { locale?: string }) => {
   );
 };
 
-export default MasseterBotoxPage;
+export default BotoxMalaysia;

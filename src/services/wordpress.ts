@@ -42,7 +42,9 @@ class WordPressService {
     }
     
     const { data } = await this.fetchWithEmbedded<WordPressPost[]>(endpoint);
-    // console.log(`Fetched ${data.length} posts from WordPress`);
+    if (!Array.isArray(data) || data.length === 0) {
+      console.warn(`[wordpress] /posts returned 0 items. endpoint=${endpoint}`);
+    }
     return data;
   }
 

@@ -4,36 +4,11 @@ import {
   Sparkles,
   Award,
   MapPin,
-  Calendar,
   CheckCircle,
   Clock,
-  Heart,
   Shield,
   ArrowRight,
-  Zap,
-  Droplet,
-  Target,
-  ChevronRight,
-  Phone,
-  Users,
-  Flame,
-  HelpCircle,
-  EyeOff,
-  Gem,
-  Feather,
-  Wind,
-  Activity,
-  Syringe,
-  Pill,
-  Brain,
-  Droplets,
-  Scan,
-  Weight,
-  Thermometer,
-  Snowflake,
-  AlertCircle,
-  TrendingUp,
-  BarChart3,
+
 } from "lucide-react";
 import {
   staggerContainer,
@@ -120,15 +95,15 @@ export default function WeightLossHub({ locale }: WeightLossHubProps) {
       },
     ];
   const concernMapping = [
-    { concern: "Need medical help to reduce appetite and control cravings", treatment: "Ozempic, Wegovy, Mounjaro or GLP 1 Programme", link: "/weight-loss/ozempic-malaysia" },
-    { concern: "Need a structured clinical plan with regular follow up", treatment: "Doctor Monitored Weight Loss", link: "/weight-loss/doctor-monitored-weight-loss-malaysia" },
-    { concern: "Need support for short term doctor supervised weight loss", treatment: "Duromine Weight Loss", link: "/weight-loss/duromine-malaysia" },
-    { concern: "Want to target stubborn fat in specific body areas", treatment: "Fat Freezing or CoolSculpting", link: "/weight-loss/fat-freezing-malaysia" },
-    { concern: "Want to compare injectable medication options", treatment: "Ozempic, Wegovy, Mounjaro or Zepbound", link: "/weight-loss/ozempic-malaysia" },
-    { concern: "Want body contouring without surgery", treatment: "Fat Freezing or CoolSculpting", link: "/weight-loss/coolsculpting-malaysia" },
-    { concern: "Need a broader programme instead of one treatment", treatment: "GLP 1 Programme or Doctor Monitored Weight Loss", link: "/weight-loss/glp-1-programme-malaysia" },
-    { concern: "Looking for supportive wellness add ons", treatment: "IV Drip Weight Loss", link: "/weight-loss/iv-drip-malaysia" },
-    { concern: "Want to understand all options before deciding", treatment: "Weight Loss Overview Consultation", link: "/consultation" },
+    { concern: "Need medical help to reduce appetite and control cravings", treatment: "Ozempic, Wegovy, Mounjaro or GLP 1 Programme", link: "/weight-loss/ozempic-malaysia/" },
+    { concern: "Need a structured clinical plan with regular follow up", treatment: "Doctor Monitored Weight Loss", link: "/weight-loss/doctor-monitored-weight-loss-malaysia/" },
+    { concern: "Need support for short term doctor supervised weight loss", treatment: "Duromine Weight Loss", link: "/weight-loss/duromine-malaysia/" },
+    { concern: "Want to target stubborn fat in specific body areas", treatment: "Fat Freezing or CoolSculpting", link: "/weight-loss/fat-freezing-malaysia/" },
+    { concern: "Want to compare injectable medication options", treatment: "Ozempic, Wegovy, Mounjaro or Zepbound", link: "/weight-loss/ozempic-malaysia/" },
+    { concern: "Want body contouring without surgery", treatment: "Fat Freezing or CoolSculpting", link: "/weight-loss/coolsculpting-malaysia/" },
+    { concern: "Need a broader programme instead of one treatment", treatment: "GLP 1 Programme or Doctor Monitored Weight Loss", link: "/weight-loss/glp-1-programme-malaysia/" },
+    { concern: "Looking for supportive wellness add ons", treatment: "IV Drip Weight Loss", link: "/weight-loss/iv-drip-malaysia/" },
+    { concern: "Want to understand all options before deciding", treatment: "Weight Loss Overview Consultation", link: "/consultation/" },
   ];
 
   const faqData = [
@@ -189,7 +164,7 @@ export default function WeightLossHub({ locale }: WeightLossHubProps) {
             variants={fadeInUp} 
             className="flex flex-col sm:flex-row gap-4 justify-center mt-8"
           >
-            <Link href="/contact-us">
+            <Link href="/contact-us/">
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -318,7 +293,7 @@ export default function WeightLossHub({ locale }: WeightLossHubProps) {
                   </div>
                   <h3 className="font-georgia text-xl text-brown mb-2 px-6">{treatment.name}</h3>
                   <p className="text-taupe font-inter text-sm mb-4 px-6">{treatment.description}</p>
-                  <Link href={`/weight-loss/${treatment.slug}`}>
+                  <Link href={`/weight-loss/${treatment.slug}/`}>
                     <button className="inline-flex items-center gap-2 text-wine font-inter font-semibold text-sm hover:gap-3 transition-all px-6">
                       View Treatment Details
                       <ArrowRight className="w-4 h-4" />
@@ -360,9 +335,8 @@ export default function WeightLossHub({ locale }: WeightLossHubProps) {
                     <td className="p-4 text-brown font-inter font-medium">{item.treatment}</td>
                     <td className="p-4">
                       <Link href={item.link}>
-                        <button className="inline-flex items-center gap-1 text-wine font-inter text-sm hover:gap-2 transition-all">
+                        <button className="text-wine font-inter text-sm hover:font-bold transition-all">
                           View Details
-                          <ArrowRight className="w-3 h-3" />
                         </button>
                       </Link>
                     </td>

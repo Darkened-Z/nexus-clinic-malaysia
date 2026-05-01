@@ -29,30 +29,30 @@ import {
   scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
-import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
+// import SectionBeforeAfter from "@/src/components/BeforeAfterCustomize";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 const IVDripLanding = ({ locale = fallbackLng }: { locale?: string }) => {
   const { t } = useTranslation(locale, "weightLoss/ivDrip");
 
-  const transformations = [
-    {
-      id: 1,
-      before: "/images/B&A-w/B&A-ivdrip1.webp",
-      after: "/images/B&A-w/B&A-ivdrip1.webp",
-    },
-    {
-      id: 2,
-      before: "/images/B&A-w/B&A-ivdrip2.webp",
-      after: "/images/B&A-w/B&A-ivdrip2.webp",
-    },
-    {
-      id: 3,
-      before: "/images/B&A-w/B&A-ivdrip3.webp",
-      after: "/images/B&A-w/B&A-ivdrip3.webp",
-    },
-  ];
+  // const transformations = [
+  //   {
+  //     id: 1,
+  //     before: "/images/B&A-w/B&A-ivdrip1.webp",
+  //     after: "/images/B&A-w/B&A-ivdrip1.webp",
+  //   },
+  //   {
+  //     id: 2,
+  //     before: "/images/B&A-w/B&A-ivdrip2.webp",
+  //     after: "/images/B&A-w/B&A-ivdrip2.webp",
+  //   },
+  //   {
+  //     id: 3,
+  //     before: "/images/B&A-w/B&A-ivdrip3.webp",
+  //     after: "/images/B&A-w/B&A-ivdrip3.webp",
+  //   },
+  // ];
     const faqData = [
       {
         q: "Is IV drip therapy safe in a medical clinic?",
@@ -199,7 +199,7 @@ const IVDripLanding = ({ locale = fallbackLng }: { locale?: string }) => {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="text-wine font-inter text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all"
               >
                 Explore all drip options
@@ -279,12 +279,6 @@ const IVDripLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             </motion.div>
 
             <motion.div variants={fadeInRight} className="space-y-8">
-              <img
-                src="/images/main/iv-drip.webp"
-                alt="IV drip therapy at Nexus Clinic Kuala Lumpur"
-                className="rounded-2xl shadow-2xl w-full object-cover"
-              />
-
               <div className="bg-cream p-8 rounded-2xl">
                 <h3 className="font-georgia text-2xl text-brown mb-4">
                   What patients usually want from IV drip therapy
@@ -665,7 +659,7 @@ const IVDripLanding = ({ locale = fallbackLng }: { locale?: string }) => {
         </div>
       </motion.section>
 
-      <SectionBeforeAfter transformations={transformations} />
+      {/* <SectionBeforeAfter transformations={transformations} /> */}
 
       {/* Side Effects / Safety Section */}
       <motion.section
@@ -1088,7 +1082,7 @@ const IVDripLanding = ({ locale = fallbackLng }: { locale?: string }) => {
             variants={scaleIn}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="/contact-us"
+            href="/contact-us/"
             className="bg-light text-wine px-12 py-4 rounded-full font-semibold text-lg hover:bg-cream transition-colors shadow-xl"
           >
             Book Free Consultation

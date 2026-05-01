@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import { Star, Quote, ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
 import { getReviews } from "@/src/utils/googleReviews";
-
+import Image from "next/image";
 interface Review {
   author_name: string;
   text: string;
@@ -155,13 +155,7 @@ export default function GoogleReviews() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
+        <div className="text-center mb-12 animate-fade-in-up">
           <span className="inline-flex items-center gap-2 px-4 py-2 bg-wine/10 text-wine rounded-full text-sm font-inter font-medium mb-4">
             <Sparkles className="w-4 h-4" />
             Client Stories
@@ -172,7 +166,7 @@ export default function GoogleReviews() {
           <p className="text-taupe font-inter max-w-2xl mx-auto">
             Real experiences from real people who transformed their lives with us
           </p>
-        </motion.div>
+        </div>
 
         <div className="flex justify-end gap-3 mb-6">
           <button onClick={() => scroll("left")} className="p-2 rounded-full bg-white shadow-md hover:bg-wine transition-all duration-300 group" aria-label="Previous reviews">
@@ -197,13 +191,7 @@ export default function GoogleReviews() {
               const uniqueId = `${review.time}-${index}`;
              
               return (
-                <motion.div
-                  key={uniqueId}
-                  initial={{ opacity: 0, scale: 0.96 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: (index % 6) * 0.04 }}
-                  className="flex-none w-[320px] md:w-[360px] lg:w-[380px]"
-                >
+                <div className="flex-none w-[320px] md:w-[360px] lg:w-[380px] animate-scale-in" style={{ animationDelay: `${(index % 6) * 0.04}s` }}>
                   <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-taupe/10 h-full flex flex-col">
                     
                     {/* Top row */}
@@ -242,21 +230,21 @@ export default function GoogleReviews() {
 
                     {/* Author */}
                     <div className="flex items-center gap-3 pt-4 border-t border-taupe/10">
-                      <div className="relative">
-                        <img
+                      {/* <div className="relative">
+                        <Image
                           src={review.profile_photo_url || ""}
                           alt={review.author_name}
                           loading="lazy"
                           referrerPolicy="no-referrer"
-                          className="w-11 h-11 rounded-full object-cover border border-taupe/10"
+                          width={44}
+                          height={44}
+                          className="h-full w-full rounded-full object-cover border border-taupe/10"
                           onError={(e) => {
                             e.currentTarget.style.display = "none";
                             const fallback = e.currentTarget.nextElementSibling as HTMLElement;
                             if (fallback) fallback.style.display = "flex";
                           }}
                         />
-
-                        {/* fallback initials */}
                         <div
                           className="hidden w-11 h-11 rounded-full bg-gradient-to-br from-wine to-rose items-center justify-center absolute inset-0"
                         >
@@ -268,7 +256,7 @@ export default function GoogleReviews() {
                               .join("")}
                           </span>
                         </div>
-                      </div>
+                      </div> */}
 
                       <div className="min-w-0">
                         <p className="font-georgia font-semibold text-brown truncate">
@@ -280,7 +268,7 @@ export default function GoogleReviews() {
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               );
             })}
         </div>

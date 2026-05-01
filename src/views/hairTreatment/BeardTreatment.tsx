@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -10,21 +9,8 @@ import {
   Heart,
   Shield,
   ArrowRight,
-  AlertCircle,
-  Activity,
-  Zap,
-  Eye,
-  AlertTriangle,
-  Scissors,
+   Activity,
   TrendingUp,
-  DollarSign,
-  Layers,
-  Users,
-  Target,
-  Droplet,
-  Leaf,
-  Flame,
-  Wind,
 } from "lucide-react";
 import {
   staggerContainer,
@@ -290,7 +276,7 @@ export default function BeardLanding({ locale }: BeardTransplantProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Speak to a Transplant Surgeon
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -327,6 +313,18 @@ export default function BeardLanding({ locale }: BeardTransplantProps) {
           fadeInUp={fadeInUp}
           className="py-20 px-4"
         />
+        <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+            Epstein JS. Hair Transplantation to Restore Eyebrows, Eyelashes, and the Beard. 
+            <a 
+              href="https://pubmed.ncbi.nlm.nih.gov/15135136/" 
+              target="_blank" 
+              rel="nofollow" 
+              className="text-wine font-bold italic"
+            >
+              Dermatologic Surgery
+            </a>. 
+            2003;29(11):1112-1120. Documents the clinical adaptation of FUE follicular unit transplantation techniques to facial hair restoration including beard and moustache, establishing the directional implantation protocols required for natural results.
+        </p>
         </motion.div>
       </section>
 
@@ -358,6 +356,16 @@ export default function BeardLanding({ locale }: BeardTransplantProps) {
             fadeInUp={fadeInUp}
             className="py-20 px-4"
           />
+          <p className="text-center text-brown">
+            Patients who are also considering scalp hair restoration in addition to a beard transplant can learn more about our{' '}
+            <a
+              href="/hair/fue-hair-transplant-malaysia/" 
+              className="text-wine font-bold italic"
+            >
+              FUE hair transplant Malaysia programme
+            </a>{' '}
+            and how donor area planning works across combined scalp and facial hair transplant cases.
+          </p>
         </motion.div>
       </section>
 
@@ -585,7 +593,7 @@ export default function BeardLanding({ locale }: BeardTransplantProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-10">
-            <Link href="/contact-us" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
+            <Link href="/contact-us/" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
               Book Your  Consultation
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -659,10 +667,23 @@ export default function BeardLanding({ locale }: BeardTransplantProps) {
           />
 
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
-              Get Your Personalised Beard Transplant Quote
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+              <p className="text-center text-taupe">
+                Beard transplant cost in Malaysia is calculated per graft or per hair depending on the technique used, meaning the total investment reflects the size of the coverage area and the density achieved. All consultations at Nexus Clinic KL are complimentary and a full itemised cost breakdown is provided after the beard design consultation. Patients combining beard transplant with scalp hair restoration may also benefit from{' '}
+                <Link 
+                  href="/hair/hair-transplant-malaysia/" 
+                  className="text-wine font-bold italic"
+                >
+                  hair transplant treatment in Malaysia
+                </Link>{' '}
+                as a comprehensive combined session. Patients wanting to support the surrounding hair health before or after surgery can explore{' '}
+                <Link 
+                  href="/hair/prp-hair-treatment-malaysia/" 
+                  className="text-wine font-bold italic"
+                >
+                  PRP hair treatment Malaysia
+                </Link>{' '}
+                as a complementary regenerative option.
+              </p>
           </motion.div>
         </motion.div>
       </section>
@@ -696,7 +717,7 @@ export default function BeardLanding({ locale }: BeardTransplantProps) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Free Consultation

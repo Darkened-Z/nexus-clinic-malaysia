@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import {
-  Sparkles,
   Award,
   MapPin,
   Calendar,
@@ -12,27 +11,13 @@ import {
   Shield,
   ArrowRight,
   AlertCircle,
-  Activity,
-  Zap,
-  Eye,
-  AlertTriangle,
-  Scissors,
   TrendingUp,
-  DollarSign,
-  Layers,
   Users,
-  Stethoscope,
-  Droplets,
-  FileText,
-  Leaf,
   Phone,
   Mail,
   Pill,
-  Syringe,
   Target,
   Repeat,
-  Flame,
-  Camera,
   HeartPulse,
   Ban,
 } from "lucide-react";
@@ -83,7 +68,6 @@ export default function MinoxidilLanding({ locale }: MinoxidilLandingProps) {
     },
   ];
 
-  // Minoxidil for Men vs Women Table
   const genderTable = [
     {
       factor: "Pattern of Hair Loss Addressed",
@@ -439,11 +423,22 @@ export default function MinoxidilLanding({ locale }: MinoxidilLandingProps) {
             <p className="text-brown font-inter text-sm">
               The scalp sulphotransferase enzyme variability row is the most clinically novel content for Malaysian patients. The reason some patients get excellent hair density improvement while others get minimal response is primarily explained by individual differences in the scalp enzyme that converts topical minoxidil to its active form. At Nexus Clinic KL, this variability is the clinical rationale for switching to oral minoxidil in patients with inadequate topical response.
             </p>
+
+            <p className="text-sm text-taupe text-center mt-4">
+              Olsen EA et al. A randomized clinical trial of 5% topical minoxidil versus 2% topical minoxidil and placebo in the treatment of androgenetic alopecia in men. 
+              <a 
+                href="https://pubmed.ncbi.nlm.nih.gov/12196747/" 
+                target="_blank" 
+                rel="nofollow" 
+                className="text-wine font-bold italic"
+              >
+                Journal of the American Academy of Dermatology
+              </a>. 
+              2002;47(3):377-385. This landmark study established the superior efficacy of 5% topical minoxidil over 2% and placebo, showing a significant increase in hair count and earlier response times in men with pattern hair loss.
+            </p>
           </motion.div>
         </motion.div>
       </section>
-
-      {/* Minoxidil for Men vs Women Table */}
       <section className="py-20 px-4 bg-light">
         <motion.div
           variants={staggerContainer}
@@ -469,6 +464,16 @@ export default function MinoxidilLanding({ locale }: MinoxidilLandingProps) {
               fadeInUp={fadeInUp}
               className="py-20 px-4"
             />
+            <p className="text-center">
+              For patients whose hair loss assessment reveals hormonal causes including testosterone deficiency or thyroid dysfunction, our{' '}
+              <a 
+                href="/regenerative/hormone-test-malaysia/" 
+                className="text-wine font-bold italic"
+              >
+                hormone test Malaysia
+              </a>{' '}
+              provides the comprehensive blood test panel that identifies treatable hormonal drivers of hair loss alongside the minoxidil programme.
+            </p>
         </motion.div>
       </section>
 
@@ -535,6 +540,17 @@ export default function MinoxidilLanding({ locale }: MinoxidilLandingProps) {
               fadeInUp={fadeInUp}
               className="py-20 px-4"
             />
+
+            <p className="text-center text-brown">
+              For patients whose hair loss has a hormonal component including DHT-driven androgenetic alopecia, our{' '}
+              <Link 
+                href="/hair/finasteride-treatment-malaysia/" 
+                className="text-wine font-bold italic"
+              >
+                finasteride treatment Malaysia
+              </Link>{' '}
+              provides the complete finasteride prescribing framework that forms the combination partner to minoxidil for men.
+            </p>
         </motion.div>
       </section>
 
@@ -869,7 +885,7 @@ export default function MinoxidilLanding({ locale }: MinoxidilLandingProps) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Book Your Assessment

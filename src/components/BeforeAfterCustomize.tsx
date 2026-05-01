@@ -9,6 +9,7 @@ import {
   scaleIn,
   floatAnimation,
 } from "../lib/animations";
+import Link from "next/link";
 
 const ImageComparisonSlider = ({
   beforeImage,
@@ -360,15 +361,13 @@ const SectionBeforeAfter = ({
               ? t("beforeAfter.disclaimer")
               : "Results may vary. Individual results depend on various factors."}
           </p>
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            href="/contact-us"
-            className="px-8 py-4 bg-wine text-light rounded-full font-inter font-medium inline-flex items-center gap-2 shadow-lg shadow-wine/30 hover:bg-wine/90 transition-colors"
+          <Link
+            href="/contact-us/"
+            className="transition-transform duration-200 hover:translate-x-1 px-8 py-4 bg-wine text-light rounded-full font-inter font-medium inline-flex items-center gap-2 shadow-lg shadow-wine/30 hover:bg-wine/90 transition-colors"
           >
             <Sparkles className="w-5 h-5" />
             {t ? t("beforeAfter.cta") : "Start Your Transformation"}
-          </motion.a>
+          </Link>
         </motion.div>
       </div>
     </section>

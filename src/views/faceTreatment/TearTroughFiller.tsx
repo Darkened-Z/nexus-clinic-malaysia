@@ -172,7 +172,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
             <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-            href="/contact-us">
+            href="/contact-us/">
               Speak to a Doctor About Your Under-Eye Concern | Free Assessment
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -213,7 +213,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
             <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-            href="/contact-us">
+            href="/contact-us/">
               Get a Proper Under-Eye Diagnosis | Free Assessment
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -243,7 +243,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
                   </div>
                   <div>
                     <p className="font-inter font-semibold text-brown">Higher Melanin Levels</p>
-                    <p className="text-taupe font-inter text-sm">Patients of Malay, Indian and Chinese descent have genetic predisposition to periorbital hyperpigmentation.</p>
+                    <p className="text-taupe font-inter text-sm">Patients of Malay, Indian and Chinese descent in Malaysia frequently have a genetic predisposition to periorbital hyperpigmentation. The under-eye skin produces more melanin in response to UV exposure and even gentle eye rubbing. This brown pigmentation is independent of the structural tear trough and does not respond to filler injections. Patients in Malaysia often have both pigmentation and structural hollowing at the same time, which requires a combined approach.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -252,7 +252,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
                   </div>
                   <div>
                     <p className="font-inter font-semibold text-brown">Allergic Rhinitis & Allergic Shiners</p>
-                    <p className="text-taupe font-inter text-sm">Nasal congestion causes venous congestion around the eyes, darkening the under-eye skin.</p>
+                    <p className="text-taupe font-inter text-sm">Malaysia has a high prevalence of allergic rhinitis among the population. Nasal congestion from allergies causes venous congestion around the eyes, darkening the under-eye skin from dilated blood vessels. This creates what is clinically called allergic shiners, a blue-purple discolouration that is present even in young patients. Filler does not address this vascular component. Managing the underlying allergy and using skin booster treatment to improve skin quality are the appropriate approaches for the vascular element.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -261,7 +261,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
                   </div>
                   <div>
                     <p className="font-inter font-semibold text-brown">Early Midface Volume Loss</p>
-                    <p className="text-taupe font-inter text-sm">Asian patients experience midface volume loss earlier than Western patients, deepening tear troughs.</p>
+                    <p className="text-taupe font-inter text-sm">As discussed in detail on the Nexus Clinic KL cheek filler page, Asian patients experience midface volume loss earlier than Western patients. As the cheek descends, it pulls support away from the lower eyelid and makes the tear trough deepen more rapidly. This is why tear trough hollowing in Malaysian patients often appears in the late twenties rather than the mid-thirties.</p>
                   </div>
                 </div>
               </div>
@@ -270,26 +270,26 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
             <motion.div variants={fadeInRight} className="bg-light p-6 rounded-2xl border border-taupe/20">
               <h3 className="font-georgia text-xl text-brown mb-4">Why Cheek Filler Sometimes Needs to Come First</h3>
               <p className="text-taupe font-inter text-sm mb-4">
-                The tear trough deepens in part because the cheek below it has descended. When the cheek drops, 
-                the lid-cheek junction widens and support for the lower eyelid disappears.
+                  This is one of the most important clinical considerations in under-eye rejuvenation and one that most patients are never told before booking tear trough filler.
               </p>
               <p className="text-taupe font-inter text-sm mb-4">
-                Adding tear trough filler alone fills the hollow but does not address the structural reason the hollow formed. 
-                The result lasts less time, requires more frequent top-ups and is less natural-looking.
+               The tear trough deepens in part because the cheek below it has descended. When the cheek drops, the lid-cheek junction widens, the support for the lower eyelid disappears and the tear trough hollow deepens from below. In these cases, adding tear trough filler alone fills the hollow but does not address the structural reason the hollow formed. The result lasts less time than it should, requires more frequent top-ups and is less natural-looking than it would be with proper midface foundation first.
+               <br/> The American Society of Plastic Surgeons has noted that successful tear trough rejuvenation frequently requires addressing the midface simultaneously to provide a stable structural foundation, since the under-eye area is highly dependent on the support provided by the cheek below it.
               </p>
               <div className="bg-wine/5 p-3 rounded-lg">
                 <p className="text-brown font-inter text-xs">
-                  At Nexus Clinic KL, the doctor assesses the relationship between your cheek position and tear trough depth. 
-                  Patients who need cheek support first are given a staged treatment recommendation.
+                  At Nexus Clinic KL, the doctor assesses the relationship between your cheek position and your tear trough depth at consultation. Patients who need cheek support first are given a staged treatment recommendation, not simply sold tear trough filler regardless of their anatomy.
                 </p>
               </div>
-              <Link className="mt-4 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all" href="/contact-us">
+              <Link className="mt-4 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all" href="/contact-us/">
                 Get the Right Treatment Sequence for Your Eyes
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </motion.div>
           </div>
+        <p className="text-center mt-4 max-w-4xl">Patients with both midface volume loss and tear trough concerns often benefit from addressing<Link  href='/face/cheek-filler-malaysia/' className='font-bold text-wine italic'> cheek filler </Link> first before or alongside tear trough treatment at Nexus Clinic KL.</p>
         </motion.div>
+
       </section>
 
       {/* Tear Trough Demanding Area Section */}
@@ -333,7 +333,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="mt-8 text-center">
-            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all" href="/contact-us">
+            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all" href="/contact-us/">
               Book with a Clinic That Understands Why This Treatment Is Different
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -368,16 +368,15 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-taupe text-sm">
-              According to the International Society of Aesthetic Plastic Surgery 2024 Global Statistics Report, 
-              periorbital and under-eye rejuvenation treatments were the third most searched aesthetic concern among patients aged 25 to 40 in Southeast Asia.
-            </p>
-            <p className="text-taupe text-xs mt-1">[ISAPS Global Statistics Report 2024]</p>
+              <p className="text-taupe text-sm">
+                According to the <a href="https://www.isaps.org/discover/about-isaps/global-statistics/" target="_blank" rel="nofollow" className="text-wine font-bold italic">International Society of Aesthetic Plastic Surgery (ISAPS) 2024 Global Statistics Report</a>, 
+                periorbital and under-eye rejuvenation treatments ranked among the top aesthetic concerns for patients aged 25 to 40 in Southeast Asia.
+              </p>
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
             <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"          
-            href="/contact-us">     
+            href="/contact-us/">     
               Ask Which Product Is Right for Your Under-Eyes
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -417,7 +416,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-10">
-            <Link className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2" href="/contact-us">
+            <Link className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2" href="/contact-us/">
               Book Your Tear Trough Filler Appointment
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -443,14 +442,16 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
             <p className="text-taupe text-sm">
-              A published stepwise assessment framework from the journal Aesthetic Surgery (2024) found that 
-              precise patient categorisation before treatment was the single most important predictor of tear trough filler satisfaction.
+              A published stepwise assessment framework from the journal 
+              <a href="https://journals.sagepub.com/doi/10.1177/1090820X20971345" rel="nofollow" target="_blank" className="text-taupe hover:underline font-bold">
+                Aesthetic Surgery Journal
+              </a> (2024) found that precise patient categorisation before treatment was the single most important predictor of tear trough filler satisfaction.
             </p>
             <p className="text-taupe text-xs mt-1">[Aesthetic Surgery Journal, PMC Stepwise Assessment Framework for Tear Trough, 2024]</p>
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all" href="/contact-us">
+            <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all" href="/contact-us/">
               Get Your Personalised Tear Trough Quote
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -577,7 +578,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
 
           <motion.div variants={fadeInUp} className="mt-8 text-center">
             <p className="text-taupe font-inter text-sm">
-              ✨ Regular maintenance every 12-15 months helps maintain your refreshed under-eye appearance
+              Patients wanting a complete under-eye and midface plan often explore<Link  href='/face/cheek-filler-malaysia/' className='font-bold text-wine italic'> cheek filler </Link> at Nexus Clinic as a companion treatment to tear trough filler.
             </p>
           </motion.div>
         </motion.div>
@@ -663,6 +664,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
                 </div>
               ))}
             </div>
+            <p className="text-center mt-4 max-w-4xl">Patients who want to address pigmentation-related dark circles alongside their structural tear trough treatment can explore <Link href='/face/skin-booster-malaysia/' className='font-bold text-wine italic'>skin booster in Malaysia </Link> for skin quality improvement at Nexus Clinic KL, including treatments for dark eye circles.</p>
           </motion.div>
         </motion.div>
       </section>
@@ -695,7 +697,7 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Book Your Free Under-Eye Consultation Now
@@ -710,10 +712,9 @@ export default function TearTroughFiller({ locale }: TearTroughFillerProps) {
               Limited slots available this week | Located at Wisma UOA II, Jalan Pinang, KLCC — Serving Malaysia since 2001
             </p>
             <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center text-cream/70 text-sm">
-              <a href="/cheek-filler-malaysia
-              " className="hover:text-cream transition-colors">Explore Cheek Filler</a>
+              <a href="/cheek-filler-malaysia/" className="hover:text-cream transition-colors">Explore Cheek Filler</a>
               <span>•</span>
-              <a href="/face/skin-booster-malaysia" className="hover:text-cream transition-colors">Explore Skin Boosters</a>
+              <a href="/face/skin-booster-malaysia/" className="hover:text-cream transition-colors">Explore Skin Boosters</a>
             </div>
           </motion.div>
         </motion.div>

@@ -3,14 +3,12 @@
 import { motion } from "framer-motion";
 import {
   Calendar,
-  Shield,
   Activity,
   Moon,
   Sun,
   Flower2,
   Brain,
   AlertCircle,
-  ChevronRight,
   Phone,
   MapPin,
   Sparkles,
@@ -34,6 +32,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import Link from "next/link";
+import Image from "next/image";
 export default function HormoneTestLanding({
   locale = fallbackLng,
 }: {
@@ -247,10 +246,11 @@ export default function HormoneTestLanding({
                 transition={{ duration: 0.8 }}
                 className="relative"
               >
-                <div className="absolute inset-0 bg-linear-to-tr from-wine/20 to-transparent rounded-3xl" />
-                <img
+                <Image
                   src="/images/regenerative/hormone-test.webp"
                   alt="Blood test tubes in laboratory"
+                  width={400}
+                  height={300}
                   className="rounded-3xl shadow-2xl w-full h-auto object-cover"
                 />
               </motion.div>
@@ -395,6 +395,19 @@ export default function HormoneTestLanding({
                     Below is what each hormone measures, why it is included, and what an abnormal
                     result indicates for your health.
                   </p>
+
+                  <p className="text-sm text-taupe">
+                    Bhasin S et al. Testosterone Therapy in Men with Hypogonadism: An Endocrine Society Clinical Practice Guideline. 
+                    <a 
+                      href="https://pubmed.ncbi.nlm.nih.gov/29562364/" 
+                      target="_blank" 
+                      rel="nofollow" 
+                      className="text-wine font-bold italic"
+                    >
+                      The Journal of Clinical Endocrinology & Metabolism
+                    </a>. 
+                    2018;103(5):1715-1776. This official clinical practice guideline provides the gold standard for diagnosing male hypogonadism and outlines evidence-based protocols for testosterone replacement therapy, monitoring, and safety assessment.
+                  </p>
                 </motion.div>
               </motion.div>
             </div>
@@ -422,6 +435,13 @@ export default function HormoneTestLanding({
                 );
               })}
             </div>
+            <p className="text-center max-w-2xl mx-auto text-taupe mt-8">
+              For women whose hormone screening reveals perimenopause or menopause, our{' '}
+              <Link href="/regenerative/hormone-replacement-therapy-malaysia/" className="text-wine font-bold italic">
+                hormone replacement therapy in Malaysia
+              </Link>{' '}
+              provides the complete HRT assessment and treatment framework at Nexus Clinic KL.
+            </p>
           </div>
         </section>
 
@@ -845,7 +865,7 @@ export default function HormoneTestLanding({
               </motion.p>
 
               <motion.div variants={fadeInUp} className="space-y-4">
-                <Link href="/contact-us" className="bg-white text-wine px-8 py-4 rounded-full font-medium hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                <Link href="/contact-us/" className="bg-white text-wine px-8 py-4 rounded-full font-medium hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                   Call or WhatsApp to Schedule
                 </Link>
 

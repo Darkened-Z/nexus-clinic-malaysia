@@ -288,7 +288,7 @@ export default function PRPLandingPage({ locale }: PRPHairTreatmentProps) {
           </motion.div>
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Speak to a Doctor 
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -305,7 +305,6 @@ export default function PRPLandingPage({ locale }: PRPHairTreatmentProps) {
           viewport={{ once: true }}
           className="container mx-auto max-w-6xl"
         >
-        {/* PRP Quality and Platelet Concentration Table */}
         <TableForPages
           columns={[
             { key: "type", header: "PRP Type", className: "font-semibold" },
@@ -327,9 +326,18 @@ export default function PRPLandingPage({ locale }: PRPHairTreatmentProps) {
         />
           
           <motion.div variants={fadeInUp} className="mt-6 p-4 bg-wine/5 rounded-xl text-center">
-            <p className="text-brown font-inter text-sm">
-              Not all PRP treatments deliver the same clinical result. The therapeutic effect depends directly on the concentration of platelets in the final preparation. At Nexus Clinic KL, the PRP preparation protocol is calibrated to deliver therapeutically meaningful platelet concentrations for each application.
-            </p>
+              <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+                Alves R, Grimalt R. Randomized Placebo-Controlled, Double-Blind, Half-Head Study to Assess the Efficacy of Platelet-Rich Plasma on the Treatment of Androgenous Alopecia. 
+                <a 
+                  href="https://pubmed.ncbi.nlm.nih.gov/27035501/" 
+                  target="_blank" 
+                  rel="nofollow" 
+                  className="text-wine font-bold italic"
+                >
+                  Dermatologic Surgery
+                </a>. 
+                2016;42(4):491-497. This randomised controlled trial demonstrated statistically significant improvements in hair density and diameter, providing high-level clinical evidence for the efficacy of PRP in treating hair loss.
+              </p>
           </motion.div>
         </motion.div>
       </section>
@@ -343,7 +351,6 @@ export default function PRPLandingPage({ locale }: PRPHairTreatmentProps) {
           viewport={{ once: true }}
           className="container mx-auto max-w-6xl"
         >
-          {/* PRP in Combination with Other Treatments Table */}
           <TableForPages
             columns={[
               { key: "combination", header: "Combined Treatment", className: "font-semibold" },
@@ -362,6 +369,23 @@ export default function PRPLandingPage({ locale }: PRPHairTreatmentProps) {
             className="py-20 px-4"
           />
         </motion.div>
+        <p className="text-center max-w-2xl mx-auto text-sm">
+            Patients interested in non-PRP hair restoration options can explore{' '}
+            <a 
+              href="/hair/exosome-hair-treatment-malaysia/" 
+              className="text-wine font-bold italic"
+            >
+              exosome hair treatment
+            </a>{' '}
+            and{' '}
+            <a 
+              href="/hair/mesotherapy-hair-loss-malaysia/" 
+              className="text-wine font-bold italic"
+            >
+              mesotherapy hair loss treatment
+            </a>{' '}
+            as complementary regenerative options at Nexus Clinic KL.
+          </p>
       </section>
 
       {/* PRP Aesthetic Applications Table */}
@@ -373,24 +397,40 @@ export default function PRPLandingPage({ locale }: PRPHairTreatmentProps) {
           viewport={{ once: true }}
           className="container mx-auto max-w-6xl"
         >
-            {/* PRP Aesthetic Applications Table */}
-            <TableForPages
-              columns={[
-                { key: "application", header: "Aesthetic Application", className: "font-semibold" },
-                { key: "whatItDoes", header: "What PRP Does" },
-                { key: "sessions", header: "Typical Sessions Needed" },
-              ]}
-              data={aestheticApplications.map((item) => ({
-                application: item.application,
-                whatItDoes: item.whatItDoes,
-                sessions: item.sessions,
-              }))}
-              title="PRP Aesthetic Applications"
-              subtitle="Beyond hair loss: skin rejuvenation and scar treatment"
-              variant="detailed"
-              fadeInUp={fadeInUp}
-              className="py-20 px-4"
-            />
+          <TableForPages
+            columns={[
+              { key: "application", header: "Aesthetic Application", className: "font-semibold" },
+              { key: "whatItDoes", header: "What PRP Does" },
+              { key: "sessions", header: "Typical Sessions Needed" },
+            ]}
+            data={aestheticApplications.map((item) => ({
+              application: item.application,
+              whatItDoes: item.whatItDoes,
+              sessions: item.sessions,
+            }))}
+            title="PRP Aesthetic Applications"
+            subtitle="Beyond hair loss: skin rejuvenation and scar treatment"
+            variant="detailed"
+            fadeInUp={fadeInUp}
+            className="py-20 px-4"
+          />
+          <p className=" text-center max-w-2xl mx-auto text-sm">
+            Patients exploring broader skin rejuvenation alongside PRP may be interested in the full range of{' '}
+            <a 
+              href="/face/skin-booster-malaysia/" 
+              className="text-wine font-bold italic"
+            >
+              skin booster treatments at Nexus Clinic
+            </a>{' '}
+            and our{' '}
+            <a 
+              href="/skin/pico-laser-malaysia/" 
+              className="text-wine font-bold italic"
+            >
+              pico laser treatment in Malaysia
+            </a>{' '}
+            for combined skin quality improvement.
+          </p>
         </motion.div>
       </section>
 
@@ -574,7 +614,7 @@ export default function PRPLandingPage({ locale }: PRPHairTreatmentProps) {
           </div>
           
           <motion.div variants={fadeInUp} className="text-center mt-10">
-            <Link href="/contact-us" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
+            <Link href="/contact-us/" className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2">
               Book Your Free Consultation
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -620,7 +660,7 @@ export default function PRPLandingPage({ locale }: PRPHairTreatmentProps) {
           </motion.p>
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
+            <Link href="/contact-us/" className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all">
               Get Your Personalised PRP Treatment Quote
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -657,7 +697,7 @@ export default function PRPLandingPage({ locale }: PRPHairTreatmentProps) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Free Consultation

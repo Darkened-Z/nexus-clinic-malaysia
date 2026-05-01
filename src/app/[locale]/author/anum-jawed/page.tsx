@@ -1,6 +1,17 @@
 export const dynamic = "force-static";
 import Image from "next/image";
 import { Linkedin, Award, BookOpen, Users } from "lucide-react";
+import { Metadata } from "next";
+const baseurl = process.env.BASE_URL || "https://www.nexus-clinic.com"
+
+
+export const metadata: Metadata = {
+  title: "Dr. Anum Jawed | Nexus Clinic",
+  description: "Learn more about Dr. Anum Jawed, a registered pharmacist and pharmaceutical content writer at Nexus Clinic.",
+  alternates: {
+    canonical: `${baseurl}/author/anum-jawed/`,
+  },
+};
 export default function AuthorPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">

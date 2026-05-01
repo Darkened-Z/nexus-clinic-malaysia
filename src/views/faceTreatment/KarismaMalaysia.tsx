@@ -237,7 +237,7 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
             <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-              href="/contact-us">
+              href="/contact-us/">
               Speak to a Doctor About Karisma
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -286,7 +286,7 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
                 />
               </div>
               <Link className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all"
-                href="/contact-us">
+                href="/contact-us/">
                 Find Out If Karisma Is Right for You
                 <ArrowRight className="w-4 h-4" />
               </Link>
@@ -323,7 +323,7 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
             <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-              href="/contact-us">
+              href="/contact-us/">
               Book a Consultation to See If Karisma Matches Your Skin Goals
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -452,7 +452,7 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
                 ))}
               </ul>
               <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-                href="/contact-us">
+                href="/contact-us/">
                 Book Your Karisma Consultation at Nexus Clinic KL
                 <ArrowRight className="w-4 h-4" />
               </Link>
@@ -489,7 +489,7 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
           
           <motion.div variants={fadeInUp} className="text-center mt-10">
             <Link className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2"
-              href="/contact-us">
+              href="/contact-us/">
               Book Your Karisma Appointment
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -544,7 +544,7 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
             <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-              href="/contact-us">
+              href="/contact-us/">
               Get Your Personalised Karisma Quote
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -684,7 +684,7 @@ export default function KarismaMalaysia({ locale }: KarismaMalaysiaProps) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Book Your Free Karisma Consultation Now

@@ -32,7 +32,7 @@ export const faceTreatmentsMetadata: TreatmentMetadata[] = [
   },
   {
     slug: 'botox-malaysia',
-    component: 'MasseterBotox',
+    component: 'BotoxMalaysia',
     title: 'Top Botox Treatment in Malaysia for Smoother Skin and Natural Results | Nexus Clinic KL',
     description: 'Lines that appear when you talk, smile or frown are fixable in under 20 minutes. Nexus Clinic KL has delivered Botox treatment in Malaysia since 2001. Precise dosing, natural results, zero frozen look. Book your free consultation in Kuala Lumpur today.',
   },

@@ -1,107 +1,154 @@
 {
   "hero": {
-    "heading1": "重新定义您的",
-    "heading2": "自然之美",
-    "description": "我们专注于提升您的自然美感，以科学与艺术的完美融合，缔造恒久光彩。",
-    "cta1": "预约排期",
-    "cta2": "查看您的疗程",
-    "scanFace": "面部扫描",
-    "skinTreatment": "天然肌肤护理",
-    "viewRecommendations": "查看推荐方案",
-    "stat1Value": "40+",
-    "stat1Label1": "传统与现代",
-    "stat1Label2": "美容疗程",
-    "stat2Value": "7+",
-    "stat2Label1": "专业资深",
-    "stat2Label2": "美容师",
-    "customersVisited": "位客户到访",
-    "scroll": "滚动浏览"
+    "subtitle": "屡获殊荣的LCP认证医美诊所",
+    "heading": "个性化医疗美容护理，呈现自然效果",
+    "description": "在Nexus Clinic，我们提供以医生为主导的医美治疗，专注于面部、皮肤和医疗减重。我们的方法简单明了 - 呈现自然效果，个性化护理，以及旨在帮助您对自己的皮肤感到自信的治疗方案。",
+    "cta1": "预约咨询",
+    "cta2": "探索治疗",
+    "scroll": "滚动"
   },
-  "beforeAfter": {
-    "badge": "真实效果",
-    "title1": "治疗前 &",
-    "title2": "治疗后",
-    "desc": "滑动查看我们客户通过 GLP-1 治疗实现的惊人蜕变",
-    "before": "治疗前",
-    "after": "治疗后",
-    "dragToCompare": "拖动以对比",
-    "failedToLoad": "图片加载失败",
-    "disclaimer": "效果因人而异，个人结果取决于多种因素。",
-    "cta": "开启您的蜕变之旅"
-  },
-  "services": {
-    "subtitle": "我们的专长",
-    "title": "专业",
-    "titleHighlight": "疗程",
-    "description": "探索我们全面的医学美容服务，每项疗程均根据您的独特需求量身定制。",
-    "explore": "了解更多",
-    "items": {
-      "facial": {
-        "title": "面部年轻化",
-        "subtitle": "抗衰老与轮廓塑造",
-        "description": "肉毒素、填充剂及先进提升疗程"
+  "whyChoose": {
+    "subtitle": "为什么患者选择Nexus Clinic",
+    "title": "科学与",
+    "titleHighlight": "艺术",
+    "description": "在Nexus Clinic，我们相信通过循证治疗来增强您的自然美。我们以医生为主导的方法确保安全性、有效性和您会喜欢的效果。",
+    "yearsValue": "15+",
+    "yearsLabel1": "年",
+    "yearsLabel2": "卓越经验",
+    "features": {
+      "moh": {
+        "title": "自然效果",
+        "desc": "我们相信最佳的医美效果是看起来清新、柔和，绝不夸张"
       },
-      "weightLoss": {
-        "title": "医学减重",
-        "subtitle": "科学减重方案",
-        "description": "Ozempic、Mounjaro 及身体塑形"
+      "doctor": {
+        "title": "医生主导护理",
+        "desc": "您的治疗由经验丰富的医疗专业人员指导，他们优先考虑安全性和效果。"
       },
-      "skin": {
-        "title": "肌肤疗程",
-        "subtitle": "痤疮与色素沉着",
-        "description": "激光治疗与化学焕肤"
+      "personalized": {
+        "title": "个性化治疗方案",
+        "desc": "没有两张脸、两种皮肤类型或两个目标是相同的。每个计划都是为您量身定制的。"
       },
-      "hair": {
-        "title": "毛发修复",
-        "subtitle": "PRP与中胚层疗法",
-        "description": "先进脱发解决方案"
+      "premium": {
+        "title": "现代医美解决方案",
+        "desc": "我们结合医学知识与现代医美技术，提供精致、平衡的效果。"
       }
     }
   },
-  "whyChoose": {
-    "subtitle": "为何选择 Nexus Clinic",
-    "title": "科学与",
-    "titleHighlight": "艺术",
-    "description": "在 Nexus Clinic，我们坚信通过循证医学疗程提升您的自然美。我们以医生主导的诊疗模式，确保安全、有效，带给您满意的效果。",
-    "yearsValue": "15+",
-    "yearsLabel1": "年卓越",
-    "yearsLabel2": "品质",
-    "features": {
-      "moh": { "title": "MOH 注册认证", "desc": "完全符合医疗标准" },
-      "doctor": { "title": "医生主导诊疗", "desc": "持证医疗专业团队" },
-      "personalized": { "title": "个性化方案", "desc": "根据您的独特需求量身定制" },
-      "premium": { "title": "优质产品", "desc": "FDA 批准的疗程产品" }
+  "services": {
+    "subtitle": "适合您目标的护理",
+    "title": "专业",
+    "titleHighlight": "治疗",
+    "description": "探索我们全面的医美服务，每一项都针对您的独特需求量身定制。",
+    "explore": "探索",
+    "items": {
+      "facial": {
+        "title": "面部美学",
+        "subtitle": "精致。提升。焕新。",
+        "description": "我们提供面部医美治疗，旨在以柔和、平衡的效果增强您的自然特征。从皱纹护理到轮廓塑造和面部和谐，我们的治疗都经过精心规划，以适合您的面部特点和目标。"
+      },
+      "weightLoss": {
+        "title": "医疗减重",
+        "subtitle": "更智能的减重途径",
+        "description": "Nexus Clinic提供安全、专家主导的医疗减重治疗，以实现可持续的效果。"
+      },
+      "skin": {
+        "title": "皮肤治疗",
+        "subtitle": "更清晰、更健康、更明亮的皮肤",
+        "description": "Nexus Clinic提供针对痤疮、色素沉着和衰老的先进治疗，以改善皮肤质地和色调。"
+      },
+      "hair": {
+        "title": "头发再生",
+        "subtitle": "PRP与中胚层疗法",
+        "description": "Nexus Clinic提供先进的头发再生治疗，包括PRP和中胚层疗法，以支持自然头发生长并减少脱发。"
+      }
     }
   },
   "testimonials": {
-    "subtitle": "客户评价",
-    "title": "听听",
-    "titleHighlight": "患者",
-    "titleEnd": "怎么说",
+    "subtitle": "患者评价",
+    "title": "患者喜爱",
+    "titleHighlight": "Nexus Clinic",
+    "titleEnd": "的评价",
     "reviews": "(500+ 条评价)",
     "items": [
-      { "quote": "Nexus Clinic 不仅改变了我的外貌，更提升了我的自信。医生真正倾听需求，制定个性化方案。", "author": "Sarah Chen", "role": "企业高管" },
-      { "quote": "他们透明坦诚的态度令我印象深刻。他们从不推荐不必要的疗程。这是一家值得信赖的诊所。", "author": "Michael Tan", "role": "企业家" },
-      { "quote": "减重计划改变了我的生活。在专业医学指导下，我安全且持久地达成了目标。", "author": "Emily Wong", "role": "创意总监" }
+      {
+        "quote": "我非常喜欢我的治疗效果如此自然。Nexus Clinic的团队从一开始就让我感到舒适，而且一切都解释得非常清楚。",
+        "author": "陈莎拉",
+        "role": "企业高管"
+      },
+      {
+        "quote": "我的皮肤看起来更清新、光滑、健康。Nexus Clinic为我推荐了合适的治疗，没有强加任何额外项目。",
+        "author": "陈迈克尔",
+        "role": "企业家"
+      },
+      {
+        "quote": "我想要的是微妙的改善，而不是戏剧性的变化。Nexus Clinic完全理解我的意思，我对结果非常满意。",
+        "author": "王艾米丽",
+        "role": "创意总监"
+      }
     ]
   },
   "contact": {
     "subtitle": "联系我们",
-    "title": "莅临",
+    "title": "访问",
     "titleHighlight": "Nexus Clinic",
-    "address": "LG 10, Wisma UOA II, Jalan Pinang, KL",
-    "phone": "016-702 5699 / 03-2163 5699",
-    "hours": "周一至周六：上午 9:00 - 下午 6:00",
-    "formTitle": "预约咨询",
+    "description": "我们欢迎您来到Nexus Clinic，在舒适现代的环境中享受个性化的医美护理。无论您对面部美学、皮肤治疗还是医疗减重感兴趣，我们的团队都随时准备帮助您自信地迈出下一步。",
+    "address": "LG 10, 下层地面楼层, Wisma UOA 2, 吉隆坡, 50450 吉隆坡, 吉隆坡联邦直辖区, 马来西亚",
+    "phone": "016-7025699 / 03-21635699",
+    "hours": "周一至周六：上午9:00 - 下午6:00",
+    "formTitle": "预约您的咨询",
     "placeholderName": "您的姓名",
-    "placeholderEmail": "电子邮箱",
-    "placeholderPhone": "联系电话",
-    "selectTreatment": "选择感兴趣的疗程",
-    "optionFacial": "面部与抗衰老",
+    "placeholderEmail": "电子邮箱地址",
+    "placeholderPhone": "电话号码",
+    "selectTreatment": "选择感兴趣的治疗",
+    "optionFacial": "面部与抗衰老治疗",
     "optionWeightLoss": "减重计划",
-    "optionSkin": "肌肤疗程",
-    "optionHair": "毛发修复",
+    "optionSkin": "皮肤治疗",
+    "optionHair": "头发再生",
     "placeholderMessage": "您的留言",
     "submitButton": "提交咨询"
+  },
+  "faq": {
+    "items": [
+      {
+        "q": "Nexus Clinic专注于哪些治疗？",
+        "a": "Nexus Clinic专门从事面部、皮肤和医疗减重的美容治疗。我们的目标是提供个性化护理，达到自然的效果。"
+      },
+      {
+        "q": "Nexus Clinic是医生主导的美容诊所吗？",
+        "a": "是的，Nexus Clinic是一家医生主导的美容诊所。患者安全、治疗适宜性和自然效果是我们方法的核心。"
+      },
+      {
+        "q": "Nexus Clinic提供哪些治疗？",
+        "a": "在Nexus Clinic，我们提供一系列美容服务，可能包括面部年轻化、皮肤治疗和医疗减重支持。您推荐的治疗取决于您的需求和目标。"
+      },
+      {
+        "q": "Nexus Clinic注重自然效果吗？",
+        "a": "是的。在Nexus Clinic，我们相信美容治疗应该以柔和、平衡的方式增强您的特征。我们专注于看起来清新、不夸张的效果。"
+      },
+      {
+        "q": "我可以因为皮肤问题去Nexus Clinic吗？",
+        "a": "可以，Nexus Clinic为常见的皮肤问题提供治疗，如暗沉、不均匀纹理、痤疮、色素沉着和衰老迹象。咨询帮助我们为您指导正确的选择。"
+      },
+      {
+        "q": "Nexus Clinic提供减重治疗吗？",
+        "a": "是的，Nexus Clinic为寻求更专业、更有条理的减重方法的患者提供医疗指导的减重支持。"
+      },
+      {
+        "q": "我如何知道Nexus Clinic的哪种治疗适合我？",
+        "a": "最好的方法是在Nexus Clinic预约咨询。我们将评估您的问题，听取您的目标，并推荐适合您的治疗计划。"
+      },
+      {
+        "q": "Nexus Clinic适合初次接受美容治疗的患者吗？",
+        "a": "是的。许多患者在Nexus Clinic进行他们的首次美容咨询。我们清楚地解释一切，只推荐适合您的治疗。"
+      },
+      {
+        "q": "Nexus Clinic位于哪里？",
+        "a": "Nexus Clinic位于吉隆坡Jalan Pinang的Wisma UOA II的LG 10。"
+      },
+      {
+        "q": "我如何预约Nexus Clinic？",
+        "a": "您可以通过电话联系Nexus Clinic或使用网站上的预约表格来安排您的咨询。"
+      }
+    ]
   }
 }

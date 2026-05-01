@@ -2,54 +2,78 @@
 
 import { motion } from "framer-motion";
 import {
-  Moon,
-  Heart,
-  Calendar,
-  ChevronRight,
-  MapPin,
-  Phone,
-  Award,
-  Users,
-  AlertCircle,
-  CheckCircle,
-  Activity,
-  Wind,
-  Droplet,
-  ThermometerSun,
-  Star,
-  Cloud,
-} from "lucide-react";
-import {
   staggerContainer,
   fadeInUp,
   fadeInLeft,
   fadeInRight,
-  scaleIn,
 } from "@/src/lib/animations";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
 import TableForPages from "@/src/components/TableForPages";
 import Link from "next/link";
+import FAQWithSchema from "@/src/components/FAQWithSchema";
 const HormonReplaceLanding = ({
   locale = fallbackLng,
 }: {
   locale?: string;
 }) => {
-  const { t } = useTranslation(locale, "regenerative/hormoneReplacement");
+    const { t } = useTranslation(locale, "regenerative/hormoneReplacement");
 
-  const images = {
-    heroWoman:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1287&q=80",
-    consultation:
-      "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-    clinic:
-      "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?ixlib=rb-4.0.3&auto=format&fit=crop&w=1191&q=80",
-    hormones: "/images/regenerative/hormone-replacement.webp",
-    wellness:
-      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1220&q=80",
-  };
-
+    const images = {
+      heroWoman:
+        "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1287&q=80",
+      consultation:
+        "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+      clinic:
+        "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?ixlib=rb-4.0.3&auto=format&fit=crop&w=1191&q=80",
+      hormones: "/images/regenerative/hormone-replacement.webp",
+      wellness:
+        "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1220&q=80",
+    };
+    const faqsData =
+    [
+      {
+        q: "Does HRT cause cancer?",
+        a: "The answer depends entirely on the type of HRT and what kind of cancer is being discussed. For endometrial (uterine) cancer: oestrogen therapy taken without progestogen in a woman with a uterus does significantly increase the risk of uterine cancer. This is why progestogen is prescribed to women with a uterus on systemic oestrogen therapy, making combined HRT the standard approach. Combined HRT does not increase the risk of uterine cancer and is specifically recommended for women with an intact uterus to reduce the risk of uterine cancer that oestrogen alone would cause. For breast cancer: the risk depends on the type of progestogen. Estrogen alone in hysterectomised women actually reduced breast cancer incidence by 23% in the WHI trial. Combined HRT with synthetic progestogen carries a small increased risk. Bioidentical hormone replacement therapy (transdermal oestradiol with micronised progesterone bioidentical hormones) carries a substantially lower breast cancer risk. The potential risks and benefits of each type of HRT are discussed with every patient at Nexus Clinic KL before any hormone therapy is prescribed."
+      },
+      {
+        q: "How do I know if I need HRT?",
+        a: "Women may benefit from HRT if menopausal symptoms are affecting quality of life to a meaningful degree. The Menopause-Specific Quality of Life questionnaire used at Nexus Clinic KL quantifies the severity of menopausal symptoms across vasomotor, psychosocial, physical and sexual domains. If hot flashes are waking you multiple times per night, if mood swings and brain fog are interfering with your work performance, if vaginal dryness is causing pain during intercourse or if joint aches are limiting your physical activity, these are meaningful quality of life impacts that hormone replacement therapy can address. Blood testing is used to confirm perimenopausal or menopausal status where the clinical picture is unclear. Menopausal women experiencing symptoms of menopause include hot flashes, night sweats, mood swings, vaginal dryness and cognitive changes, and may need to decide whether to start HRT sooner than they think. You do not need to have stopped periods to be eligible for perimenopause management, and you do not need to wait for symptoms of menopause to become severe before seeking assessment."
+      },
+      {
+        q: "Can I take HRT if my mother had breast cancer?",
+        a: "A family history of breast cancer in a first-degree relative is a relative consideration in hormone replacement therapy prescribing, not an absolute contraindication. Women experiencing this concern are counselled carefully about their individual breast cancer risk and the formulation-specific potential risks and benefits of different types of HRT. In most menopausal women with family history but no personal history of breast cancer who are experiencing menopausal symptoms, the benefit of appropriately selected bioidentical hormone replacement therapy with micronised progesterone is considered to outweigh the residual potential risks when used at the lowest effective dose. The doctor will provide a clear explanation of the potential risks and benefits specific to each patient's situation. An absolute contraindication is personal history of active oestrogen-receptor-positive breast cancer. Healthcare professionals at Nexus Clinic KL discuss all potential risks thoroughly with women affected by breast cancer history before prescribing hormone therapy."
+      },
+      {
+        q: "Does HRT cause weight gain?",
+        a: "Hormone replacement therapy does not directly cause weight gain. Menopause itself is associated with changes in fat distribution and a reduction in metabolic rate driven by oestrogen withdrawal, not by taking HRT. Menopausal women experiencing weight gain often attribute it to their hormone therapy but the evidence does not support HRT as a cause of weight gain. HRT helps mitigate these effects of oestrogen withdrawal by partially restoring oestrogen signalling in adipose tissue and partially mitigating abdominal fat redistribution. Some menopausal women notice fluid retention in the first few weeks of starting hormone replacement therapy, particularly with oral oestrogen therapy formulations, which can be interpreted as weight gain; this typically resolves within 6 to 8 weeks and can be reduced by switching to transdermal oestrogen therapy. Published evidence does not support hormone replacement therapy as a cause of weight gain."
+      },
+      {
+        q: "How long should I take HRT?",
+        a: "There is no arbitrary maximum duration for taking HRT. Current international guidelines including the British Menopause Society and the 2025 PMC narrative review explicitly state that the decision to continue HRT is based on ongoing individual benefit versus risk at each annual review rather than a fixed duration limit. HRT and when to initiate a taper or cessation is a decision made between each menopausal woman and her doctor based on her ongoing symptoms, potential risks and overall health. Menopausal women experiencing severe premature menopause may need hormone therapy until age 51 or beyond; women with persistent menopause symptoms beyond 5 years may benefit from extended HRT when potential risks are low. At Nexus Clinic KL, each annual review explicitly reassesses whether to continue HRT and whether the ongoing hormone replacement therapy is justified for each individual menopausal woman."
+      },
+      {
+        q: "Is transdermal HRT better than tablets?",
+        a: "For most menopausal women in Malaysia, transdermal oestrogen therapy (gel or patch) is the preferred route because it bypasses first-pass liver metabolism, does not increase hepatic clotting factors and therefore does not carry the modest blood clots risk associated with oral oestrogen therapy. For menopausal women who are obese, who smoke, who have personal or family history of blood clots, who have migraine with aura or who have metabolic risk factors, transdermal hormone therapy is specifically recommended over oral hormone replacement therapy as the safest type of HRT. Oestrogen-only HRT via transdermal route is usually the first choice for hysterectomised women. For menopausal women without these risk factors, the absolute risk difference between oral and transdermal oestrogen therapy is small and individual preference can be accommodated. Healthcare professionals at Nexus Clinic KL assess each woman's specific risk profile before recommending the most appropriate type of HRT."
+      },
+      {
+        q: "Can I take HRT during perimenopause when I still have periods?",
+        a: "Yes. Hormone replacement therapy can be started during perimenopause when menopause symptoms are present and FSH testing confirms perimenopausal status. During perimenopause, cyclical or sequential combined HRT is prescribed: oestrogen therapy is taken daily and progestogen is added for 12 to 14 days of each cycle to produce a monthly withdrawal bleed. Perimenopausal women may also benefit from HRT or the combined pill as an alternative, which provides both contraception and hormonal menopause symptom management. After the final period, the type of HRT transitions to continuous combined HRT for women with a uterus, or oestrogen-only HRT for hysterectomised women. The decision for perimenopausal women to take HRT or the combined pill is discussed based on the woman's specific menopause symptom pattern and symptoms at assessment. The doctor will provide personalised guidance for perimenopausal women at every consultation."
+      },
+      {
+        q: "What is bioidentical hormone replacement therapy?",
+        a: "The term bioidentical hormone replacement therapy and bioidentical hormones are used in two distinct ways in Malaysia. Regulated bioidentical hormone replacement therapy refers to pharmaceutically manufactured oestradiol and micronised progesterone that are chemically identical to the hormones produced by the human ovary; these are MOH-approved bioidentical hormones with well-established clinical evidence. Compounded bioidentical hormone replacement therapy refers to custom-mixed hormone preparations made by compounding pharmacies; these bioidentical hormones are not subject to the same manufacturing controls or clinical evidence requirements as regulated pharmaceutical HRT. At Nexus Clinic KL, the hormone replacement therapy prescribed uses regulated pharmaceutical bioidentical hormones (oestradiol and micronised progesterone), which are bioidentical in the scientifically accurate sense and are the type of HRT recommended by international guidelines. Women experiencing menopause symptoms who want bioidentical hormone replacement therapy should ensure they are receiving regulated pharmaceutical bioidentical hormones, not compounded preparations."
+      },
+      {
+        q: "Does HRT help with reduced libido after menopause?",
+        a: "HRT helps mitigate these effects of oestrogen withdrawal on genitourinary health by reducing vaginal dryness and pain during intercourse, which are among the most common menopause symptoms affecting sexual function. Oestrogen therapy combined with local vaginal oestrogen provides the most comprehensive hormone therapy treatment for the genitourinary component of reduced sexual function at menopause. However, for reduced libido (sexual desire) specifically, testosterone plays the dominant hormonal role. Low-dose testosterone therapy for postmenopausal menopausal women with reduced libido is prescribed off-label in Malaysia using low-dose testosterone formulations and represents an evidence-supported option for women who have addressed oestrogen deficiency but whose libido has not recovered. Testosterone is discussed at the HRT consultation when relevant and forms part of a comprehensive sexual health assessment. Menopausal women experiencing reduced libido should make an appointment to discuss whether testosterone alongside hormone replacement therapy is an appropriate treatment option."
+      },
+      {
+        q: "Is the HRT consultation at Nexus Clinic KL free?",
+        a: "The initial hormone replacement therapy assessment at Nexus Clinic KL is priced at RM 150 to RM 300 and includes a structured menopausal symptom assessment using the MENQOL or equivalent validated questionnaire, comprehensive medical and family history review including breast cancer and VTE history, blood pressure measurement, physical examination, contraindication screening and a blood test requisition for the full pre-HRT hormonal and metabolic panel. A follow-up appointment reviews the blood results and presents the personalised hormone replacement therapy plan with formulation and route recommendation, monitoring schedule and full pricing before any prescription is issued. The doctor will provide information about HRT's advantages and potential risks and assist in making an informed decision about taking HRT. Menopausal women experiencing symptoms can book an appointment today at Nexus Clinic KL, located at Wisma UOA II, Jalan Pinang, 50450 Kuala Lumpur, serving patients from across KL, Petaling Jaya, Bangsar, KLCC, Ampang, Mont Kiara and throughout Malaysia."
+      },
+    ]
   return (
     <div className="bg-cream min-h-screen font-inter">
       {/* Hero Section */}
@@ -287,6 +311,13 @@ const HormonReplaceLanding = ({
             fadeInUp={fadeInUp}
             className="py-20 px-4"
           />
+          <p className="text-center text-brown max-w-2xl mx-auto">
+              For women whose hormone concerns also intersect with sexual health changes including reduced libido and genitourinary symptoms, our{' '}
+              <Link href="/regenerative/ed-treatment-malaysia/" className="text-wine font-bold italic">
+                ED treatment in Malaysia
+              </Link>{' '}
+              provides context on how hormonal decline affects sexual health in both men and women.
+            </p>
         </motion.div>
       </section>
 
@@ -404,90 +435,21 @@ const HormonReplaceLanding = ({
             fadeInUp={fadeInUp}
             className="py-20 px-4"
           />
-        </motion.div>
-      </section>
-
-      {/* FAQ Section - All 10 Questions */}
-      <section className="py-20 bg-light">
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="container mx-auto px-4 sm:px-6 lg:px-8"
-        >
-          <div className="max-w-4xl mx-auto">
-            <motion.h2
-              variants={fadeInUp}
-              className="font-georgia text-3xl lg:text-4xl text-brown text-center mb-12"
-            >
-              Frequently Asked Questions About Hormone Replacement Therapy in Malaysia
-            </motion.h2>
-
-            <div className="space-y-4">
-              {[
-                {
-                  q: "Does HRT cause cancer?",
-                  a: "The answer depends entirely on the type of HRT and what kind of cancer is being discussed. For endometrial (uterine) cancer: oestrogen therapy taken without progestogen in a woman with a uterus does significantly increase the risk of uterine cancer. This is why progestogen is prescribed to women with a uterus on systemic oestrogen therapy, making combined HRT the standard approach. Combined HRT does not increase the risk of uterine cancer and is specifically recommended for women with an intact uterus to reduce the risk of uterine cancer that oestrogen alone would cause. For breast cancer: the risk depends on the type of progestogen. Estrogen alone in hysterectomised women actually reduced breast cancer incidence by 23% in the WHI trial. Combined HRT with synthetic progestogen carries a small increased risk. Bioidentical hormone replacement therapy (transdermal oestradiol with micronised progesterone bioidentical hormones) carries a substantially lower breast cancer risk. The potential risks and benefits of each type of HRT are discussed with every patient at Nexus Clinic KL before any hormone therapy is prescribed."
-                },
-                {
-                  q: "How do I know if I need HRT?",
-                  a: "Women may benefit from HRT if menopausal symptoms are affecting quality of life to a meaningful degree. The Menopause-Specific Quality of Life questionnaire used at Nexus Clinic KL quantifies the severity of menopausal symptoms across vasomotor, psychosocial, physical and sexual domains. If hot flashes are waking you multiple times per night, if mood swings and brain fog are interfering with your work performance, if vaginal dryness is causing pain during intercourse or if joint aches are limiting your physical activity, these are meaningful quality of life impacts that hormone replacement therapy can address. Blood testing is used to confirm perimenopausal or menopausal status where the clinical picture is unclear. Menopausal women experiencing symptoms of menopause include hot flashes, night sweats, mood swings, vaginal dryness and cognitive changes, and may need to decide whether to start HRT sooner than they think. You do not need to have stopped periods to be eligible for perimenopause management, and you do not need to wait for symptoms of menopause to become severe before seeking assessment."
-                },
-                {
-                  q: "Can I take HRT if my mother had breast cancer?",
-                  a: "A family history of breast cancer in a first-degree relative is a relative consideration in hormone replacement therapy prescribing, not an absolute contraindication. Women experiencing this concern are counselled carefully about their individual breast cancer risk and the formulation-specific potential risks and benefits of different types of HRT. In most menopausal women with family history but no personal history of breast cancer who are experiencing menopausal symptoms, the benefit of appropriately selected bioidentical hormone replacement therapy with micronised progesterone is considered to outweigh the residual potential risks when used at the lowest effective dose. The doctor will provide a clear explanation of the potential risks and benefits specific to each patient's situation. An absolute contraindication is personal history of active oestrogen-receptor-positive breast cancer. Healthcare professionals at Nexus Clinic KL discuss all potential risks thoroughly with women affected by breast cancer history before prescribing hormone therapy."
-                },
-                {
-                  q: "Does HRT cause weight gain?",
-                  a: "Hormone replacement therapy does not directly cause weight gain. Menopause itself is associated with changes in fat distribution and a reduction in metabolic rate driven by oestrogen withdrawal, not by taking HRT. Menopausal women experiencing weight gain often attribute it to their hormone therapy but the evidence does not support HRT as a cause of weight gain. HRT helps mitigate these effects of oestrogen withdrawal by partially restoring oestrogen signalling in adipose tissue and partially mitigating abdominal fat redistribution. Some menopausal women notice fluid retention in the first few weeks of starting hormone replacement therapy, particularly with oral oestrogen therapy formulations, which can be interpreted as weight gain; this typically resolves within 6 to 8 weeks and can be reduced by switching to transdermal oestrogen therapy. Published evidence does not support hormone replacement therapy as a cause of weight gain."
-                },
-                {
-                  q: "How long should I take HRT?",
-                  a: "There is no arbitrary maximum duration for taking HRT. Current international guidelines including the British Menopause Society and the 2025 PMC narrative review explicitly state that the decision to continue HRT is based on ongoing individual benefit versus risk at each annual review rather than a fixed duration limit. HRT and when to initiate a taper or cessation is a decision made between each menopausal woman and her doctor based on her ongoing symptoms, potential risks and overall health. Menopausal women experiencing severe premature menopause may need hormone therapy until age 51 or beyond; women with persistent menopause symptoms beyond 5 years may benefit from extended HRT when potential risks are low. At Nexus Clinic KL, each annual review explicitly reassesses whether to continue HRT and whether the ongoing hormone replacement therapy is justified for each individual menopausal woman."
-                },
-                {
-                  q: "Is transdermal HRT better than tablets?",
-                  a: "For most menopausal women in Malaysia, transdermal oestrogen therapy (gel or patch) is the preferred route because it bypasses first-pass liver metabolism, does not increase hepatic clotting factors and therefore does not carry the modest blood clots risk associated with oral oestrogen therapy. For menopausal women who are obese, who smoke, who have personal or family history of blood clots, who have migraine with aura or who have metabolic risk factors, transdermal hormone therapy is specifically recommended over oral hormone replacement therapy as the safest type of HRT. Oestrogen-only HRT via transdermal route is usually the first choice for hysterectomised women. For menopausal women without these risk factors, the absolute risk difference between oral and transdermal oestrogen therapy is small and individual preference can be accommodated. Healthcare professionals at Nexus Clinic KL assess each woman's specific risk profile before recommending the most appropriate type of HRT."
-                },
-                {
-                  q: "Can I take HRT during perimenopause when I still have periods?",
-                  a: "Yes. Hormone replacement therapy can be started during perimenopause when menopause symptoms are present and FSH testing confirms perimenopausal status. During perimenopause, cyclical or sequential combined HRT is prescribed: oestrogen therapy is taken daily and progestogen is added for 12 to 14 days of each cycle to produce a monthly withdrawal bleed. Perimenopausal women may also benefit from HRT or the combined pill as an alternative, which provides both contraception and hormonal menopause symptom management. After the final period, the type of HRT transitions to continuous combined HRT for women with a uterus, or oestrogen-only HRT for hysterectomised women. The decision for perimenopausal women to take HRT or the combined pill is discussed based on the woman's specific menopause symptom pattern and symptoms at assessment. The doctor will provide personalised guidance for perimenopausal women at every consultation."
-                },
-                {
-                  q: "What is bioidentical hormone replacement therapy?",
-                  a: "The term bioidentical hormone replacement therapy and bioidentical hormones are used in two distinct ways in Malaysia. Regulated bioidentical hormone replacement therapy refers to pharmaceutically manufactured oestradiol and micronised progesterone that are chemically identical to the hormones produced by the human ovary; these are MOH-approved bioidentical hormones with well-established clinical evidence. Compounded bioidentical hormone replacement therapy refers to custom-mixed hormone preparations made by compounding pharmacies; these bioidentical hormones are not subject to the same manufacturing controls or clinical evidence requirements as regulated pharmaceutical HRT. At Nexus Clinic KL, the hormone replacement therapy prescribed uses regulated pharmaceutical bioidentical hormones (oestradiol and micronised progesterone), which are bioidentical in the scientifically accurate sense and are the type of HRT recommended by international guidelines. Women experiencing menopause symptoms who want bioidentical hormone replacement therapy should ensure they are receiving regulated pharmaceutical bioidentical hormones, not compounded preparations."
-                },
-                {
-                  q: "Does HRT help with reduced libido after menopause?",
-                  a: "HRT helps mitigate these effects of oestrogen withdrawal on genitourinary health by reducing vaginal dryness and pain during intercourse, which are among the most common menopause symptoms affecting sexual function. Oestrogen therapy combined with local vaginal oestrogen provides the most comprehensive hormone therapy treatment for the genitourinary component of reduced sexual function at menopause. However, for reduced libido (sexual desire) specifically, testosterone plays the dominant hormonal role. Low-dose testosterone therapy for postmenopausal menopausal women with reduced libido is prescribed off-label in Malaysia using low-dose testosterone formulations and represents an evidence-supported option for women who have addressed oestrogen deficiency but whose libido has not recovered. Testosterone is discussed at the HRT consultation when relevant and forms part of a comprehensive sexual health assessment. Menopausal women experiencing reduced libido should make an appointment to discuss whether testosterone alongside hormone replacement therapy is an appropriate treatment option."
-                },
-                {
-                  q: "Is the HRT consultation at Nexus Clinic KL free?",
-                  a: "The initial hormone replacement therapy assessment at Nexus Clinic KL is priced at RM 150 to RM 300 and includes a structured menopausal symptom assessment using the MENQOL or equivalent validated questionnaire, comprehensive medical and family history review including breast cancer and VTE history, blood pressure measurement, physical examination, contraindication screening and a blood test requisition for the full pre-HRT hormonal and metabolic panel. A follow-up appointment reviews the blood results and presents the personalised hormone replacement therapy plan with formulation and route recommendation, monitoring schedule and full pricing before any prescription is issued. The doctor will provide information about HRT's advantages and potential risks and assist in making an informed decision about taking HRT. Menopausal women experiencing symptoms can book an appointment today at Nexus Clinic KL, located at Wisma UOA II, Jalan Pinang, 50450 Kuala Lumpur, serving patients from across KL, Petaling Jaya, Bangsar, KLCC, Ampang, Mont Kiara and throughout Malaysia."
-                },
-              ].map((faq, index) => (
-                <motion.details
-                  key={index}
-                  variants={fadeInUp}
-                  className="group bg-white rounded-lg"
+            <p className="text-sm text-taupe text-center max-w-2xl mx-auto">
+                Bakken K, et al. Menopausal hormone therapy and breast cancer risk: a population-based cohort study of 1.3 million women. 
+                <a 
+                  href="https://www.nature.com/articles/s41416-024-02636-1" 
+                  target="_blank" 
+                  rel="nofollow" 
+                  className="text-wine font-bold italic"
                 >
-                  <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
-                    <span className="font-georgia text-brown font-medium">
-                      {index + 1}) {faq.q}
-                    </span>
-                    <ChevronRight className="w-5 h-5 text-wine group-open:rotate-90 transition-transform shrink-0" />
-                  </summary>
-                  <div className="px-6 pb-6 text-taupe">
-                    {faq.a}
-                  </div>
-                </motion.details>
-              ))}
-            </div>
-          </div>
+                  British Journal of Cancer
+                </a>. 
+                2024;131:212-221. (Updated Review: PMC, 2025). This extensive population-based analysis and subsequent 2025 review evaluate the evolving safety profiles of modern MHT, providing clinicians with updated risk-benefit frameworks for treating menopausal symptoms.
+            </p>
         </motion.div>
       </section>
-
+    <FAQWithSchema data={faqsData} />
       {/* CTA Section */}
       <section className="py-20 bg-wine">
         <motion.div
@@ -513,7 +475,7 @@ const HormonReplaceLanding = ({
                 Phone: 016-7025699 / 03-21635699
               </p>
 
-              <Link href="/contact-us" className="bg-light text-wine px-8 py-4 rounded-lg hover:bg-cream transition-all duration-300 font-medium">
+              <Link href="/contact-us/" className="bg-light text-wine px-8 py-4 rounded-lg hover:bg-cream transition-all duration-300 font-medium">
                 Schedule Your Consultation
               </Link>
             </div>

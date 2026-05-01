@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import SocialIcons from "@/src/components/SocialIcons";
+import Image from "next/image";
 
 export const Footer = ({ locale }: { locale?: string }) => {
   const { t, i18n } = useTranslation();
@@ -16,7 +17,7 @@ export const Footer = ({ locale }: { locale?: string }) => {
 
   // Check if current page is blogs page
   useEffect(() => {
-    const isBlogs = pathname.includes('/blogs');
+    const isBlogs = pathname.includes('/blogs/');
     setIsBlogsPage(isBlogs);
     
     // On blogs page, force locale to 'en' for display
@@ -50,9 +51,14 @@ export const Footer = ({ locale }: { locale?: string }) => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
             <div className="lg:col-span-2">
               <span className="text-2xl mb-6 block font-georgia text-brown">
-                <img src="/images/logo.png" alt="Nexus Clinic Logo" className="w-[250px] h-auto"/>
+                <Image
+                  src="/images/logo.png" 
+                  alt="Nexus Clinic Logo" 
+                  width={200}
+                  height={200}
+                  loading="lazy"
+                  className="w-auto"/>
               </span>
-              <div className="h-20 bg-gray-100 animate-pulse rounded" />
             </div>
           </div>
         </div>
@@ -62,8 +68,8 @@ export const Footer = ({ locale }: { locale?: string }) => {
 
   const getNavHref = (path: string) => {
     // If it's the blogs link, always go to /blogs without locale prefix
-    if (path === '/blogs') {
-      return '/blogs';
+    if (path === '/blogs/') {
+      return '/blogs/';
     }
     
     // For other paths, add locale prefix if not English
@@ -72,16 +78,16 @@ export const Footer = ({ locale }: { locale?: string }) => {
   };
 
   const quickLinks = [
-    { label: getText("footer.aboutUs", "About Us"), href: "/about-us" },
-    { label: getText("footer.services", "Doctors"), href: "/doctors" },
-    { label: getText("footer.treatments", "Gallery"), href: "/gallery" },
-    { label: getText("footer.blog", "Blog"), href: "/blogs" },
-    { label: getText("footer.contact", "Contact"), href: "/contact-us" },
+    { label: getText("footer.aboutUs", "About Us"), href: "/about-us/" },
+    { label: getText("footer.services", "Doctors"), href: "/doctors/" },
+    { label: getText("footer.treatments", "Gallery"), href: "/gallery/" },
+    { label: getText("footer.blog", "Blog"), href: "/blogs/" },
+    { label: getText("footer.contact", "Contact"), href: "/contact-us/" },
   ];
 
   const legalLinks = [
-    { label: getText("footer.privacyPolicy", "Privacy Policy"), href: "/privacy-policy" },
-    { label: getText("footer.termsOfUse", "Terms of Use"), href: "/terms-of-use" },
+    { label: getText("footer.privacyPolicy", "Privacy Policy"), href: "/privacy-policy/" },
+    { label: getText("footer.termsOfUse", "Terms of Use"), href: "/terms-of-use/" },
   ];
 
   return (
@@ -91,7 +97,14 @@ export const Footer = ({ locale }: { locale?: string }) => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <span className="text-2xl mb-6 block font-georgia text-brown">
-              <img src="/images/logo.png" alt="Nexus Clinic Logo" className="w-[250px] h-auto"/>
+              <Image
+                src="/images/logo.png"
+                alt="Nexus Clinic Logo"
+                width={200}
+                height={200}
+                loading="lazy"
+                className="w-auto"
+              />
             </span>
             <p className="max-w-md mb-6 text-taupe">
               {getText("footer.description", "LCP Certified and MOH Registered aesthetic and medical weight loss clinic in Kuala Lumpur, combining science-backed treatments with artistic precision for natural-looking results.")}

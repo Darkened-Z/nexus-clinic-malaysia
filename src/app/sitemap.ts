@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { languages } from "@/src/i18n/settings";
+// import { languages } from "@/src/i18n/settings";
 
 import { faceTreatmentsMetadata } from "@/src/config/faceTreatments";
 import { hairTreatmentsMetadata } from "@/src/config/hairTreatments";
@@ -27,36 +27,52 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/regenerative",
     "/weight-loss",
     "/consultation",
-
+    "/awards-and-certifications",
     "/fraqtional-laser-resurfacing",
     
   ];
-  const staticUrls = languages.flatMap((locale) =>
-    staticRoutes.map((route) => ({
-      url: withSlash(
-        locale === "en"
-          ? `${baseUrl}${route}`
-          : `${baseUrl}/${locale}${route}`
-      ),
-      lastModified: new Date(),
-    }))
-  );
+  // const staticUrls = languages.flatMap((locale) =>
+  //   staticRoutes.map((route) => ({
+  //     url: withSlash(
+  //       locale === "en"
+  //         ? `${baseUrl}${route}`
+  //         : `${baseUrl}/${locale}${route}`
+  //     ),
+  //     lastModified: new Date(),
+  //   }))
+  // );
+
+  const staticUrls = staticRoutes.map((route) => ({
+    url: withSlash(`${baseUrl}${route}`),
+    lastModified: new Date(),
+  }));
+
 
   const generateDynamicUrls = (
     items: { slug: string }[],
     basePath: string
   ) => {
-    return languages.flatMap((locale) =>
-      items.map((item) => ({
-        url: withSlash(
-          locale === "en"
-            ? `${baseUrl}/${basePath}/${item.slug}`
-            : `${baseUrl}/${locale}/${basePath}/${item.slug}`
-        ),
-        lastModified: new Date(),
-      }))
-    );
+    return items.map((item) => ({
+      url: withSlash(`${baseUrl}/${basePath}/${item.slug}`),
+      lastModified: new Date(),
+    }));
   };
+
+  // const generateDynamicUrls = (
+  //   items: { slug: string }[],
+  //   basePath: string
+  // ) => {
+  //   return languages.flatMap((locale) =>
+  //     items.map((item) => ({
+  //       url: withSlash(
+  //         locale === "en"
+  //           ? `${baseUrl}/${basePath}/${item.slug}`
+  //           : `${baseUrl}/${locale}/${basePath}/${item.slug}`
+  //       ),
+  //       lastModified: new Date(),
+  //     }))
+  //   );
+  // };
 
   const faceUrls = generateDynamicUrls(faceTreatmentsMetadata, "face");
   const hairUrls = generateDynamicUrls(hairTreatmentsMetadata, "hair");

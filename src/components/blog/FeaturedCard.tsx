@@ -21,7 +21,7 @@ export function FeaturedCard({ post }: FeaturedCardProps) {
       className="group relative overflow-hidden rounded-3xl cursor-pointer"
       style={{ background: "var(--color-cream)" }}
     >
-      <Link href={`/blogs/${slug}`} className="block">
+      <Link href={`/blogs/${slug}/`} className="block">
         <div className="relative overflow-hidden h-72 lg:h-80">
           <img
             src={post.image}

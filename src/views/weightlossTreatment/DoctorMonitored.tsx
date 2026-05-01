@@ -738,7 +738,7 @@ export default function DoctorMonitoredLanding({
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="/contact-us"
+              href="/contact-us/"
               className="bg-light text-wine px-10 py-5 rounded-full font-inter font-medium text-lg hover:bg-cream transition-colors shadow-2xl inline-flex items-center gap-2"
             >
               Book Free Consultation

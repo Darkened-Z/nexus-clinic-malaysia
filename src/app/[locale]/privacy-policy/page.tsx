@@ -306,7 +306,7 @@ export default function PrivacyPolicy() {
             </div>
 
             <div className="mt-8">
-              <Link href="/contact-us">
+              <Link href="/contact-us/">
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}

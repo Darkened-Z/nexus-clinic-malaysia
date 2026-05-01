@@ -33,6 +33,7 @@ import FAQWithSchema from "@/src/components/FAQWithSchema";
 import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import AllPagesHero from "@/src/components/AllPagesHero";
+import Image from "next/image";
 const HCGWeightLossLanding = ({
   locale = fallbackLng,
 }: {
@@ -203,9 +204,11 @@ const HCGWeightLossLanding = ({
               variants={fadeInRight}
               className="relative h-100 rounded-3xl overflow-hidden shadow-2xl"
             >
-              <img
+              <Image
                 src="/images/main/HCG-weight-loss-treatment.webp"
                 alt="Medical consultation at Nexus Clinic Kuala Lumpur"
+                width={600}
+                height={400}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-linear-to-t from-brown/50 to-transparent" />
@@ -646,7 +649,7 @@ const HCGWeightLossLanding = ({
 
           <motion.a
             variants={scaleIn}
-            href="/contact-us"
+            href="/contact-us/"
             className="bg-cream text-wine px-10 py-5 rounded-full font-bold text-lg hover:bg-rose hover:text-white transition-all duration-300 shadow-2xl hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center gap-2"
           >
             Book Free Consultation

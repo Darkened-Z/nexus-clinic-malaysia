@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Sparkles, AlertCircle, ArrowRight } from "lucide-react";
 import Whatsapp from "./Whatsapp";
+import Link from "next/link";
 
 interface TreatmentHeroProps {
   badge: string;
@@ -134,16 +135,13 @@ export default function AllPagesHero({
               className="flex flex-col sm:flex-row gap-3 md:gap-4 items-stretch sm:items-center justify-start pt-4"
             >
               {/* Primary Button - Different styling on mobile */}
-              <motion.a
-                variants={fadeInUp}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+              <Link
                 href={ctaLink || "#"} 
-                className="px-6 md:px-8 py-3.5 md:py-4 rounded-full font-georgia text-base md:text-lg transition-all shadow-xl flex items-center justify-center gap-2 w-full sm:w-auto lg:bg-wine lg:text-light bg-white text-wine font-semibold lg:font-normal"
+                className="transition-transform duration-200 hover:translate-x-1 px-6 md:px-8 py-3.5 md:py-4 rounded-full font-georgia text-base md:text-lg transition-all shadow-xl flex items-center justify-center gap-2 w-full sm:w-auto lg:bg-wine lg:text-light bg-white text-wine font-semibold lg:font-normal"
               >
                 {ctaText}
                 <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
-              </motion.a>
+              </Link>
 
                 <Whatsapp message={whatsappMessage} variant="light" />
             </motion.div>

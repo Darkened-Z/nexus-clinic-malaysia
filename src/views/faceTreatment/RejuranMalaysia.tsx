@@ -252,7 +252,7 @@ export default function RejuranMalaysia({ locale }: RejuranMalaysiaProps) {
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
             <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-              href="/contact-us">
+              href="/contact-us/">
               Speak to a Doctor About Rejuran
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -303,7 +303,7 @@ export default function RejuranMalaysia({ locale }: RejuranMalaysiaProps) {
                 />
               </div>
               <Link className="mt-6 text-wine font-inter font-semibold flex items-center gap-2 hover:gap-3 transition-all"
-                href="/contact-us">
+                href="/contact-us/">
                 Find Out If Rejuran Is Right for You
                 <ArrowRight className="w-4 h-4" />
               </Link>
@@ -340,7 +340,7 @@ export default function RejuranMalaysia({ locale }: RejuranMalaysiaProps) {
           
           <motion.div variants={fadeInUp} className="text-center mt-8">
             <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-              href="/contact-us">
+              href="/contact-us/">
               Book a Consultation to See If Rejuran Matches Your Skin Goals
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -475,7 +475,7 @@ export default function RejuranMalaysia({ locale }: RejuranMalaysiaProps) {
                 ))}
               </ul>
               <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-                href="/contact-us">
+                href="/contact-us/">
                 Book Your Rejuran Consultation at Nexus Clinic KL
                 <ArrowRight className="w-4 h-4" />
               </Link>
@@ -512,7 +512,7 @@ export default function RejuranMalaysia({ locale }: RejuranMalaysiaProps) {
           
           <motion.div variants={fadeInUp} className="text-center mt-10">
             <Link className="bg-wine text-light px-8 py-3 rounded-full font-georgia text-lg hover:bg-wine/90 transition-all shadow-lg inline-flex items-center gap-2"
-              href="/contact-us">
+              href="/contact-us/">
               Book Your Rejuran Appointment
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -567,7 +567,7 @@ export default function RejuranMalaysia({ locale }: RejuranMalaysiaProps) {
           
           <motion.div variants={fadeInUp} className="text-center mt-6">
             <Link className="inline-flex items-center gap-2 text-wine font-inter font-semibold hover:gap-3 transition-all"
-              href="/contact-us">
+              href="/contact-us/">
               Get Your Personalised Rejuran Quote
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -716,7 +716,7 @@ export default function RejuranMalaysia({ locale }: RejuranMalaysiaProps) {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="bg-light text-wine px-8 py-4 rounded-full font-georgia text-lg hover:bg-cream transition-all shadow-lg flex items-center justify-center gap-2"
               >
                 Book Your Free Rejuran Consultation Now

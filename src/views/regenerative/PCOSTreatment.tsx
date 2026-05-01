@@ -3,52 +3,21 @@
 import { motion } from "framer-motion";
 import {
   Calendar,
-  Droplets,
-  Weight,
-  Heart,
-  ChevronRight,
-  Sparkles,
-  Moon,
-  Sun,
   MapPin,
   Award,
   Phone,
   Shield,
   Users,
-  Lock,
-  Target,
-  AlertCircle,
-  CheckCircle2,
-  XCircle,
   ArrowRight,
   Stethoscope,
-  TestTube,
   ClipboardList,
   Timer,
-  MessageCircle,
   Building,
-  Star,
-  Activity,
-  TrendingUp,
-  Brain,
-  Scale,
-  Dumbbell,
-  Wine,
-  ShieldCheck,
-  Eye,
-  Gauge,
-  FileText,
-  Clock,
-  BarChart3,
-  Thermometer,
-  Briefcase,
   HeartPulse 
 } from "lucide-react";
 import {
   staggerContainer,
   fadeInUp,
-  fadeInLeft,
-  fadeInRight,
   scaleIn,
 } from "@/src/lib/animations";
 import FAQWithSchema from "@/src/components/FAQWithSchema";
@@ -56,6 +25,7 @@ import { useTranslation } from "@/src/i18n/client";
 import { fallbackLng } from "@/src/i18n/settings";
 import TableForPages from "@/src/components/TableForPages";
 import Whatsapp from "@/src/components/Whatsapp";
+import Link from "next/link";
 
 const PCOSPage = ({ locale = fallbackLng }: { locale?: string }) => {
   const { t } = useTranslation(locale, "regenerative/pcosTreatment");
@@ -283,7 +253,7 @@ const PCOSPage = ({ locale = fallbackLng }: { locale?: string }) => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact-us"
+                href="/contact-us/"
                 className="px-8 py-4 rounded-full font-semibold flex items-center gap-2 shadow-lg"
                 style={{ backgroundColor: "#8C4F58", color: "#FAF8F7" }}
               >
@@ -367,11 +337,18 @@ const PCOSPage = ({ locale = fallbackLng }: { locale?: string }) => {
           fadeInUp={fadeInUp}
           className="container mx-auto px-4 md:px-8"
         />
-        <motion.div variants={fadeInUp} className="text-center mt-8">
-          <p className="text-lg italic" style={{ color: "#8C4F58" }}>
-            Speak to a Doctor About PCOS and Polycystic Ovaries | Free Assessment at Nexus Clinic KL
-          </p>
-        </motion.div>
+        <p className="text-sm text-taupe text-center max-w-2xl mx-auto mt-4">
+          Teede HJ et al. Recommendations from the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome. 
+          <a 
+            href="https://pubmed.ncbi.nlm.nih.gov/37482811/" 
+            target="_blank" 
+            rel="nofollow" 
+            className="text-wine font-bold italic"
+          >
+            The Journal of Clinical Endocrinology & Metabolism
+          </a>. 
+          2023;108(10):2447-2469. This global consensus provides the current clinical standard for PCOS diagnosis and management, emphasizing updated diagnostic criteria and personalized treatment pathways for metabolic, reproductive, and psychological health.
+        </p>
       </motion.section>
 
       {/* PCOS Phenotypes Table - Using TableForPages */}
@@ -424,11 +401,13 @@ const PCOSPage = ({ locale = fallbackLng }: { locale?: string }) => {
           fadeInUp={fadeInUp}
           className="container mx-auto px-4 md:px-8"
         />
-        <motion.div variants={fadeInUp} className="text-center mt-8">
-          <p className="text-lg" style={{ color: "#8C4F58" }}>
-            Get Your PCOS Skin Manifestations Assessed and Treated at the Root Cause at Nexus Clinic KL
+          <p className="text-center max-w-2xl mx-auto text-sm text-taupe">
+            For Malaysian women whose PCOS acne has left post-inflammatory hyperpigmentation marks on the lower face and jawline, our{' '}
+            <Link href="/skin/acne-scar-treatment-malaysia/" className="text-wine font-bold italic">
+              acne scar treatment in Malaysia
+            </Link>{' '}
+            provides context on addressing the PIH component after hormonal control is achieved.
           </p>
-        </motion.div>
       </motion.section>
 
       {/* PCOS Treatment Evidence Table - Using TableForPages */}
@@ -456,8 +435,6 @@ const PCOSPage = ({ locale = fallbackLng }: { locale?: string }) => {
           <p className="text-white">Replace Guesswork with Evidence: Get a Proper PCOS Treatment Plan at Nexus Clinic KL</p>
         </motion.div>
       </motion.section>
-
-      {/* Long-term Health Risks Table - Using TableForPages */}
       <motion.section
         initial="hidden"
         whileInView="visible"
@@ -479,9 +456,13 @@ const PCOSPage = ({ locale = fallbackLng }: { locale?: string }) => {
           fadeInUp={fadeInUp}
           className="container mx-auto px-4 md:px-8"
         />
-        <motion.div variants={fadeInUp} className="mt-8 p-6 rounded-xl text-center max-w-3xl mx-auto" style={{ backgroundColor: "#4B3A33" }}>
-          <p className="text-white">Get Your PCOS Long-Term Health Monitored Properly at Nexus Clinic KL | Annual Review Programme</p>
-        </motion.div>
+      <p className="text-center max-w-2xl mx-auto text-sm text-taupe">
+        For women with PCOS experiencing hormonal skin concerns that persist alongside their PCOS management, our{' '}
+        <Link href="/skin/pigmentation-treatment-malaysia/" className="text-wine font-bold italic">
+          pigmentation treatment in Malaysia
+        </Link>{' '}
+        provides a broader framework for addressing PIH and skin discolouration that accompany polycystic ovary syndrome in Malaysian skin.
+      </p>
       </motion.section>
 
       {/* Treatment Process Section */}

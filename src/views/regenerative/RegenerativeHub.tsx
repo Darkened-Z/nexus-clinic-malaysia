@@ -4,80 +4,10 @@ import {
   Sparkles,
   Award,
   MapPin,
-  Calendar,
   CheckCircle,
-  Clock,
-  Heart,
   Shield,
   ArrowRight,
-  Zap,
-  Droplet,
   Target,
-  ChevronRight,
-  Phone,
-  Users,
-  Flame,
-  HelpCircle,
-  EyeOff,
-  Gem,
-  Feather,
-  Wind,
-  Activity,
-  Syringe,
-  Pill,
-  Brain,
-  Droplets,
-  Scan,
-  Weight,
-  Thermometer,
-  Snowflake,
-  AlertCircle,
-  TrendingUp,
-  BarChart3,
-  Star,
-  Quote,
-  Play,
-  Stethoscope,
-  Smile,
-  ThumbsUp,
-  Globe,
-  Instagram,
-  Facebook,
-  Twitter,
-  Linkedin,
-  Mail,
-  MessageCircle,
-  Home,
-  Building2,
-  BadgeCheck,
-  Leaf,
-  Trophy,
-  Briefcase,
-  GraduationCap,
-  Send,
-  Navigation,
-  Car,
-  Train,
-  Bus,
-  ParkingCircle,
-  Clock as ClockIcon,
-  Calendar as CalendarIcon,
-  User,
-  MessageSquare,
-  SendHorizontal,
-  CheckCircle as CheckCircleIcon,
-  Recycle,
-  Battery,
-  HeartPulse,
-  TestTube,
-  FlaskConical,
-  Microscope,
-  Dna,
-  Pill as PillIcon,
-  Activity as ActivityIcon,
-  ShieldCheck,
-  Scale,
-  LucideIcon,
 } from "lucide-react";
 import {
   staggerContainer,
@@ -172,15 +102,15 @@ export default function RegenerativeHub({ locale }: RegenerativeHubProps) {
     ];
 
   const concernMapping = [
-    { concern: "Low energy, reduced drive, symptoms of low testosterone", treatment: "Testosterone Therapy or Hormone Test", link: "/regenerative-treatments/testosterone-therapy-malaysia" },
-    { concern: "Difficulty with sexual performance", treatment: "ED Treatment or Shockwave Therapy", link: "/regenerative-treatments/ed-treatment-malaysia" },
-    { concern: "Menopause symptoms affecting daily life", treatment: "Menopause Hormone Replacement", link: "/regenerative-treatments/menopause-hormone-replacement-malaysia" },
-    { concern: "Hormonal imbalance symptoms without clear answers yet", treatment: "Hormone Test or Hormone Replacement Therapy", link: "/regenerative-treatments/hormone-test-malaysia" },
-    { concern: "PCOS related hormonal concerns", treatment: "PCOS Treatment", link: "/regenerative-treatments/pcos-treatment-malaysia" },
-    { concern: "Possible thyroid related fatigue or weight change", treatment: "Hypothyroidism Treatment", link: "/regenerative-treatments/hypothyroidism-treatment-malaysia" },
-    { concern: "Want a broader healthy aging plan", treatment: "Anti-Aging Therapy", link: "/regenerative-treatments/anti-aging-therapy-malaysia" },
-    { concern: "Interest in intimate wellness support", treatment: "P-Shot or O-Shot", link: "/regenerative-treatments/p-shot-malaysia" },
-    { concern: "Looking for advanced regenerative options", treatment: "Stem Cell Therapy", link: "/regenerative-treatments/stem-cell-therapy-malaysia" },
+    { concern: "Low energy, reduced drive, symptoms of low testosterone", treatment: "Testosterone Therapy or Hormone Test", link: "/regenerative-treatments/testosterone-therapy-malaysia/" },
+    { concern: "Difficulty with sexual performance", treatment: "ED Treatment or Shockwave Therapy", link: "/regenerative-treatments/ed-treatment-malaysia/" },
+    { concern: "Menopause symptoms affecting daily life", treatment: "Menopause Hormone Replacement", link: "/regenerative-treatments/menopause-hormone-replacement-malaysia/" },
+    { concern: "Hormonal imbalance symptoms without clear answers yet", treatment: "Hormone Test or Hormone Replacement Therapy", link: "/regenerative-treatments/hormone-test-malaysia/" },
+    { concern: "PCOS related hormonal concerns", treatment: "PCOS Treatment", link: "/regenerative-treatments/pcos-treatment-malaysia/" },
+    { concern: "Possible thyroid related fatigue or weight change", treatment: "Hypothyroidism Treatment", link: "/regenerative-treatments/hypothyroidism-treatment-malaysia/" },
+    { concern: "Want a broader healthy aging plan", treatment: "Anti-Aging Therapy", link: "/regenerative-treatments/anti-aging-therapy-malaysia/" },
+    { concern: "Interest in intimate wellness support", treatment: "P-Shot or O-Shot", link: "/regenerative-treatments/p-shot-malaysia/" },
+    { concern: "Looking for advanced regenerative options", treatment: "Stem Cell Therapy", link: "/regenerative-treatments/stem-cell-therapy-malaysia/" },
   ];
 
   const faqData = [
@@ -369,7 +299,7 @@ export default function RegenerativeHub({ locale }: RegenerativeHubProps) {
                 </div>
                 <h3 className="font-georgia text-xl text-brown mb-2 px-6">{treatment.name}</h3>
                 <p className="text-taupe font-inter text-sm mb-4 px-6">{treatment.description}</p>
-                <Link href={`/regenerative/${treatment.slug}`}>
+                <Link href={`/regenerative/${treatment.slug}/`}>
                   <button className="inline-flex items-center gap-2 text-wine font-inter font-semibold text-sm hover:gap-3 transition-all px-6">
                     View Treatment Details
                     <ArrowRight className="w-4 h-4" />
@@ -411,9 +341,8 @@ export default function RegenerativeHub({ locale }: RegenerativeHubProps) {
                     <td className="p-4 text-brown font-inter font-medium">{item.treatment}</td>
                     <td className="p-4">
                       <Link href={item.link}>
-                        <button className="inline-flex items-center gap-1 text-wine font-inter text-sm hover:gap-2 transition-all">
+                        <button className="text-wine font-inter text-sm hover:font-bold transition-all">
                           View Details
-                          <ArrowRight className="w-3 h-3" />
                         </button>
                       </Link>
                     </td>
