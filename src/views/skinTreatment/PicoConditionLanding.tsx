@@ -1,18 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import {
-  Award,
-  MapPin,
-  Calendar,
   CheckCircle,
   Syringe,
   Clock,
   Heart,
   Shield,
   ArrowRight,
-  Activity,
   Zap,
-  Target,
   ChevronRight,
   XCircle,
 } from "lucide-react";
@@ -69,129 +64,6 @@ export default function PicoConditionLanding({
         fadeInRight={fadeInRight}
         fadeInUp={fadeInUp}
       />
-
-      {/* Trust Section */}
-      <section className="py-12 px-4 bg-light">
-        <motion.div
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="container mx-auto max-w-5xl"
-        >
-          <div className="bg-white/95 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-taupe/20 shadow-xl hover:shadow-2xl transition-all duration-300">
-            <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-wine/10 rounded-full flex items-center justify-center">
-                  <Award className="w-6 h-6 text-wine" />
-                </div>
-                <h2 className="font-georgia text-2xl md:text-3xl text-brown">
-                  Trust at a glance
-                </h2>
-              </div>
-              <div className="hidden sm:block w-px h-8 bg-taupe/20" />
-              <p className="text-taupe font-inter text-sm">
-                Nexus Clinic Kuala Lumpur — Excellence in Medical Aesthetics
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 py-4 border-y border-taupe/10">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-wine/5 rounded-full flex items-center justify-center">
-                  <Award className="w-5 h-5 text-wine" />
-                </div>
-                <div>
-                  <p className="font-inter text-xs text-taupe uppercase tracking-wide">
-                    Established
-                  </p>
-                  <p className="font-georgia text-brown font-bold text-lg">
-                    2001
-                  </p>
-                  <p className="font-inter text-taupe text-xs">
-                    Over 20 years of excellence
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-wine/5 rounded-full flex items-center justify-center">
-                  <MapPin className="w-5 h-5 text-wine" />
-                </div>
-                <div>
-                  <p className="font-inter text-xs text-taupe uppercase tracking-wide">
-                    Location
-                  </p>
-                  <p className="font-georgia text-brown font-bold text-sm">
-                    Wisma UOA II, Jalan Pinang
-                  </p>
-                  <p className="font-inter text-taupe text-xs">
-                    KLCC, 50450 Kuala Lumpur
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-wine/5 rounded-full flex items-center justify-center">
-                  <Calendar className="w-5 h-5 text-wine" />
-                </div>
-                <div>
-                  <p className="font-inter text-xs text-taupe uppercase tracking-wide">
-                    Opening Hours
-                  </p>
-                  <p className="font-georgia text-brown font-bold text-sm">
-                    Monday - Saturday
-                  </p>
-                  <p className="font-inter text-taupe text-xs">
-                    9:00am – 6:00pm | Closed Sundays &amp; PH
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-6 pt-2">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-wine/10 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-                    <Shield className="w-4 h-4 text-wine" />
-                  </div>
-                  <div>
-                    <p className="font-inter font-semibold text-brown text-sm">
-                      MOH Registered &amp; Compliant
-                    </p>
-                    <p className="font-inter text-taupe text-xs leading-relaxed">
-                      FDA-cleared picosecond laser device
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-wine/10 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-                    <Activity className="w-4 h-4 text-wine" />
-                  </div>
-                  <div>
-                    <p className="font-inter font-semibold text-brown text-sm">
-                      Licensed Aesthetic Doctors
-                    </p>
-                    <p className="font-inter text-taupe text-xs leading-relaxed">
-                      15+ years combined experience
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-wine/10 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-                    <Target className="w-4 h-4 text-wine" />
-                  </div>
-                  <div>
-                    <p className="font-inter font-semibold text-brown text-sm">
-                      Wavelength-Calibrated Protocols
-                    </p>
-                    <p className="font-inter text-taupe text-xs leading-relaxed">
-                      532nm • 755nm • 1064nm selected per concern
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      </section>
 
       {/* Overview Section */}
       <section className="py-16 px-4 bg-cream">
