@@ -1903,12 +1903,12 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
   price: {
     slug: "price",
     metaTitle:
-      "Pico Laser Price Malaysia 2025 Cost Per Session Package Rates and What Affects the Price at Nexus Clinic KL",
+      "Pico Laser Price Malaysia 2026 Cost Per Session Package Rates and What Affects the Price at Nexus Clinic KL",
     metaDescription:
       "Pico Laser pricing in Malaysia ranges from RM500 to RM2000 per session depending on skin concern and treatment area. Nexus Clinic KL offers transparent, consultation-based pricing with no hidden fees. Find out the cost for your specific concern before committing to a package.",
 
     heroBadge: "Transparent Pico Laser Pricing • MOH Registered Clinic",
-    heroTitle: "Pico Laser Price Malaysia 2025",
+    heroTitle: "Pico Laser Price Malaysia 2026",
     heroHighlight: "Cost Per Session and What Actually Affects the Price",
     heroDescription:
       "Pico laser pricing in Malaysia is confusing. One clinic charges RM400. Another charges RM2,000. The machine might share the same brand name on the website. The results will not be the same. Understanding what drives the price difference helps you make a better decision about where you actually spend your money.",
@@ -1976,7 +1976,7 @@ export const picoLaserConditions: Record<string, PicoConditionContent> = {
       },
     ],
 
-    pricingHeading: "Pico Laser Price at Nexus Clinic KL",
+    pricingHeading: "Pico Laser Price Malaysia 2026 at Nexus Clinic KL",
     pricingSubheading: "Current session prices — free consultation included",
     pricingRows: [
       {
