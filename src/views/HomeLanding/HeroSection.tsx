@@ -1,10 +1,8 @@
 import Image from "next/image";
 
 const HeroSection = ({ t }: { t: any }) => {
-  const badges = (t("hero.badges", { returnObjects: true }) as unknown as string[]) || [];
-
   return (
-    <section className="relative h-[760px] w-full overflow-hidden">
+    <section className="relative h-[700px] w-full overflow-hidden">
       <Image
         src="/images/hero_image.webp"
         alt="Nexus Clinic Aesthetic Treatment"
@@ -27,24 +25,9 @@ const HeroSection = ({ t }: { t: any }) => {
             <h1 className="text-3xl lg:text-5xl font-georgia text-brown leading-tight mb-6">
               {t("hero.heading")}
             </h1>
-            <p className="text-base lg:text-lg text-gray-600 leading-relaxed mb-6">
+            <p className="text-base lg:text-lg text-gray-600 leading-relaxed mb-8">
               {t("hero.description")}
             </p>
-
-            {/* Trust Badges */}
-            {badges.length > 0 && (
-              <ul className="flex flex-wrap gap-2 mb-8">
-                {badges.map((badge) => (
-                  <li
-                    key={badge}
-                    className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/80 border border-wine/20 text-xs text-brown font-medium backdrop-blur-sm"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-wine" aria-hidden="true" />
-                    {badge}
-                  </li>
-                ))}
-              </ul>
-            )}
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
